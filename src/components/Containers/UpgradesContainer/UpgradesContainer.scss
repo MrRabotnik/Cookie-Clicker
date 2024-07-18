@@ -1,0 +1,52 @@
+.upgrades-container {
+    height: 97vh;
+    width: 25%;
+
+    h1 {
+        text-align: center;
+        color: white;
+        font-size: 32px;
+    }
+
+    .control-container {
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+        box-sizing: border-box;
+
+        & > span {
+            display: block;
+            margin: 0 30px;
+        }
+
+        & > div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin: 0 10px;
+            box-sizing: border-box;
+            border: 1px inset transparent;
+            cursor: pointer;
+
+            &:hover {
+                background-color: black;
+                border: 1px inset white;
+            }
+        }
+
+        p {
+            margin: 5px 0;
+            cursor: pointer;
+
+            &.inactive {
+                color: grey;
+            }
+
+            &.active {
+                color: white;
+            }
+        }
+    }
+}

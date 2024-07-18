@@ -1,0 +1,13 @@
+.farms-container {
+    width: 40%;
+    height: 97vh;
+
+    .farm-container-header {
+        height: 100px;
+    }
+
+    .farm-items-scrollable {
+        height: calc(97vh - 110px);
+        overflow: auto;
+    }
+}
