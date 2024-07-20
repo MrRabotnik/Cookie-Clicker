@@ -2,7 +2,7 @@ const UPGRADES = [
     {
         label: "Cursor",
         avatar: "https://opengameart.org/sites/default/files/styles/medium/public/3_5.png",
-        price: generateValues(15),
+        price: generateValues(15, 1.15),
         description: "Each cursor generates 0.1 cookies in 10s.",
         value: 0.1,
         boughtCount: 0,
@@ -10,7 +10,7 @@ const UPGRADES = [
     {
         label: "Grandma",
         avatar: "https://opengameart.org/sites/default/files/styles/medium/public/profile_0.png",
-        price: generateValues(100),
+        price: generateValues(100, 1.15),
         description: "Each Grandma generates 1 cookies in 10s.",
         value: 1,
         boughtCount: 0,
@@ -18,7 +18,7 @@ const UPGRADES = [
     {
         label: "Farm",
         avatar: "https://opengameart.org/sites/default/files/styles/medium/public/profile_0.png",
-        price: generateValues(1100),
+        price: generateValues(1100, 1.15),
         description: "Each Grandma generates 1 cookies in 10s.",
         value: 1,
         boughtCount: 0,
@@ -35,12 +35,12 @@ const UPGRADES = [
 
 export default UPGRADES;
 
-function generateValues(initialValue) {
+function generateValues(initialValue, percentage) {
     const array = [];
 
     for (let i = 0; i < 100; i++) {
         array.push(initialValue.toFixed(0));
-        initialValue *= 1.4; // Increase the value by 40%
+        initialValue *= percentage; // Increase the value by 40%
     }
 
     return array;
