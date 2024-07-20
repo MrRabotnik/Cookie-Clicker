@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Stage, Layer, Image as KonvaImage, Text, Group } from "react-konva";
 import useImage from "use-image";
 
@@ -8,17 +8,28 @@ import { useCookies } from "../../App";
 const UpgradeItem = ({ dimensions, upgrade, buying, buySellMultiplier, updateUpgrades }: any) => {
     const { cookiesCount, setCookiesCount, setCookiesPerSecond } = useCookies();
 
-    const [bg] = useImage("https://opengameart.org/sites/default/files/styles/medium/public/sand_template_0.jpg");
-    const [cookie] = useImage("https://opengameart.org/sites/default/files/styles/medium/public/Cookie.png");
+    const [bg] = useImage("./assets/upgradeBg.jpeg");
+    const [cookie] = useImage("./assets/cookie.png");
     const [avatar] = useImage(upgrade.avatar);
+
+    const [textWidth, setTextWidth] = useState(0);
+    const textRef = useRef(null);
 
     const textColor = buying
         ? cookiesCount >= buySellMultiplier * upgrade.price[upgrade.boughtCount]
-            ? "#6fc276"
-            : "#ff0000"
-        : "#6fc276";
+            ? "#6f6"
+            : "#f66"
+        : "#6f6";
 
     const upgradeAvailable = cookiesCount >= buySellMultiplier * upgrade.price[upgrade.boughtCount];
+
+    useEffect(() => {
+        if (textRef.current) {
+            const textNode: any = textRef.current;
+            const textWidth = textNode.getTextWidth();
+            setTextWidth(textWidth);
+        }
+    }, [upgrade.boughtCount]);
 
     const buyAnUpgrade = () => {
         if (!upgradeAvailable) return;
@@ -42,63 +53,63 @@ const UpgradeItem = ({ dimensions, upgrade, buying, buySellMultiplier, updateUpg
 
             <Stage
                 width={dimensions.width}
-                height={100}
+                height={64}
             >
                 <Layer>
                     <KonvaImage
                         image={bg}
                         width={dimensions.width}
-                        height={100}
+                        height={256}
                     />
                     <Group
                         width={dimensions.width}
-                        height={100}
+                        height={64}
                         x={0}
                         y={0}
                     >
                         <KonvaImage
                             image={avatar}
-                            width={dimensions.width / 4}
-                            height={100}
+                            width={dimensions.width / 6}
+                            height={64}
                         />
                         <Text
                             text={upgrade.label}
-                            x={100}
-                            y={10}
+                            x={dimensions.width / 5}
+                            y={5}
                             fill="white"
                             fontSize={32}
                             fontFamily="Arial"
+                            shadowBlur={6}
+                            shadowOffsetX={0}
+                            shadowOffsetY={2}
                         />
                         <KonvaImage
                             image={cookie}
-                            x={100}
-                            y={50}
-                            width={20}
-                            height={20}
+                            x={dimensions.width / 5 - 5}
+                            y={35}
+                            width={30}
+                            height={25}
                         />
                         <Text
                             text={upgrade.price[upgrade.boughtCount]}
-                            x={125}
-                            y={55}
+                            x={dimensions.width / 5 + 20}
+                            y={40}
                             fill={textColor}
-                            fontSize={12}
+                            fontSize={16}
                             fontFamily="Arial"
-                        />
-                        <Text
-                            text={upgrade.description}
-                            x={100}
-                            y={75}
-                            fill={"#ededed"}
-                            fontSize={12}
-                            fontFamily="Arial"
+                            shadowColor="black"
+                            shadowBlur={6}
+                            shadowOffsetX={0}
+                            shadowOffsetY={2}
                         />
                         <Text
                             text={upgrade.boughtCount ? upgrade.boughtCount : ""}
-                            x={dimensions.width - 50}
-                            y={30}
-                            fill="white"
+                            x={Math.max(dimensions.width - textWidth - 10, 0)}
+                            y={15}
+                            fill="rgba(187, 187, 187, 0.5)"
                             fontSize={48}
                             fontFamily="Arial"
+                            ref={textRef}
                         />
                     </Group>
                 </Layer>

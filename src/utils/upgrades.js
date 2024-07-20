@@ -16,13 +16,21 @@ const UPGRADES = [
         boughtCount: 0,
     },
     {
-        label: "Factory",
-        avatar: "https://opengameart.org/sites/default/files/styles/medium/public/usine5-red.png",
-        price: generateValues(500),
-        description: "Each Factory generates 10 cookies in 10s.",
-        value: 10,
+        label: "Farm",
+        avatar: "https://opengameart.org/sites/default/files/styles/medium/public/profile_0.png",
+        price: generateValues(1100),
+        description: "Each Grandma generates 1 cookies in 10s.",
+        value: 1,
         boughtCount: 0,
     },
+    // {
+    //     label: "Factory",
+    //     avatar: "https://opengameart.org/sites/default/files/styles/medium/public/usine5-red.png",
+    //     price: generateValues(500),
+    //     description: "Each Factory generates 10 cookies in 10s.",
+    //     value: 10,
+    //     boughtCount: 0,
+    // },
 ];
 
 export default UPGRADES;

@@ -11,10 +11,11 @@ const CookieContainer = () => {
 
     const divRef = useRef(null);
     const haloRef = useRef<any>(null);
+    const halo2Ref = useRef<any>(null);
     const cursorRefs = useRef<any[]>([]);
     const fallingCookiesRefs = useRef<any[]>([]);
 
-    const [cookie] = useImage("https://opengameart.org/sites/default/files/styles/medium/public/Cookie.png");
+    const [cookie] = useImage("./assets/cookie.png");
     const [cookieHalo] = useImage("https://orteil.dashnet.org/cookieclicker/img/shine.png");
     const [cursor] = useImage("https://opengameart.org/sites/default/files/styles/medium/public/pointer_1.png");
     const [fallingCookies, setFallingCookies] = useState<any[]>([]);
@@ -35,10 +36,12 @@ const CookieContainer = () => {
 
         window.addEventListener("mousemove", handleMouseMove);
 
-        if (haloRef.current) {
+        if (haloRef.current && halo2Ref.current) {
             const anim = new Konva.Animation((frame: any) => {
                 const angleDiff = (frame.timeDiff * 90) / 5000;
+                const angle2Diff = -(frame.timeDiff * 90) / 5000;
                 haloRef.current.rotate(angleDiff);
+                halo2Ref.current.rotate(angle2Diff);
             }, haloRef.current.getLayer());
 
             anim.start();
@@ -173,6 +176,16 @@ const CookieContainer = () => {
                             offsetX={150}
                             offsetY={150}
                             ref={haloRef}
+                        />
+                        <KonvaImage
+                            image={cookieHalo}
+                            x={0}
+                            y={0}
+                            width={300}
+                            height={300}
+                            offsetX={150}
+                            offsetY={150}
+                            ref={halo2Ref}
                         />
                         <KonvaImage
                             image={cookie}
