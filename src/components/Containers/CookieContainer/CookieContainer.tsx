@@ -332,7 +332,7 @@ const CookieContainer = () => {
                             fontFamily="Arial"
                         />
                         <Text
-                            text={`per second: ${cookiesPerSecond}`}
+                            text={`per second: ${formatNumber(cookiesPerSecond)}`}
                             x={10}
                             y={60}
                             fill="white"
