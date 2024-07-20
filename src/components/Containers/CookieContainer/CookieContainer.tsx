@@ -344,7 +344,7 @@ const CookieContainer = () => {
                     {fadingTexts.map((text) => (
                         <Text
                             key={text.id}
-                            text={text.text}
+                            text={`+${formatNumber(parseInt(text.text))}`}
                             x={text.x}
                             y={text.y}
                             fill="white"
