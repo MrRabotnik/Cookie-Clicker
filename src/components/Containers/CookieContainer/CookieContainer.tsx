@@ -152,7 +152,7 @@ const CookieContainer = () => {
                             key={fallingCookie.id}
                             image={cookie}
                             width={100}
-                            height={100}
+                            height={80}
                             x={fallingCookie.x}
                             y={fallingCookie.y}
                             ref={(node) => {
