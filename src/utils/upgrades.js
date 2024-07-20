@@ -32,7 +32,7 @@ function generateValues(initialValue) {
 
     for (let i = 0; i < 100; i++) {
         array.push(initialValue.toFixed(0));
-        initialValue *= 1.25; // Increase the value by 25%
+        initialValue *= 1.4; // Increase the value by 40%
     }
 
     return array;
