@@ -14,6 +14,7 @@ import upgradeMineIcon from "../assets/images/upgrades/mine.png";
 import upgradeFactoryIcon from "../assets/images/upgrades/factory.png";
 import upgradeBankIcon from "../assets/images/upgrades/bank.jpg";
 import upgradeTempleIcon from "../assets/images/upgrades/temple.jpg";
+import upgradeWizardTowerIcon from "../assets/images/upgrades/wizard-tower.webp";
 
 const IMAGES = {
     bg,
@@ -34,6 +35,7 @@ const IMAGES = {
     upgradeFactoryIcon,
     upgradeBankIcon,
     upgradeTempleIcon,
+    upgradeWizardTowerIcon,
 };
 
 export default IMAGES;

@@ -65,15 +65,15 @@ const UPGRADES = [
         boughtCount: 0,
         multiplier: 1,
     },
-    // {
-    //     label: "",
-    //     avatar: "https://opengameart.org/sites/default/files/styles/medium/public/usine5-red.png",
-    //     price: generateValues(330000000, 1.15),
-    //     description: "Each  generates       cookies in 10s.",
-    //     value: 1,
-    //     boughtCount: 0,
-    //     multiplier: 1,
-    // },
+    {
+        label: "Wizard tower",
+        avatar: IMAGES.upgradeWizardTowerIcon,
+        price: generateValues(330000000, 1.15),
+        description: "Each  generates       cookies in 10s.",
+        value: 1,
+        boughtCount: 0,
+        multiplier: 1,
+    },
 ];
 
 export default UPGRADES;
