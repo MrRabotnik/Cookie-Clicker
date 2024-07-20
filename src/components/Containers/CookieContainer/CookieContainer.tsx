@@ -6,6 +6,7 @@ import useImage from "use-image";
 import { useCookies } from "../../../App";
 import { useSpring, animated } from "@react-spring/konva";
 import IMAGES from "../../../utils/images";
+import numeral from "numeral";
 
 const CookieContainer = () => {
     const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -52,7 +53,7 @@ const CookieContainer = () => {
             const anim = new Konva.Animation((frame: any) => {
                 const angleDiff = (frame.timeDiff * 90) / 5000;
                 const angle2Diff = -(frame.timeDiff * 90) / 5000;
-                if (haloRef && halo2Ref) {
+                if (haloRef?.current && halo2Ref?.current) {
                     haloRef.current.rotate(angleDiff);
                     halo2Ref.current.rotate(angle2Diff);
                 }
@@ -171,6 +172,18 @@ const CookieContainer = () => {
             anim.stop();
         };
     }, [dimensions, cursorRefs.current.length]);
+
+    const formatNumber = (number: number) => {
+        let formatted = numeral(number).format("0.00a");
+
+        formatted = formatted.replace(/\.00([a-z])$/, "$1");
+
+        if (number < 1000) {
+            formatted = numeral(number).format("0");
+        }
+
+        return formatted;
+    };
 
     const handleClickOnCookie = () => {
         const addedNewCookies = cookiesPerClick * multiplier;
@@ -311,7 +324,7 @@ const CookieContainer = () => {
                             cornerRadius={10}
                         />
                         <Text
-                            text={`${cookiesCount} cookies`}
+                            text={`${formatNumber(cookiesCount)} cookies`}
                             x={10}
                             y={20}
                             fill="white"
