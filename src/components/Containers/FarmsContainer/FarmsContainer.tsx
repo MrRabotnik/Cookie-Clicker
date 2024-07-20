@@ -18,7 +18,15 @@ const FarmsContainer = () => {
             className="farms-container"
             ref={divRef}
         >
-            <div className="farm-container-header"></div>
+            <div className="farm-container-header">
+                <div className="farm-header-sides stats">
+                    <p>Stats</p>
+                </div>
+                <div className="random-texts"></div>
+                <div className="farm-header-sides options">
+                    <p>Options</p>
+                </div>
+            </div>
             <div className="line-horizontal"></div>
             <div className="farm-items-scrollable">
                 {Array.from(Array(10)).map((_, index) => {

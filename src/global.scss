@@ -1,6 +1,7 @@
 body {
     margin: 0;
     height: 100vh;
+    color: white;
 }
 
 #root {
@@ -32,4 +33,8 @@ a {
 
 .scrollable {
     overflow: auto;
+}
+
+.display-none {
+    display: none;
 }

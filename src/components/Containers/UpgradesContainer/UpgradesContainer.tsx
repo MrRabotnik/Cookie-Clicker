@@ -1,12 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./UpgradesContainer.scss";
 import MultiplierItem from "../../MultiplierItem/MultiplierItem";
-import UPGRADES from "../../../utils/upgrades";
 import UpgradeItem from "../../UpgradeItem/UpgradeItem";
+import { useCookies } from "../../../App";
 
 const UpgradesContainer = () => {
     const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
     const divRef = useRef(null);
+
+    const { upgrades, updateUpgrades } = useCookies();
 
     const [buying, setBuying] = useState(true);
     const [buySellMultiplier, setBuySellMultiplier] = useState(1);
@@ -17,6 +19,7 @@ const UpgradesContainer = () => {
             setDimensions({ width: offsetWidth, height: offsetHeight });
         }
     }, []);
+
     return (
         <section
             className="upgrades-container"
@@ -52,13 +55,16 @@ const UpgradesContainer = () => {
                     <p className={buySellMultiplier === 100 ? "active" : "inactive"}>100</p>
                 </div>
             </div>
-            {UPGRADES.map((upgrade, index) => {
+            {upgrades.map((upgrade: any, index: number) => {
                 return (
                     <UpgradeItem
                         key={index}
                         dimensions={dimensions}
+                        updateUpgrades={updateUpgrades}
                         upgrade={upgrade}
                         position={index}
+                        buying={buying}
+                        buySellMultiplier={buySellMultiplier}
                     />
                 );
             })}

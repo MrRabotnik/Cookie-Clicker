@@ -1,7 +1,5 @@
 import React from "react";
-import Konva from "konva";
-import { Stage, Layer, Image as KonvaImage, Text, Rect, Group } from "react-konva";
-import useImage from "use-image";
+import { Stage, Layer, Rect, Group } from "react-konva";
 
 const MultiplierItem = ({ dimensions }: any) => {
     return (

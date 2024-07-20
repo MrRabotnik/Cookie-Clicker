@@ -1,6 +1,5 @@
 import React from "react";
-import Konva from "konva";
-import { Stage, Layer, Image as KonvaImage, Text, Rect, Group } from "react-konva";
+import { Stage, Layer, Image as KonvaImage, Group } from "react-konva";
 import useImage from "use-image";
 
 import "./FarmItem.scss";

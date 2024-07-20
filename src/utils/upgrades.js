@@ -1,20 +1,39 @@
 const UPGRADES = [
     {
         label: "Cursor",
-        price: [15, 100, 1100, 12000, 130000],
-        value: "Each cursor click automatically generates cookies.",
+        avatar: "https://opengameart.org/sites/default/files/styles/medium/public/3_5.png",
+        price: generateValues(15),
+        description: "Each cursor generates 0.1 cookies in 10s.",
+        value: 0.1,
+        boughtCount: 0,
     },
     {
         label: "Grandma",
-        price: [100, 500, 3000, 10000, 40000],
-        value: "Grandmas are twice as efficient.",
+        avatar: "https://opengameart.org/sites/default/files/styles/medium/public/profile_0.png",
+        price: generateValues(100),
+        description: "Each Grandma generates 1 cookies in 10s.",
+        value: 1,
+        boughtCount: 0,
     },
     {
         label: "Factory",
-        price: [5000, 25000, 140000, 790000, 4000000],
-        value: "Factories are twice as efficient.",
+        avatar: "https://opengameart.org/sites/default/files/styles/medium/public/usine5-red.png",
+        price: generateValues(500),
+        description: "Each Factory generates 10 cookies in 10s.",
+        value: 10,
+        boughtCount: 0,
     },
-    // Add more UPGRADES as needed
 ];
 
 export default UPGRADES;
+
+function generateValues(initialValue) {
+    const array = [];
+
+    for (let i = 0; i < 100; i++) {
+        array.push(initialValue.toFixed(0));
+        initialValue *= 1.25; // Increase the value by 25%
+    }
+
+    return array;
+}
