@@ -1,7 +1,10 @@
 import React from "react";
-import { Stage, Layer, Rect, Group } from "react-konva";
+import { Stage, Layer, Image as KonvaImage, Group } from "react-konva";
+import useImage from "use-image";
 
 const MultiplierItem = ({ dimensions }: any) => {
+    const [containerFrame] = useImage("./assets/images/multiplier-frame.png");
+
     return (
         <div className="multiplier-item">
             <Stage
@@ -13,14 +16,10 @@ const MultiplierItem = ({ dimensions }: any) => {
                         x={dimensions.width / 2}
                         y={dimensions.height / 2}
                     >
-                        <Rect
-                            width={dimensions.width}
-                            height={100}
-                            x={0}
-                            y={0}
-                            fill="rgba(0,0,0,0.7)"
-                            opacity={0.5}
-                            cornerRadius={10}
+                        <KonvaImage
+                            image={containerFrame}
+                            width={dimensions.width / 5}
+                            height={dimensions.width / 5}
                         />
                     </Group>
                 </Layer>

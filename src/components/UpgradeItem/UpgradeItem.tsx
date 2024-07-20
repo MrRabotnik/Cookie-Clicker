@@ -4,24 +4,52 @@ import useImage from "use-image";
 
 import "./UpgradeItem.scss";
 import { useCookies } from "../../App";
+import numeral from "numeral";
+import IMAGES from "../../utils/images";
 
 const UpgradeItem = ({ dimensions, upgrade, buying, buySellMultiplier, updateUpgrades }: any) => {
     const { cookiesCount, setCookiesCount, setCookiesPerSecond } = useCookies();
 
-    const [bg] = useImage("./assets/upgradeBg.jpeg");
-    const [cookie] = useImage("./assets/cookie.png");
+    const [bg] = useImage(IMAGES.upgradeBg);
+    const [cookie] = useImage(IMAGES.cookie);
     const [avatar] = useImage(upgrade.avatar);
 
     const [textWidth, setTextWidth] = useState(0);
     const textRef = useRef(null);
 
+    const sumPriceArray = () => {
+        if (!Array.isArray(upgrade.price) || buySellMultiplier + upgrade.boughtCount > upgrade.price.length) {
+            return;
+        }
+
+        const slicedArray = upgrade.price.slice(upgrade.boughtCount, buySellMultiplier + upgrade.boughtCount);
+        const sum = slicedArray.reduce((acc: number, value: number) => acc + +value, 0);
+        return sum;
+    };
+
+    const summedPriceArray = sumPriceArray();
+
+    const formatNumber = (number: number) => {
+        let formatted = numeral(number).format("0.00a");
+
+        formatted = formatted.replace(/\.00([a-z])$/, "$1");
+
+        if (number < 1000) {
+            formatted = numeral(number).format("0");
+        }
+
+        return formatted;
+    };
+
     const textColor = buying
-        ? cookiesCount >= buySellMultiplier * upgrade.price[upgrade.boughtCount]
+        ? cookiesCount >= summedPriceArray
             ? "#6f6"
             : "#f66"
-        : "#6f6";
+        : buySellMultiplier <= upgrade.boughtCount
+        ? "#6f6"
+        : "#f66";
 
-    const upgradeAvailable = cookiesCount >= buySellMultiplier * upgrade.price[upgrade.boughtCount];
+    const upgradeAvailable = buying ? cookiesCount >= summedPriceArray : buySellMultiplier <= upgrade.boughtCount;
 
     useEffect(() => {
         if (textRef.current) {
@@ -34,15 +62,24 @@ const UpgradeItem = ({ dimensions, upgrade, buying, buySellMultiplier, updateUpg
     const buyAnUpgrade = () => {
         if (!upgradeAvailable) return;
 
-        setCookiesCount((prev: number) => prev - upgrade.price[upgrade.boughtCount]);
-        setCookiesPerSecond((prev: number) => prev + upgrade.value);
+        setCookiesCount((prev: number) => prev - summedPriceArray);
+        setCookiesPerSecond((prev: number) => prev + upgrade.value * buySellMultiplier);
 
         updateUpgrades(upgrade.label, {
-            boughtCount: upgrade.boughtCount + 1,
+            boughtCount: upgrade.boughtCount + buySellMultiplier,
         });
     };
 
-    const sellAnUpgrade = () => {};
+    const sellAnUpgrade = () => {
+        if (!upgradeAvailable) return;
+
+        setCookiesCount((prev: number) => +prev + summedPriceArray);
+        setCookiesPerSecond((prev: number) => +prev - upgrade.value * buySellMultiplier);
+
+        updateUpgrades(upgrade.label, {
+            boughtCount: upgrade.boughtCount - buySellMultiplier,
+        });
+    };
 
     return (
         <div
@@ -91,7 +128,9 @@ const UpgradeItem = ({ dimensions, upgrade, buying, buySellMultiplier, updateUpg
                             height={25}
                         />
                         <Text
-                            text={upgrade.price[upgrade.boughtCount]}
+                            text={formatNumber(
+                                buying ? summedPriceArray : summedPriceArray - (summedPriceArray * 50) / 100
+                            )}
                             x={dimensions.width / 5 + 20}
                             y={40}
                             fill={textColor}

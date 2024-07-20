@@ -1,9 +1,10 @@
 import React from "react";
 import "./Header.scss";
+import IMAGES from "../../../utils/images";
 
 const Header = () => {
     return (
-        <header>
+        <header style={{ backgroundImage: `url(${IMAGES.headerBg})` }}>
             <div>
                 <a
                     href="https://terbalyants.vercel.app/"

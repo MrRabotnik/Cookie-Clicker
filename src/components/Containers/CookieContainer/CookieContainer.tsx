@@ -1,24 +1,36 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./CookieContainer.scss";
 import Konva from "konva";
-import { Stage, Layer, Image as KonvaImage, Text, Rect, Group } from "react-konva";
+import { Stage, Layer, Image as KonvaImage, Text, Rect, Group, Shape } from "react-konva";
 import useImage from "use-image";
 import { useCookies } from "../../../App";
+import { useSpring, animated } from "@react-spring/konva";
+import IMAGES from "../../../utils/images";
 
 const CookieContainer = () => {
     const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
     const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
     const divRef = useRef(null);
+    const cookieRef = useRef<any>(null);
     const haloRef = useRef<any>(null);
     const halo2Ref = useRef<any>(null);
     const cursorRefs = useRef<any[]>([]);
     const fallingCookiesRefs = useRef<any[]>([]);
+    const waveRef = useRef<any>(null);
 
-    const [cookie] = useImage("./assets/cookie.png");
-    const [cookieHalo] = useImage("https://orteil.dashnet.org/cookieclicker/img/shine.png");
-    const [cursor] = useImage("https://opengameart.org/sites/default/files/styles/medium/public/pointer_1.png");
+    const AnimatedGroup: any = animated(Group);
+
+    const [cookie] = useImage(IMAGES.cookie);
+    const [cookieHalo] = useImage(IMAGES.halo);
+    const [cursor] = useImage(IMAGES.rotatingCursor);
     const [fallingCookies, setFallingCookies] = useState<any[]>([]);
+    const [invert, setInvert] = useState(false);
+
+    const props = useSpring({
+        transform: invert ? "scaleY(-1)" : "scaleY(1)",
+        config: { duration: 2000 },
+    });
 
     const { upgrades, cookiesCount, setCookiesCount, cookiesPerClick, cookiesPerSecond, multiplier } = useCookies();
 
@@ -40,17 +52,50 @@ const CookieContainer = () => {
             const anim = new Konva.Animation((frame: any) => {
                 const angleDiff = (frame.timeDiff * 90) / 5000;
                 const angle2Diff = -(frame.timeDiff * 90) / 5000;
-                haloRef.current.rotate(angleDiff);
-                halo2Ref.current.rotate(angle2Diff);
+                if (haloRef && halo2Ref) {
+                    haloRef.current.rotate(angleDiff);
+                    halo2Ref.current.rotate(angle2Diff);
+                }
             }, haloRef.current.getLayer());
 
             anim.start();
         }
 
+        const wave = setInterval(() => {
+            setInvert((prev) => !prev);
+        }, 2000);
+
         return () => {
+            clearInterval(wave);
             window.removeEventListener("mousemove", handleMouseMove);
         };
     }, []);
+
+    useEffect(() => {
+        const anim = new Konva.Animation((frame: any) => {
+            if (waveRef.current) {
+                const time = frame.time / 3000;
+                waveRef.current.sceneFunc((context: any, shape: any) => {
+                    context.beginPath();
+                    for (let x = 0; x < dimensions.width; x++) {
+                        const y = dimensions.height / 1.2 + Math.sin((x + time * 200) / 20) * 10;
+                        context.lineTo(x, y);
+                    }
+                    context.lineTo(dimensions.width, dimensions.height);
+                    context.lineTo(0, dimensions.height);
+                    context.closePath();
+                    context.fillStrokeShape(shape);
+                });
+                waveRef.current.getLayer().batchDraw();
+            }
+        }, waveRef.current.getLayer());
+
+        anim.start();
+
+        return () => {
+            anim.stop();
+        };
+    }, [dimensions.height, dimensions.width, invert]);
 
     useEffect(() => {
         fadingTexts.forEach((text) => {
@@ -75,10 +120,10 @@ const CookieContainer = () => {
                     id: Date.now(),
                     x: Math.random() * dimensions.width,
                     y: 0,
-                    velocity: 100 + Math.random() * 200,
+                    velocity: 100 + Math.random() * 100,
                 },
             ]);
-        }, 1000);
+        }, 200);
 
         return () => clearInterval(interval);
     }, [dimensions.width]);
@@ -99,7 +144,7 @@ const CookieContainer = () => {
         return () => {
             anim.stop();
         };
-    }, []);
+    }, [dimensions]);
 
     useEffect(() => {
         const anim = new Konva.Animation((frame: any) => {
@@ -109,13 +154,14 @@ const CookieContainer = () => {
                 const angle = (i / cursorRefs.current.length) * 2 * Math.PI + time;
                 const x = dimensions.width / 2 + radius * Math.cos(angle);
                 const y = dimensions.height / 2 + radius * Math.sin(angle);
-                cursor.x(x);
-                cursor.y(y);
-
-                const dx = dimensions.width / 2 - x;
-                const dy = dimensions.height / 2 - y;
-                const rotation = Math.atan2(dy, dx) * (180 / Math.PI);
-                cursor.rotation(rotation + 90);
+                if (cursor) {
+                    cursor.x(x);
+                    cursor.y(y);
+                    const dx = dimensions.width / 2 - x;
+                    const dy = dimensions.height / 2 - y;
+                    const rotation = Math.atan2(dy, dx) * (180 / Math.PI);
+                    cursor.rotation(rotation + 90);
+                }
             });
         });
 
@@ -138,6 +184,31 @@ const CookieContainer = () => {
             opacity: 1,
         };
         setFadingTexts((prev) => [...prev, newText]);
+    };
+
+    const mouseDownOnCookie = () => {
+        const anim = new Konva.Animation((frame: any) => {
+            const scale = 1 - Math.sin(frame.time * 0.01) * 0.1;
+            cookieRef.current.scale({ x: scale, y: scale });
+        }, cookieRef.current.getLayer());
+
+        anim.start();
+
+        const generateCookies = setInterval(() => {
+            handleClickOnCookie();
+        }, 500);
+
+        cookieRef.current.on("mouseup", () => {
+            anim.stop();
+            cookieRef.current.scale({ x: 1, y: 1 });
+            clearInterval(generateCookies);
+        });
+
+        cookieRef.current.on("mouseout", () => {
+            anim.stop();
+            cookieRef.current.scale({ x: 1, y: 1 });
+            clearInterval(generateCookies);
+        });
     };
 
     return (
@@ -196,24 +267,28 @@ const CookieContainer = () => {
                             offsetX={150}
                             offsetY={150}
                             onClick={handleClickOnCookie}
+                            onMouseDown={mouseDownOnCookie}
+                            ref={cookieRef}
                         />
                     </Group>
 
-                    {Array.from({ length: upgrades[0].boughtCount }).map((_, i) => (
-                        <KonvaImage
-                            key={i}
-                            image={cursor}
-                            width={50}
-                            height={50}
-                            x={dimensions.width / 2}
-                            y={dimensions.height / 2}
-                            offsetX={25}
-                            offsetY={25}
-                            ref={(node) => {
-                                cursorRefs.current[i] = node;
-                            }}
-                        />
-                    ))}
+                    {Array.from({ length: upgrades[0].boughtCount }).map((_, i) => {
+                        return (
+                            <KonvaImage
+                                key={i}
+                                image={cursor}
+                                width={50}
+                                height={50}
+                                x={dimensions.width / 2}
+                                y={dimensions.height / 2}
+                                offsetX={25}
+                                offsetY={25}
+                                ref={(node) => {
+                                    cursorRefs.current[i] = node;
+                                }}
+                            />
+                        );
+                    })}
 
                     <Group
                         x={0}
@@ -280,6 +355,15 @@ const CookieContainer = () => {
                             }}
                         />
                     ))}
+
+                    <AnimatedGroup style={props}>
+                        <Shape
+                            ref={waveRef}
+                            fill="#ede"
+                            stroke="rgba(255,255,255,0.5)"
+                            strokeWidth={1}
+                        />
+                    </AnimatedGroup>
                 </Layer>
             </Stage>
         </div>

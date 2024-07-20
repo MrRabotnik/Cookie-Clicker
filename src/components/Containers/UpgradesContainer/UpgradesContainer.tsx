@@ -3,12 +3,13 @@ import "./UpgradesContainer.scss";
 import MultiplierItem from "../../MultiplierItem/MultiplierItem";
 import UpgradeItem from "../../UpgradeItem/UpgradeItem";
 import { useCookies } from "../../../App";
+import IMAGES from "../../../utils/images";
 
 const UpgradesContainer = () => {
     const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
     const divRef = useRef(null);
 
-    const { upgrades, updateUpgrades } = useCookies();
+    const { upgrades, updateUpgrades, multipliers } = useCookies();
 
     const [buying, setBuying] = useState(true);
     const [buySellMultiplier, setBuySellMultiplier] = useState(1);
@@ -26,9 +27,20 @@ const UpgradesContainer = () => {
             ref={divRef}
         >
             <h1>Store</h1>
-            <div className="line-horizontal"></div>
+            <div
+                className="line-horizontal"
+                style={{ backgroundImage: `url(${IMAGES.woodBg})` }}
+            ></div>
             <div className="multipliers-container">
-                <MultiplierItem dimensions={dimensions} />
+                {multipliers.map((multiplier: any) => {
+                    return (
+                        <MultiplierItem
+                            key={multiplier.label}
+                            dimensions={dimensions}
+                            item={multiplier}
+                        />
+                    );
+                })}
             </div>
             <div className="control-container">
                 <span>

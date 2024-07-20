@@ -3,9 +3,10 @@ import { Stage, Layer, Image as KonvaImage, Group } from "react-konva";
 import useImage from "use-image";
 
 import "./FarmItem.scss";
+import IMAGES from "../../utils/images";
 
 const FarmItem = ({ dimensions }: any) => {
-    const [bg] = useImage("https://opengameart.org/sites/default/files/styles/medium/public/city_background_night.png");
+    const [bg] = useImage(IMAGES.grandmaFieldBg);
 
     return (
         <div className="farm-item">
