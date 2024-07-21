@@ -24,12 +24,14 @@ export const useCookies = () => {
 const App = () => {
     const cookiesCountFromLocalStorage = getCookiesFromLocalStorage("cookies_count");
     const clicksPerSecondFromLocalStorage = getCookiesFromLocalStorage("cookies_per_second");
+    const cookiesPerClickFromLocalStorage = getCookiesFromLocalStorage("cookies_per_click");
     const multiplierCountFromLocalStorage = getCookiesFromLocalStorage("multiplier");
     const upgradesFromLocalStorage = getCookiesFromLocalStorage("upgrades");
     const multipliersFromLocalStorage = getCookiesFromLocalStorage("multipliers");
 
     const cookiesPerSecondRef = useRef<number>(0);
     const cookiesCountRef = useRef<number>(0);
+    const cookiesPerClickRef = useRef<number>(0);
     const multiplierRef = useRef<any>(1);
     const upgradesRef = useRef<any>([]);
     const multipliersRef = useRef<any>([]);
@@ -46,7 +48,9 @@ const App = () => {
             ? parseInt(cookiesCountFromLocalStorage)
             : 0
     );
-    const [cookiesPerClick, setCookiesPerClick] = useState(1);
+    const [cookiesPerClick, setCookiesPerClick] = useState(
+        cookiesPerClickFromLocalStorage ? parseInt(cookiesPerClickFromLocalStorage) : 1
+    );
     const [cookiesPerSecond, setCookiesPerSecond] = useState(
         clicksPerSecondFromLocalStorage ? parseFloat(clicksPerSecondFromLocalStorage) : 0
     );
@@ -58,6 +62,7 @@ const App = () => {
         saveInLocalStorage("cookies_count", cookiesCountRef.current);
         saveInLocalStorage("cookies_per_second", cookiesPerSecondRef.current);
         saveInLocalStorage("multiplier", JSON.stringify(multiplierRef.current));
+        saveInLocalStorage("cookies_per_click", JSON.stringify(cookiesPerClickRef.current));
         saveInLocalStorage("upgrades", JSON.stringify(upgradesRef.current));
         saveInLocalStorage("multipliers", JSON.stringify(multipliersRef.current));
         toast.success("Saved");
@@ -91,10 +96,11 @@ const App = () => {
     useEffect(() => {
         cookiesCountRef.current = cookiesCount;
         cookiesPerSecondRef.current = cookiesPerSecond;
+        cookiesPerClickRef.current = cookiesPerClick;
         multiplierRef.current = multiplier;
         upgradesRef.current = upgrades;
         multipliersRef.current = multipliers;
-    }, [cookiesCount, cookiesPerSecond, multiplier, upgrades, multipliers]);
+    }, [cookiesCount, cookiesPerSecond, multiplier, upgrades, multipliers, cookiesPerClick]);
 
     const updateUpgrades = (label: string, updatedUpgrade: any) => {
         const arr = upgrades.map((upgrade: any) => {

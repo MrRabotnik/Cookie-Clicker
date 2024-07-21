@@ -16,6 +16,7 @@ const MultiplierItem = ({ dimensions, item, index }: any) => {
         setCookiesCount,
         cookiesPerSecond,
         setCookiesPerSecond,
+        setCookiesPerClick,
         upgrades,
         updateMultipliers,
         updateUpgrades,
@@ -45,6 +46,9 @@ const MultiplierItem = ({ dimensions, item, index }: any) => {
 
         setCookiesCount((prev: number) => prev - item.price);
         const foundUpgrade = upgrades.find((upgrade: any) => upgrade.category === item.category);
+        if (item.category === "cursor") {
+            setCookiesPerClick((prev: number) => prev * item.value);
+        }
         const newCookiesPerSecond = cookiesPerSecond - foundUpgrade.boughtCount * foundUpgrade.value;
         setCookiesPerSecond(newCookiesPerSecond + foundUpgrade.value * item.value * foundUpgrade.boughtCount);
 
