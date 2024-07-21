@@ -96,7 +96,7 @@ const CookieContainer = () => {
         return () => {
             anim.stop();
         };
-    }, [dimensions.height, dimensions.width, invert]);
+    }, [dimensions.height, dimensions.width]);
 
     useEffect(() => {
         fadingTexts.forEach((text) => {
@@ -372,8 +372,8 @@ const CookieContainer = () => {
                     <AnimatedGroup style={props}>
                         <Shape
                             ref={waveRef}
-                            fill="#ede"
-                            stroke="rgba(255,255,255,0.5)"
+                            fill="rgba(238, 221, 238, 0.9)"
+                            stroke="white"
                             strokeWidth={1}
                         />
                     </AnimatedGroup>
