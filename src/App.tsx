@@ -10,7 +10,6 @@ import MULTIPLIERS from "./utils/multipliers";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import IMAGES from "./utils/images";
-// import axios from "axios";
 
 const CookiesContext = createContext<any>(undefined);
 
@@ -58,17 +57,6 @@ const App = () => {
     const [multiplier, setMultiplier] = useState(
         multiplierCountFromLocalStorage ? parseInt(multiplierCountFromLocalStorage) : 1
     );
-
-    // useEffect(() => {
-    //     axios
-    //         .get(`https://cookieclicker-3181a99ad544.herokuapp.com/api/random_quote/`)
-    //         .then((res: any) => {
-    //             console.log(res);
-    //         })
-    //         .catch((err: any) => {
-    //             console.log(err);
-    //         });
-    // }, []);
 
     const saveAll = () => {
         saveInLocalStorage("cookies_count", cookiesCountRef.current);

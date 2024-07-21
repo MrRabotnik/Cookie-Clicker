@@ -3,10 +3,14 @@ import "./FarmContainer.scss";
 import FarmItem from "../../FarmItem/FarmItem";
 import IMAGES from "../../../utils/images";
 import { useCookies } from "../../../App";
+import axios from "axios";
 
 const FarmsContainer = () => {
     const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
     const divRef = useRef(null);
+    const [randomText, setRandomText] = useState("");
+    const [author, setAuthor] = useState("");
+    const [update, setUpdate] = useState(false);
 
     const { upgrades } = useCookies();
 
@@ -16,6 +20,27 @@ const FarmsContainer = () => {
             setDimensions({ width: offsetWidth, height: offsetHeight });
         }
     }, []);
+
+    useEffect(() => {
+        let timeOut: any;
+        axios
+            .get(`https://cookieclicker-3181a99ad544.herokuapp.com/api/random-quote/`)
+            .then((res: any) => {
+                console.log(res);
+                setRandomText(res.data.data.text);
+                setAuthor(res.data.data.author);
+                timeOut = setTimeout(() => {
+                    setUpdate((prev) => !prev);
+                }, 10000);
+            })
+            .catch((err: any) => {
+                console.log(err);
+            });
+
+        return () => {
+            clearTimeout(timeOut);
+        };
+    }, [update]);
 
     return (
         <section
@@ -29,7 +54,13 @@ const FarmsContainer = () => {
                 >
                     <p>Stats</p>
                 </div>
-                <div className="random-texts"></div>
+                <div
+                    className="random-texts"
+                    onClick={() => setUpdate((prev) => !prev)}
+                >
+                    <p>"{randomText}"</p>
+                    {author.length ? <p className="author">-{author}</p> : ""}
+                </div>
                 <div
                     className="farm-header-sides options"
                     style={{ backgroundImage: `url(${IMAGES.headerBg})` }}

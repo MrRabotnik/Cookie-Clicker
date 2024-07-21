@@ -21,6 +21,11 @@
 
         .random-texts {
             width: 60%;
+            padding: 10px;
+
+            .author {
+                text-align: end;
+            }
         }
 
         .options {
