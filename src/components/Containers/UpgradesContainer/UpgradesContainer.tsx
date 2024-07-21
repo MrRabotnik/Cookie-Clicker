@@ -103,7 +103,6 @@ const UpgradesContainer = () => {
                             />
                         );
                     } else if (upgrades[index - 1].boughtCount === 0 && upgrades[index - 2].boughtCount !== 0) {
-                        console.log(upgrades[index - 1].boughtCount, upgrades[index - 2].boughtCount);
                         return (
                             <UpgradeItem
                                 key={index}

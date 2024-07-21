@@ -1,30 +1,15 @@
-import React, { useEffect, useRef } from "react";
-import { Stage, Layer, Image as KonvaImage, Group } from "react-konva";
+import React, { useRef } from "react";
+import { Stage, Layer, Image as KonvaImage, Group, Rect } from "react-konva";
 import useImage from "use-image";
-import Konva from "konva";
 
 import "./FarmItem.scss";
 
 const FarmItem = ({ dimensions, item }: any) => {
     const [bg] = useImage(item.backgroundImage);
-    const [dogImage] = useImage(item.fullImage);
+    const [building] = useImage(item.buildingImage);
+
+    console.log(building);
     const dogRef = useRef<any>(null);
-
-    useEffect(() => {
-        const animation = new Konva.Animation((frame: any) => {
-            if (dogRef.current) {
-                const stageWidth = dimensions.width;
-                const newX = (frame.time * 0.1) % stageWidth;
-                dogRef.current.x(newX);
-            }
-        }, dogRef.current.getLayer());
-
-        animation.start();
-
-        return () => {
-            animation.stop();
-        };
-    }, [dimensions.width]);
 
     return (
         <div className="farm-item">
@@ -33,10 +18,13 @@ const FarmItem = ({ dimensions, item }: any) => {
                 height={100}
             >
                 <Layer>
-                    <KonvaImage
-                        image={bg}
+                    <Rect
+                        x={0}
+                        y={0}
                         width={dimensions.width}
                         height={100}
+                        fillPatternImage={bg}
+                        fillPatternRepeat="repeat"
                     />
                     <Group
                         width={dimensions.width}
@@ -44,13 +32,18 @@ const FarmItem = ({ dimensions, item }: any) => {
                         x={0}
                         y={0}
                     >
-                        <KonvaImage
-                            image={dogImage}
-                            width={100}
-                            height={100}
-                            ref={dogRef}
-                            y={0}
-                        />
+                        {Array.from({ length: item.boughtCount }).map((_, i) => {
+                            return (
+                                <KonvaImage
+                                    image={building}
+                                    width={50}
+                                    height={50}
+                                    ref={dogRef}
+                                    y={30}
+                                    x={i * 50}
+                                />
+                            );
+                        })}
                     </Group>
                 </Layer>
             </Stage>
