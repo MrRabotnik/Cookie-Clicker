@@ -44,9 +44,13 @@ const FarmsContainer = () => {
             <div className="farm-items-scrollable">
                 {upgrades.map((upgrade: any, index: number) => {
                     return (
-                        upgrade.boughtCount > 0 && (
+                        upgrade.boughtCount > 0 &&
+                        index > 0 && (
                             <React.Fragment key={index}>
-                                <FarmItem dimensions={dimensions} />
+                                <FarmItem
+                                    dimensions={dimensions}
+                                    item={upgrade}
+                                />
                                 <div
                                     className="line-horizontal"
                                     style={{ backgroundImage: `url(${IMAGES.woodBg})` }}

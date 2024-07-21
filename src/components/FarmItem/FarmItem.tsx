@@ -4,11 +4,10 @@ import useImage from "use-image";
 import Konva from "konva";
 
 import "./FarmItem.scss";
-import IMAGES from "../../utils/images";
 
-const FarmItem = ({ dimensions }: any) => {
-    const [bg] = useImage(IMAGES.grandmaFieldBg);
-    const [dogImage] = useImage(IMAGES.doggo);
+const FarmItem = ({ dimensions, item }: any) => {
+    const [bg] = useImage(item.backgroundImage);
+    const [dogImage] = useImage(item.fullImage);
     const dogRef = useRef<any>(null);
 
     useEffect(() => {
