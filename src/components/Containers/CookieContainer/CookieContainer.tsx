@@ -282,6 +282,7 @@ const CookieContainer = () => {
                             offsetX={150}
                             offsetY={150}
                             onClick={handleClickOnCookie}
+                            onTouchStart={handleClickOnCookie}
                             onMouseDown={mouseDownOnCookie}
                             ref={cookieRef}
                         />
@@ -361,6 +362,7 @@ const CookieContainer = () => {
                             fontSize={32}
                             opacity={text.opacity}
                             onClick={handleClickOnCookie}
+                            onTouchStart={handleClickOnCookie}
                             ref={(node) => {
                                 if (node && !text.node) {
                                     text.node = node;

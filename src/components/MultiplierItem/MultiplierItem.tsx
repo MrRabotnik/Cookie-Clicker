@@ -71,6 +71,7 @@ const MultiplierItem = ({ dimensions, item, index }: any) => {
             className="multiplier-item"
             data-tooltip-id={`multiplier-item${index}`}
             onClick={buyAMultiplier}
+            onTouchStart={buyAMultiplier}
         >
             {/* <div className={upgradeAvailable ? "display-none" : "disabled-upgrade"}></div> */}
 

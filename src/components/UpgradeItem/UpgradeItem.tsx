@@ -85,6 +85,7 @@ const UpgradeItem = ({ dimensions, upgrade, buying, buySellMultiplier, updateUpg
         <div
             className="upgrade-item"
             onClick={buying ? buyAnUpgrade : sellAnUpgrade}
+            onTouchStart={buying ? buyAnUpgrade : sellAnUpgrade}
         >
             <div className={upgradeAvailable ? "display-none" : "disabled-upgrade"}></div>
 

@@ -50,23 +50,34 @@ const UpgradesContainer = () => {
                     <p
                         className={buying ? "active" : "inactive"}
                         onClick={() => setBuying(true)}
+                        onTouchStart={() => setBuying(true)}
                     >
                         Buy
                     </p>
                     <p
                         className={buying ? "inactive" : "active"}
                         onClick={() => setBuying(false)}
+                        onTouchStart={() => setBuying(false)}
                     >
                         Sell
                     </p>
                 </span>
-                <div onClick={() => setBuySellMultiplier(1)}>
+                <div
+                    onClick={() => setBuySellMultiplier(1)}
+                    onTouchStart={() => setBuySellMultiplier(1)}
+                >
                     <p className={buySellMultiplier === 1 ? "active" : "inactive"}>1</p>
                 </div>
-                <div onClick={() => setBuySellMultiplier(10)}>
+                <div
+                    onClick={() => setBuySellMultiplier(10)}
+                    onTouchStart={() => setBuySellMultiplier(1)}
+                >
                     <p className={buySellMultiplier === 10 ? "active" : "inactive"}>10</p>
                 </div>
-                <div onClick={() => setBuySellMultiplier(100)}>
+                <div
+                    onClick={() => setBuySellMultiplier(100)}
+                    onTouchStart={() => setBuySellMultiplier(1)}
+                >
                     <p className={buySellMultiplier === 100 ? "active" : "inactive"}>100</p>
                 </div>
             </div>
