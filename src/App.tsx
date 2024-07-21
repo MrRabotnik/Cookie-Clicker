@@ -68,9 +68,9 @@ const App = () => {
             setCookiesCount((prev: number) => prev + cookiesPerSecondRef.current);
         }, 1000);
 
-        const saveCookies = setInterval(() => {
-            saveAll();
-        }, 60000);
+        // const saveCookies = setInterval(() => {
+        //     saveAll();
+        // }, 60000);
 
         const handleKeyDown = (event: any) => {
             if (event.ctrlKey && event.key === "s") {
@@ -83,7 +83,7 @@ const App = () => {
 
         return () => {
             clearInterval(x);
-            clearInterval(saveCookies);
+            // clearInterval(saveCookies);
             window.removeEventListener("keydown", handleKeyDown);
         };
     }, []);

@@ -6,7 +6,11 @@ import grandmaFieldBg from "../assets/images/grandma-field-bg.png";
 import cookie from "../assets/images/cookie.png";
 import halo from "../assets/images/halo.png";
 import rotatingCursor from "../assets/images/rotating-cursor.png";
+import multiplierFrame from "../assets/images/multiplier-frame.png";
+
 import upgradeBg from "../assets/images/upgradeBg.jpeg";
+import doggo from "../assets/images/doggo.png";
+
 import upgradeCursorIcon from "../assets/images/upgrades/cursor.png";
 import upgradeGrandmaIcon from "../assets/images/upgrades/grandma.png";
 import upgradeFarmIcon from "../assets/images/upgrades/farm.png";
@@ -36,8 +40,10 @@ const IMAGES = {
     cookie,
     halo,
     rotatingCursor,
+    multiplierFrame,
 
     grandmaFieldBg,
+    doggo,
 
     upgradeBg,
     upgradeCursorIcon,

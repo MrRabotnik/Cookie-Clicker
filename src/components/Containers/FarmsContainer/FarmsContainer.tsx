@@ -2,10 +2,13 @@ import React, { useEffect, useRef, useState } from "react";
 import "./FarmContainer.scss";
 import FarmItem from "../../FarmItem/FarmItem";
 import IMAGES from "../../../utils/images";
+import { useCookies } from "../../../App";
 
 const FarmsContainer = () => {
     const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
     const divRef = useRef(null);
+
+    const { upgrades } = useCookies();
 
     useEffect(() => {
         if (divRef.current) {
@@ -39,15 +42,17 @@ const FarmsContainer = () => {
                 style={{ backgroundImage: `url(${IMAGES.woodBg})` }}
             ></div>
             <div className="farm-items-scrollable">
-                {Array.from(Array(10)).map((_, index) => {
+                {upgrades.map((upgrade: any, index: number) => {
                     return (
-                        <React.Fragment key={index}>
-                            <FarmItem dimensions={dimensions} />
-                            <div
-                                className="line-horizontal"
-                                style={{ backgroundImage: `url(${IMAGES.woodBg})` }}
-                            ></div>
-                        </React.Fragment>
+                        upgrade.boughtCount > 0 && (
+                            <React.Fragment key={index}>
+                                <FarmItem dimensions={dimensions} />
+                                <div
+                                    className="line-horizontal"
+                                    style={{ backgroundImage: `url(${IMAGES.woodBg})` }}
+                                ></div>
+                            </React.Fragment>
+                        )
                     );
                 })}
             </div>

@@ -32,13 +32,16 @@ const UpgradesContainer = () => {
                 style={{ backgroundImage: `url(${IMAGES.woodBg})` }}
             ></div>
             <div className="multipliers-container">
-                {multipliers.map((multiplier: any) => {
+                {multipliers.map((multiplier: any, index: number) => {
                     return (
-                        <MultiplierItem
-                            key={multiplier.label}
-                            dimensions={dimensions}
-                            item={multiplier}
-                        />
+                        !multiplier.bought && (
+                            <MultiplierItem
+                                key={index}
+                                dimensions={dimensions}
+                                item={multiplier}
+                                index={index}
+                            />
+                        )
                     );
                 })}
             </div>
@@ -68,17 +71,67 @@ const UpgradesContainer = () => {
                 </div>
             </div>
             {upgrades.map((upgrade: any, index: number) => {
-                return (
-                    <UpgradeItem
-                        key={index}
-                        dimensions={dimensions}
-                        updateUpgrades={updateUpgrades}
-                        upgrade={upgrade}
-                        position={index}
-                        buying={buying}
-                        buySellMultiplier={buySellMultiplier}
-                    />
-                );
+                let misteriousUpgrade = {
+                    ...upgrade,
+                    label: "???",
+                    price: ["???"],
+                    description: "???",
+                };
+
+                if (index > 1) {
+                    if (upgrade.boughtCount > 0) {
+                        return (
+                            <UpgradeItem
+                                key={index}
+                                dimensions={dimensions}
+                                updateUpgrades={updateUpgrades}
+                                upgrade={upgrade}
+                                position={index}
+                                buying={buying}
+                                buySellMultiplier={buySellMultiplier}
+                            />
+                        );
+                    } else if (upgrades[index - 1].boughtCount === 0 && upgrades[index - 2].boughtCount !== 0) {
+                        console.log(upgrades[index - 1].boughtCount, upgrades[index - 2].boughtCount);
+                        return (
+                            <UpgradeItem
+                                key={index}
+                                dimensions={dimensions}
+                                updateUpgrades={updateUpgrades}
+                                upgrade={misteriousUpgrade}
+                                position={index}
+                                buying={buying}
+                                buySellMultiplier={buySellMultiplier}
+                            />
+                        );
+                    } else if (upgrades[index - 1].boughtCount !== 0) {
+                        return (
+                            <UpgradeItem
+                                key={index}
+                                dimensions={dimensions}
+                                updateUpgrades={updateUpgrades}
+                                upgrade={upgrade}
+                                position={index}
+                                buying={buying}
+                                buySellMultiplier={buySellMultiplier}
+                            />
+                        );
+                    }
+                } else {
+                    return (
+                        <UpgradeItem
+                            key={index}
+                            dimensions={dimensions}
+                            updateUpgrades={updateUpgrades}
+                            upgrade={upgrade}
+                            position={index}
+                            buying={buying}
+                            buySellMultiplier={buySellMultiplier}
+                        />
+                    );
+                }
+
+                return null;
             })}
         </section>
     );

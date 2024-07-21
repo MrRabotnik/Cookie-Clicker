@@ -12,6 +12,13 @@
     .multipliers-container {
         display: flex;
         flex-wrap: wrap;
+        height: 80px;
+        overflow: hidden;
+
+        &:hover {
+            min-height: 80px;
+            height: auto;
+        }
     }
 
     .control-container {
