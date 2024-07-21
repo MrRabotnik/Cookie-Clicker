@@ -120,7 +120,7 @@ const CookieContainer = () => {
                 {
                     id: Date.now(),
                     x: Math.random() * dimensions.width,
-                    y: 0,
+                    y: -70,
                     velocity: 100 + Math.random() * 100,
                 },
             ]);
@@ -131,7 +131,7 @@ const CookieContainer = () => {
 
     useEffect(() => {
         const anim = new Konva.Animation((frame: any) => {
-            const timeDiff = frame.timeDiff / 5000;
+            const timeDiff = frame.timeDiff / 3000;
             setFallingCookies((prev) =>
                 prev.map((cookie) => ({
                     ...cookie,
@@ -174,12 +174,14 @@ const CookieContainer = () => {
     }, [dimensions, cursorRefs.current.length]);
 
     const formatNumber = (number: number) => {
-        let formatted = numeral(number).format("0.00a");
+        let formatted;
 
-        formatted = formatted.replace(/\.00([a-z])$/, "$1");
-
-        if (number < 1000) {
-            formatted = numeral(number).format("0");
+        if (number < 1000 && number >= 0) {
+            formatted = numeral(number).format("0.0");
+        } else {
+            formatted = numeral(number)
+                .format("0.00a")
+                .replace(/\.00([a-z])$/, "$1");
         }
 
         return formatted;
@@ -330,14 +332,22 @@ const CookieContainer = () => {
                             fill="white"
                             fontSize={32}
                             fontFamily="Arial"
+                            shadowColor="black"
+                            shadowBlur={6}
+                            shadowOffsetX={0}
+                            shadowOffsetY={2}
                         />
                         <Text
-                            text={`per second: ${cookiesPerSecond}`}
+                            text={`per second: ${formatNumber(cookiesPerSecond)}`}
                             x={10}
                             y={60}
                             fill="white"
                             fontSize={24}
                             fontFamily="Arial"
+                            shadowColor="black"
+                            shadowBlur={10}
+                            shadowOffsetX={1}
+                            shadowOffsetY={3}
                         />
                     </Group>
 

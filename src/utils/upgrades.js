@@ -3,6 +3,7 @@ import IMAGES from "./images";
 const UPGRADES = [
     {
         label: "Cursor",
+        category: "cursor",
         avatar: IMAGES.upgradeCursorIcon,
         price: generateValues(15, 1.15),
         description: "Each Cursor generates 0.1 cookies in 10s.",
@@ -12,8 +13,8 @@ const UPGRADES = [
     },
     {
         label: "Grandma",
+        category: "grandma",
         avatar: IMAGES.upgradeGrandmaIcon,
-
         price: generateValues(100, 1.15),
         description: "Each Grandma generates 1 cookies in 10s.",
         value: 1,
@@ -22,6 +23,7 @@ const UPGRADES = [
     },
     {
         label: "Farm",
+        category: "farm",
         avatar: IMAGES.upgradeFarmIcon,
         price: generateValues(1100, 1.15),
         description: "Each Farm generates 8 cookies in 10s.",
@@ -31,6 +33,7 @@ const UPGRADES = [
     },
     {
         label: "Mine",
+        category: "mine",
         avatar: IMAGES.upgradeMineIcon,
         price: generateValues(12000, 1.15),
         description: "Each Mine generates 47 cookies in 10s.",
@@ -40,6 +43,7 @@ const UPGRADES = [
     },
     {
         label: "Factory",
+        category: "factory",
         avatar: IMAGES.upgradeFactoryIcon,
         price: generateValues(130000, 1.15),
         description: "Each Factory generates 260 cookies in 10s.",
@@ -49,6 +53,7 @@ const UPGRADES = [
     },
     {
         label: "Bank",
+        category: "bank",
         avatar: IMAGES.upgradeBankIcon,
         price: generateValues(1400000, 1.15),
         description: "Each Bank generates 1400 cookies in 10s.",
@@ -58,6 +63,7 @@ const UPGRADES = [
     },
     {
         label: "Temple",
+        category: "temple",
         avatar: IMAGES.upgradeTempleIcon,
         price: generateValues(20000000, 1.15),
         description: "Each Temple generates 7800 cookies in 10s.",
@@ -67,6 +73,7 @@ const UPGRADES = [
     },
     {
         label: "Wizard tower",
+        category: "wizard-tower",
         avatar: IMAGES.upgradeWizardTowerIcon,
         price: generateValues(330000000, 1.15),
         description: "Each  generates 44000 cookies in 10s.",
@@ -76,6 +83,7 @@ const UPGRADES = [
     },
     {
         label: "Shipment",
+        category: "shipment",
         avatar: IMAGES.upgradeShipmentIcon,
         price: generateValues(5100000000, 1.15),
         description: "Each  generates 260000 cookies in 10s.",
@@ -85,6 +93,7 @@ const UPGRADES = [
     },
     {
         label: "Alchemy Lab",
+        category: "alchemy-lab",
         avatar: IMAGES.upgradeAlchemyLabIcon,
         price: generateValues(75000000000, 1.15),
         description: "Each  generates 1600000 cookies in 10s.",
@@ -94,6 +103,7 @@ const UPGRADES = [
     },
     {
         label: "Portal",
+        category: "portal",
         avatar: IMAGES.upgradePortalIcon,
         price: generateValues(1000000000000, 1.15),
         description: "Each  generates 10000000 cookies in 10s.",
@@ -103,6 +113,7 @@ const UPGRADES = [
     },
     {
         label: "Time Machine",
+        category: "time-machine",
         avatar: IMAGES.upgradeTimeMachineIcon,
         price: generateValues(14000000000000, 1.15),
         description: "Each  generates 65000000 cookies in 10s.",
@@ -112,6 +123,7 @@ const UPGRADES = [
     },
     {
         label: "Antimatter Condenser",
+        category: "antimatter-condenser",
         avatar: IMAGES.upgradeAntimatterCondenserIcon,
         price: generateValues(170000000000000, 1.15),
         description: "Each  generates 430000000 cookies in 10s.",
@@ -121,6 +133,7 @@ const UPGRADES = [
     },
     // {
     //     label: "Prism",
+    // category: "prism",
     //     avatar: IMAGES.upgradePrismIcon,
     //     price: generateValues("21000000000000000", 1.15),
     //     description: "Each  generates 29000000000 cookies in 10s.",
@@ -130,6 +143,7 @@ const UPGRADES = [
     // },
     // {
     //     label: "Chancemaker",
+    // category: "chancemaker",
     //     avatar: IMAGES.upgradeChancemakerIcon,
     //     price: generateValues("26000000000000000", 1.15),
     //     description: "Each  generates 21000000000 cookies in 10s.",
@@ -139,6 +153,7 @@ const UPGRADES = [
     // },
     // {
     //     label: "Fractal Engine",
+    // category: "fractal-engine",
     //     avatar: IMAGES.upgradeFractalEngineIcon,
     //     price: generateValues("310000000000000000", 1.15),
     //     description: "Each  generates 150000000000 cookies in 10s.",
@@ -148,6 +163,7 @@ const UPGRADES = [
     // },
     // {
     //     label: "Javascript Console",
+    // category: "javascript-console",
     //     avatar: IMAGES.upgradeJavascriptConsoleIcon,
     //     price: generateValues("71000000000000000000", 1.15),
     //     description: "Each  generates 11000000000000 cookies in 10s.",
@@ -157,6 +173,7 @@ const UPGRADES = [
     // },
     // {
     //     label: "Idleverse",
+    // category: "idleverse",
     //     avatar: IMAGES.upgradeIdleverseIcon,
     //     price: generateValues("12000000000000000000000", 1.15),
     //     description: "Each  generates 83000000000000 cookies in 10s.",
@@ -166,6 +183,7 @@ const UPGRADES = [
     // },
     // {
     //     label: "Cortex Baker",
+    // category: "cortex-baker",
     //     avatar: IMAGES.upgradeCortexBakerIcon,
     //     price: generateValues("19000000000000000000000000", 1.15),
     //     description: "Each  generates 64000000000000 cookies in 10s.",
@@ -175,6 +193,7 @@ const UPGRADES = [
     // },
     // {
     //     label: "You",
+    // category: "you",
     //     avatar: IMAGES.upgradeYouIcon,
     //     price: generateValues("540000000000000000000000000", 1.15),
     //     description: "Each  generates 510000000000000 cookies in 10s.",

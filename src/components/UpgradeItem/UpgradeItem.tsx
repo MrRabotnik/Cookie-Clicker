@@ -63,7 +63,7 @@ const UpgradeItem = ({ dimensions, upgrade, buying, buySellMultiplier, updateUpg
         if (!upgradeAvailable) return;
 
         setCookiesCount((prev: number) => prev - summedPriceArray);
-        setCookiesPerSecond((prev: number) => prev + upgrade.value * buySellMultiplier);
+        setCookiesPerSecond((prev: number) => prev + upgrade.value * buySellMultiplier * upgrade.multiplier);
 
         updateUpgrades(upgrade.label, {
             boughtCount: upgrade.boughtCount + buySellMultiplier,
@@ -74,7 +74,7 @@ const UpgradeItem = ({ dimensions, upgrade, buying, buySellMultiplier, updateUpg
         if (!upgradeAvailable) return;
 
         setCookiesCount((prev: number) => +prev + summedPriceArray);
-        setCookiesPerSecond((prev: number) => +prev - upgrade.value * buySellMultiplier);
+        setCookiesPerSecond((prev: number) => +prev - upgrade.value * buySellMultiplier * upgrade.multiplier);
 
         updateUpgrades(upgrade.label, {
             boughtCount: upgrade.boughtCount - buySellMultiplier,

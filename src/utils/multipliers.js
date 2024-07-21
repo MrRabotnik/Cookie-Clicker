@@ -1,6 +1,7 @@
 const MULTIPLIERS = [
     {
         label: "Cursor",
+        category: "cursor",
         image: "https://opengameart.org/sites/default/files/styles/medium/public/spr_cursor%20%281%29%20%281%29.png",
         description: "Cursors are twice as efficient x2",
         value: 2,
@@ -9,6 +10,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Cursor 2",
+        category: "cursor",
         image: "https://opengameart.org/sites/default/files/styles/medium/public/spr_cursor%20%281%29%20%281%29.png",
         description: "Cursors are twice as efficient x2",
         value: 2,
@@ -17,6 +19,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Cursor 3",
+        category: "cursor",
         image: "https://opengameart.org/sites/default/files/styles/medium/public/spr_cursor%20%281%29%20%281%29.png",
         description: "Cursors are twice as efficient x2",
         value: 2,
@@ -25,6 +28,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Cursor 4",
+        category: "cursor",
         image: "https://opengameart.org/sites/default/files/styles/medium/public/spr_cursor%20%281%29%20%281%29.png",
         description: "Cursors are twice as efficient x2",
         price: 5000,
@@ -33,6 +37,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Cursor 5",
+        category: "cursor",
         image: "https://opengameart.org/sites/default/files/styles/medium/public/spr_cursor%20%281%29%20%281%29.png",
         description: "Cursors are twice as efficient x2",
         price: 10000,
@@ -41,6 +46,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Cursor 6",
+        category: "cursor",
         image: "https://opengameart.org/sites/default/files/styles/medium/public/spr_cursor%20%281%29%20%281%29.png",
         description: "Cursors are twice as efficient x2",
         price: 20000,
@@ -49,9 +55,46 @@ const MULTIPLIERS = [
     },
     {
         label: "Cursor 7",
+        category: "cursor",
         image: "https://opengameart.org/sites/default/files/styles/medium/public/spr_cursor%20%281%29%20%281%29.png",
         description: "Cursors are twice as efficient x2",
         price: 50000,
+        value: 2,
+        bought: false,
+    },
+    {
+        label: "Grandma 1",
+        category: "grandma",
+        image: "https://opengameart.org/sites/default/files/styles/medium/public/chica%20pmorado_2.png",
+        description: "Grandmas are twice as efficient x2",
+        price: 2000,
+        value: 2,
+        bought: false,
+    },
+    {
+        label: "Grandma 2",
+        category: "grandma",
+        image: "https://opengameart.org/sites/default/files/styles/medium/public/chica%20pmorado_2.png",
+        description: "Grandmas are twice as efficient x2",
+        price: 100000,
+        value: 2,
+        bought: false,
+    },
+    {
+        label: "Grandma 3",
+        category: "grandma",
+        image: "https://opengameart.org/sites/default/files/styles/medium/public/chica%20pmorado_2.png",
+        description: "Grandmas are twice as efficient x2",
+        price: 500000,
+        value: 2,
+        bought: false,
+    },
+    {
+        label: "Grandma 4",
+        category: "grandma",
+        image: "https://opengameart.org/sites/default/files/styles/medium/public/chica%20pmorado_2.png",
+        description: "Grandmas are twice as efficient x2",
+        price: 1000000,
         value: 2,
         bought: false,
     },

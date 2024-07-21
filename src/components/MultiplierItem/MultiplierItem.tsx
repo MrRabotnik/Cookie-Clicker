@@ -11,7 +11,15 @@ import { useCookies } from "../../App";
 // import numeral from "numeral";
 
 const MultiplierItem = ({ dimensions, item, index }: any) => {
-    const { cookiesCount, setCookiesCount, updateMultipliers } = useCookies();
+    const {
+        cookiesCount,
+        setCookiesCount,
+        cookiesPerSecond,
+        setCookiesPerSecond,
+        upgrades,
+        updateMultipliers,
+        updateUpgrades,
+    } = useCookies();
 
     const [containerFrame] = useImage(IMAGES.multiplierFrame);
     const [avatar] = useImage(item.image);
@@ -36,7 +44,17 @@ const MultiplierItem = ({ dimensions, item, index }: any) => {
         if (!upgradeAvailable) return;
 
         setCookiesCount((prev: number) => prev - item.price);
-        // setCookiesPerSecond((prev: number) => prev + upgrade.value * buySellMultiplier);
+        const foundUpgrade = upgrades.find((upgrade: any) => upgrade.category === item.category);
+        const newCookiesPerSecond = cookiesPerSecond - foundUpgrade.boughtCount * foundUpgrade.value;
+        setCookiesPerSecond(newCookiesPerSecond + foundUpgrade.value * item.value * foundUpgrade.boughtCount);
+
+        updateUpgrades(foundUpgrade.label, {
+            description: `Each ${foundUpgrade.label} generates ${
+                foundUpgrade.value * item.value
+            } cookies in 10 seconds`,
+            multiplier: foundUpgrade.multiplier * item.value,
+            value: foundUpgrade.value * item.value,
+        });
 
         updateMultipliers(item.label, {
             value: item.value,
