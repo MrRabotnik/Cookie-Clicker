@@ -1,7 +1,8 @@
 import bg from "../assets/images/bg.webp";
-import woodBg from "../assets/images/woodBg.jpg";
-import headerBg from "../assets/images/header-bg.jpg";
-import farmHeaderBg from "../assets/images/farm-header-bg.png";
+import panelHorizontal from "../assets/images/panelHorizontal.png";
+import panelVertical from "../assets/images/panelVertical.png";
+import headerBg from "../assets/images/header-bg.png";
+import farmHeaderBg from "../assets/images/panelMenu3.png";
 import cookie from "../assets/images/cookie.png";
 import halo from "../assets/images/halo.png";
 import rotatingCursor from "../assets/images/rotating-cursor.png";
@@ -75,7 +76,8 @@ import upgradeYouIcon from "../assets/images/upgrades/you.png";
 
 const IMAGES = {
     bg,
-    woodBg,
+    panelHorizontal,
+    panelVertical,
     headerBg,
     farmHeaderBg,
     cookie,

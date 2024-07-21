@@ -32,14 +32,14 @@ const FarmsContainer = () => {
                 <div className="random-texts"></div>
                 <div
                     className="farm-header-sides options"
-                    style={{ backgroundImage: `url(${IMAGES.farmHeaderBg})` }}
+                    style={{ backgroundImage: `url(${IMAGES.headerBg})` }}
                 >
                     <p>Options</p>
                 </div>
             </div>
             <div
                 className="line-horizontal"
-                style={{ backgroundImage: `url(${IMAGES.woodBg})` }}
+                style={{ backgroundImage: `url(${IMAGES.panelHorizontal})` }}
             ></div>
             <div className="farm-items-scrollable">
                 {upgrades.map((upgrade: any, index: number) => {
@@ -53,7 +53,7 @@ const FarmsContainer = () => {
                                 />
                                 <div
                                     className="line-horizontal"
-                                    style={{ backgroundImage: `url(${IMAGES.woodBg})` }}
+                                    style={{ backgroundImage: `url(${IMAGES.panelHorizontal})` }}
                                 ></div>
                             </React.Fragment>
                         )

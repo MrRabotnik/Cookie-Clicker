@@ -29,7 +29,7 @@ const UpgradesContainer = () => {
             <h1>Store</h1>
             <div
                 className="line-horizontal"
-                style={{ backgroundImage: `url(${IMAGES.woodBg})` }}
+                style={{ backgroundImage: `url(${IMAGES.panelHorizontal})` }}
             ></div>
             <div className="multipliers-container">
                 {multipliers.map((multiplier: any, index: number) => {

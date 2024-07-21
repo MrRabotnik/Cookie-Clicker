@@ -8,7 +8,6 @@ const FarmItem = ({ dimensions, item }: any) => {
     const [bg] = useImage(item.backgroundImage);
     const [building] = useImage(item.buildingImage);
 
-    console.log(building);
     const dogRef = useRef<any>(null);
 
     return (
@@ -34,14 +33,17 @@ const FarmItem = ({ dimensions, item }: any) => {
                     >
                         {Array.from({ length: item.boughtCount }).map((_, i) => {
                             return (
-                                <KonvaImage
-                                    image={building}
-                                    width={50}
-                                    height={50}
-                                    ref={dogRef}
-                                    y={30}
-                                    x={i * 50}
-                                />
+                                i <= 11 && (
+                                    <KonvaImage
+                                        key={i}
+                                        image={building}
+                                        width={dimensions.width / 10}
+                                        height={dimensions.width / 10}
+                                        ref={dogRef}
+                                        y={30}
+                                        x={i * 50}
+                                    />
+                                )
                             );
                         })}
                     </Group>

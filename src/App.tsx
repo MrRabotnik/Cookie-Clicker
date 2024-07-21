@@ -183,12 +183,12 @@ const App = () => {
                     <CookieContainer></CookieContainer>
                     <div
                         className="line-vertical"
-                        style={{ backgroundImage: `url(${IMAGES.woodBg})` }}
+                        style={{ backgroundImage: `url(${IMAGES.panelVertical})` }}
                     ></div>
                     <FarmsContainer></FarmsContainer>
                     <div
                         className="line-vertical"
-                        style={{ backgroundImage: `url(${IMAGES.woodBg})` }}
+                        style={{ backgroundImage: `url(${IMAGES.panelVertical})` }}
                     ></div>
                     <UpgradesContainer></UpgradesContainer>
                 </CookiesContext.Provider>

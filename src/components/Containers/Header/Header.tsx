@@ -6,6 +6,10 @@ const Header = () => {
     return (
         <header style={{ backgroundImage: `url(${IMAGES.headerBg})` }}>
             <div>
+                <a href="https://github.com/mrrabotnik">Author: MrRabotnik</a>
+            </div>
+
+            <div>
                 <a
                     href="https://terbalyants.vercel.app/"
                     target="_blank"
@@ -13,10 +17,6 @@ const Header = () => {
                 >
                     Portfolio
                 </a>
-            </div>
-
-            <div>
-                <a href="https://github.com/mrrabotnik">Author: MrRabotnik</a>
             </div>
         </header>
     );
