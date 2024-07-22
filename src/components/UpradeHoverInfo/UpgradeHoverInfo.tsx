@@ -4,7 +4,7 @@ import IMAGES from "../../utils/images";
 import { useCookies } from "../../App";
 import numeral from "numeral";
 
-const UpgradeHoverInfo = ({ upgrade, position, infoContainerY }: any) => {
+const UpgradeHoverInfo = ({ upgrade, position, infoContainerY, shouldBeDark }: any) => {
     const { cookiesCount } = useCookies();
 
     const available = cookiesCount >= upgrade.price[upgrade.boughtCount];
@@ -31,7 +31,9 @@ const UpgradeHoverInfo = ({ upgrade, position, infoContainerY }: any) => {
                     className="avatar"
                     style={{
                         backgroundImage: `url(${IMAGES.buildingIconsSprite})`,
-                        backgroundPosition: `0px -${position * 64}px`,
+                        backgroundPosition: `${shouldBeDark ? "64px" : 0} -${
+                            position > 1 ? (position + 1) * 64 : position * 64
+                        }px`,
                     }}
                 ></div>
                 <div className="info">

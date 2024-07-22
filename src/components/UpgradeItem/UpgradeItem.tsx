@@ -117,6 +117,7 @@ const UpgradeItem = ({
                     upgrade={upgrade}
                     position={position}
                     infoContainerY={infoContainerY}
+                    shouldBeDark={shouldBeDark}
                 />
             )}
 

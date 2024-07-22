@@ -28,7 +28,7 @@ const MultiplierHoverInfo = ({ multiplier, position }: any) => {
                     className="avatar"
                     style={{
                         backgroundImage: `url(${IMAGES.multipliersIconsSprite})`,
-                        backgroundPosition: `0px -${position * 48}px`,
+                        backgroundPosition: `0 -${position * 48}px`,
                     }}
                 ></div>
                 <div className="info">
@@ -42,9 +42,7 @@ const MultiplierHoverInfo = ({ multiplier, position }: any) => {
                         width={30}
                         height={"auto"}
                     />
-                    <span className={available ? "available" : ""}>
-                        {available ? formatNumber(multiplier.price) : "???"}
-                    </span>
+                    <span className={available ? "available" : ""}>{formatNumber(multiplier.price)}</span>
                 </div>
             </div>
             <hr />

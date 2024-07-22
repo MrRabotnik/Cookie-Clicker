@@ -57,6 +57,12 @@ const MultiplierItem = ({ dimensions, item, position }: any) => {
         <div
             className="multiplier-item"
             data-tooltip-id={`multiplier-item${position}`}
+            onMouseEnter={() => {
+                setModalIsOpen(true);
+            }}
+            onMouseLeave={() => {
+                setModalIsOpen(false);
+            }}
         >
             <div className={upgradeAvailable ? "display-none" : "disabled-upgrade"}></div>
 
@@ -72,12 +78,6 @@ const MultiplierItem = ({ dimensions, item, position }: any) => {
                 height={80}
                 onClick={buyAMultiplier}
                 onTouchStart={buyAMultiplier}
-                onMouseEnter={(e) => {
-                    setModalIsOpen(true);
-                }}
-                onMouseLeave={(e) => {
-                    setModalIsOpen(false);
-                }}
             >
                 <Layer>
                     <Group
