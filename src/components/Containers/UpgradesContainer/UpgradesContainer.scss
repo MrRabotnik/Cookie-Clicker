@@ -2,6 +2,7 @@
     height: 97vh;
     width: 25%;
     overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
 
     h1 {
         text-align: center;
@@ -9,7 +10,6 @@
         font-size: 32px;
         padding: 20px;
         margin: 0;
-        background-color: rgba(0, 0, 0, 0.7);
     }
 
     .multipliers-container {

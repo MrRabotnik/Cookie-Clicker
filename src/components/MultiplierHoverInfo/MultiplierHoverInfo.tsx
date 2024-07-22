@@ -4,7 +4,7 @@ import numeral from "numeral";
 import { useCookies } from "../../App";
 import IMAGES from "../../utils/images";
 
-const MultiplierHoverInfo = ({ multiplier }: any) => {
+const MultiplierHoverInfo = ({ multiplier, position }: any) => {
     const { cookiesCount } = useCookies();
 
     const available = cookiesCount >= multiplier.price;
@@ -26,7 +26,10 @@ const MultiplierHoverInfo = ({ multiplier }: any) => {
             <div className="top-part">
                 <div
                     className="avatar"
-                    style={{ backgroundImage: IMAGES.multipliersIconsSprite }}
+                    style={{
+                        backgroundImage: `url(${IMAGES.multipliersIconsSprite})`,
+                        backgroundPosition: `0px -${position * 48}px`,
+                    }}
                 ></div>
                 <div className="info">
                     <p>{multiplier.label}</p>
@@ -39,7 +42,9 @@ const MultiplierHoverInfo = ({ multiplier }: any) => {
                         width={30}
                         height={"auto"}
                     />
-                    <span>{available ? formatNumber(multiplier.price) : "???"}</span>
+                    <span className={available ? "available" : ""}>
+                        {available ? formatNumber(multiplier.price) : "???"}
+                    </span>
                 </div>
             </div>
             <hr />

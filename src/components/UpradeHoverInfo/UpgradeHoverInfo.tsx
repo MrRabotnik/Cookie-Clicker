@@ -4,7 +4,7 @@ import IMAGES from "../../utils/images";
 import { useCookies } from "../../App";
 import numeral from "numeral";
 
-const UpgradeHoverInfo = ({ upgrade }: any) => {
+const UpgradeHoverInfo = ({ upgrade, position }: any) => {
     const { cookiesCount } = useCookies();
 
     const available = cookiesCount >= upgrade.price[upgrade.boughtCount];
@@ -26,7 +26,10 @@ const UpgradeHoverInfo = ({ upgrade }: any) => {
             <div className="top-part">
                 <div
                     className="avatar"
-                    style={{ backgroundImage: IMAGES.buildingIconsSprite }}
+                    style={{
+                        backgroundImage: `url(${IMAGES.buildingIconsSprite})`,
+                        backgroundPosition: `0px -${position * 64}px`,
+                    }}
                 ></div>
                 <div className="info">
                     <p>{upgrade.label}</p>
@@ -39,7 +42,9 @@ const UpgradeHoverInfo = ({ upgrade }: any) => {
                         width={30}
                         height={"auto"}
                     />
-                    <span>{available ? formatNumber(upgrade.price[upgrade.boughtCount]) : "???"}</span>
+                    <span className={available ? "available" : ""}>
+                        {available ? formatNumber(upgrade.price[upgrade.boughtCount]) : "???"}
+                    </span>
                 </div>
             </div>
             <hr />

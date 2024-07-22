@@ -98,7 +98,10 @@ const UpgradeItem = ({
         >
             <div className={upgradeAvailable ? "display-none" : "disabled-upgrade"}></div>
 
-            <UpgradeHoverInfo upgrade={upgrade} />
+            <UpgradeHoverInfo
+                upgrade={upgrade}
+                position={position}
+            />
 
             <Stage
                 width={dimensions.width}

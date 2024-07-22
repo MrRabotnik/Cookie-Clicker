@@ -8,7 +8,6 @@ import IMAGES from "../../utils/images";
 import "react-tooltip/dist/react-tooltip.css";
 import { useCookies } from "../../App";
 import MultiplierHoverInfo from "../MultiplierHoverInfo/MultiplierHoverInfo";
-// import numeral from "numeral";
 
 const MultiplierItem = ({ dimensions, item, position }: any) => {
     const {
@@ -24,20 +23,6 @@ const MultiplierItem = ({ dimensions, item, position }: any) => {
 
     const [containerFrame] = useImage(IMAGES.multiplierFrame);
     const [avatar] = useImage(IMAGES.multipliersIconsSprite);
-
-    // const formatNumber = (number: number) => {
-    //     let formatted = numeral(number).format("0.00a");
-
-    //     formatted = formatted.replace(/\.00([a-z])$/, "$1");
-
-    //     if (number < 1000) {
-    //         formatted = numeral(number).format("0");
-    //     }
-
-    //     return formatted;
-    // };
-
-    // const textColor = cookiesCount >= item.price ? "#6f6" : "#f66";
 
     const upgradeAvailable = cookiesCount >= item.price;
 
@@ -70,20 +55,18 @@ const MultiplierItem = ({ dimensions, item, position }: any) => {
         <div
             className="multiplier-item"
             data-tooltip-id={`multiplier-item${position}`}
-            onClick={buyAMultiplier}
-            onTouchStart={buyAMultiplier}
         >
             <div className={upgradeAvailable ? "display-none" : "disabled-upgrade"}></div>
-            <MultiplierHoverInfo multiplier={item} />
+            <MultiplierHoverInfo
+                multiplier={item}
+                position={position}
+            />
 
-            {/* <Tooltip
-                id={`multiplier-item${index}`}
-                content={"Price: " + item.price + ", " + item.description}
-                style={{ color: textColor }}
-            /> */}
             <Stage
                 width={dimensions.width / 5.1}
-                height={dimensions.width / 5.1}
+                height={80}
+                onClick={buyAMultiplier}
+                onTouchStart={buyAMultiplier}
             >
                 <Layer>
                     <Group
@@ -92,13 +75,13 @@ const MultiplierItem = ({ dimensions, item, position }: any) => {
                     >
                         <Rect
                             width={dimensions.width / 5.1}
-                            height={dimensions.width / 5.1}
+                            height={80}
                             fill={`rgba(0,0,0,0.7)`}
                         />
                         <KonvaImage
                             image={containerFrame}
                             width={dimensions.width / 2.5}
-                            height={dimensions.width / 5.1}
+                            height={80}
                             x={0}
                             y={0}
                         />
@@ -113,7 +96,7 @@ const MultiplierItem = ({ dimensions, item, position }: any) => {
                                 height: 48,
                             }}
                             x={(dimensions.width / 5.1 - dimensions.width / 5.1 / 1.5) / 2}
-                            y={(dimensions.width / 5.1 - dimensions.width / 5.1 / 1.5) / 2}
+                            y={(80 - 80 / 1.8) / 2}
                         />
                     </Group>
                 </Layer>
