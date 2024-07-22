@@ -23,6 +23,7 @@ const CookieContainer = () => {
     const AnimatedGroup: any = animated(Group);
 
     const [cookie] = useImage(IMAGES.cookie);
+    const [fallingCookieImage] = useImage(IMAGES.fallingCookies1);
     const [cookieHalo] = useImage(IMAGES.halo);
     const [cursor] = useImage(IMAGES.rotatingCursor);
     const [fallingCookies, setFallingCookies] = useState<any[]>([]);
@@ -43,6 +44,27 @@ const CookieContainer = () => {
             setDimensions({ width: offsetWidth, height: offsetHeight });
         }
 
+        let timeoutId: any;
+
+        const handleResize = () => {
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(() => {
+                if (divRef.current) {
+                    const { offsetWidth, offsetHeight } = divRef.current;
+                    setDimensions({ width: offsetWidth, height: offsetHeight });
+                }
+            }, 200);
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            clearTimeout(timeoutId);
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
+    useEffect(() => {
         const handleMouseMove = (e: any) => {
             setMousePos({ x: e.clientX, y: e.clientY });
         };
@@ -120,11 +142,11 @@ const CookieContainer = () => {
                 {
                     id: Date.now(),
                     x: Math.random() * dimensions.width,
-                    y: -70,
-                    velocity: 100 + Math.random() * 100,
+                    y: -512,
+                    velocity: 128,
                 },
             ]);
-        }, 200);
+        }, 4000);
 
         return () => clearInterval(interval);
     }, [dimensions.width]);
@@ -239,10 +261,9 @@ const CookieContainer = () => {
                     {fallingCookies.map((fallingCookie) => (
                         <KonvaImage
                             key={fallingCookie.id}
-                            image={cookie}
-                            width={100}
-                            height={80}
-                            x={fallingCookie.x}
+                            image={fallingCookieImage}
+                            width={dimensions.width}
+                            x={0}
                             y={fallingCookie.y}
                             ref={(node) => {
                                 fallingCookiesRefs.current[fallingCookie.id] = node;

@@ -1,67 +1,166 @@
 const MULTIPLIERS = [
+    // ----------------------------------- //
+    // ----------------------------------- //
+    // ------------- CURSORS ------------- //
+    // ----------------------------------- //
+    // ----------------------------------- //
     {
-        label: "Cursor",
+        label: "Reinforced index finger",
         category: "cursor",
-        image: "https://opengameart.org/sites/default/files/styles/medium/public/spr_cursor%20%281%29%20%281%29.png",
-        description: "Cursors are twice as efficient x2",
+        description: "The mouse and cursors are twice as efficient.",
+        quote: "prod prod",
         value: 2,
         price: 100,
+        unlocksAt: 1,
         bought: false,
     },
     {
-        label: "Cursor 2",
+        label: "Carpal tunnel prevention cream",
         category: "cursor",
-        image: "https://opengameart.org/sites/default/files/styles/medium/public/spr_cursor%20%281%29%20%281%29.png",
-        description: "Cursors are twice as efficient x2",
+
+        description: "The mouse and cursors are twice as efficient.2",
         value: 2,
         price: 500,
+        unlocksAt: 1,
         bought: false,
     },
     {
-        label: "Cursor 3",
+        label: "Ambidextrous",
         category: "cursor",
-        image: "https://opengameart.org/sites/default/files/styles/medium/public/spr_cursor%20%281%29%20%281%29.png",
-        description: "Cursors are twice as efficient x2",
+
+        description: "The mouse and cursors are twice as efficient.",
         value: 2,
-        price: 1000,
-        bought: false,
-    },
-    {
-        label: "Cursor 4",
-        category: "cursor",
-        image: "https://opengameart.org/sites/default/files/styles/medium/public/spr_cursor%20%281%29%20%281%29.png",
-        description: "Cursors are twice as efficient x2",
-        price: 5000,
-        value: 2,
-        bought: false,
-    },
-    {
-        label: "Cursor 5",
-        category: "cursor",
-        image: "https://opengameart.org/sites/default/files/styles/medium/public/spr_cursor%20%281%29%20%281%29.png",
-        description: "Cursors are twice as efficient x2",
+        unlocksAt: 10,
         price: 10000,
+        bought: false,
+    },
+    {
+        label: "Thousand fingers",
+        category: "cursor",
+
+        description: "The mouse and cursors gain +0.1 cookies for each non-cursor object owned.",
+        price: 100000,
+        unlocksAt: 25,
         value: 2,
         bought: false,
     },
     {
-        label: "Cursor 6",
+        label: "Million fingers",
         category: "cursor",
-        image: "https://opengameart.org/sites/default/files/styles/medium/public/spr_cursor%20%281%29%20%281%29.png",
-        description: "Cursors are twice as efficient x2",
-        price: 20000,
+
+        description: "Multiplies the gain from Thousand fingers by 5.",
+        price: 10000000,
+        unlocksAt: 50,
         value: 2,
         bought: false,
     },
     {
-        label: "Cursor 7",
+        label: "Billion fingers",
         category: "cursor",
-        image: "https://opengameart.org/sites/default/files/styles/medium/public/spr_cursor%20%281%29%20%281%29.png",
-        description: "Cursors are twice as efficient x2",
+
+        description: "Multiplies the gain from Thousand fingers by 10.",
+        price: 100000000,
+        unlocksAt: 100,
+        value: 2,
+        bought: false,
+    },
+    {
+        label: "Trillion fingers",
+        category: "cursor",
+
+        description: "Multiplies the gain from Thousand fingers by 20.",
+        price: 1000000000,
+        unlocksAt: 150,
+        value: 2,
+        bought: false,
+    },
+    {
+        label: "Quadrillion fingers",
+        category: "cursor",
+
+        description: "Multiplies the gain from Thousand fingers by 20.",
+        price: 10000000000,
+        unlocksAt: 200,
+        value: 2,
+        bought: false,
+    },
+    {
+        label: "Quintillion fingers",
+        category: "cursor",
+
+        description: "Multiplies the gain from Thousand fingers by 20.",
         price: 50000,
+        unlocksAt: 250,
         value: 2,
         bought: false,
     },
+    {
+        label: "Sextillion fingers",
+        category: "cursor",
+
+        description: "Multiplies the gain from Thousand fingers by 20.",
+        price: 50000,
+        unlocksAt: 300,
+        value: 2,
+        bought: false,
+    },
+    {
+        label: "Septillion fingers",
+        category: "cursor",
+
+        description: "Multiplies the gain from Thousand fingers by 20.",
+        price: 50000,
+        unlocksAt: 350,
+        value: 2,
+        bought: false,
+    },
+    {
+        label: "Octillion fingers",
+        category: "cursor",
+
+        description: "Multiplies the gain from Thousand fingers by 20.",
+        price: 50000,
+        unlocksAt: 400,
+        value: 2,
+        bought: false,
+    },
+    {
+        label: "Nonillion fingers",
+        category: "cursor",
+
+        description: "Multiplies the gain from Thousand fingers by 20.",
+        price: 50000,
+        unlocksAt: 450,
+        value: 2,
+        bought: false,
+    },
+    {
+        label: "Decillion fingers",
+        category: "cursor",
+
+        description: "Multiplies the gain from Thousand fingers by 20.",
+        price: 50000,
+        unlocksAt: 500,
+        value: 2,
+        bought: false,
+    },
+    {
+        label: "Undecillion fingers",
+        category: "cursor",
+
+        description: "Multiplies the gain from Thousand fingers by 20.",
+        price: 50000,
+        unlocksAt: 550,
+        value: 2,
+        bought: false,
+    },
+
+    // ----------------------------------- //
+    // ----------------------------------- //
+    // ------------- GRANDMAS ------------- //
+    // ----------------------------------- //
+    // ----------------------------------- //
+
     {
         label: "Grandma 1",
         category: "grandma",

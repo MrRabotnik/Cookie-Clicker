@@ -5,7 +5,6 @@ const UPGRADES = [
     {
         label: "Cursor",
         category: "cursor",
-        avatar: IMAGES.upgradeCursorIcon,
         price: generateValues(15, 1.15),
         description: "Each Cursor generates 0.1 cookies in 10s.",
         value: 0.1,
@@ -15,7 +14,6 @@ const UPGRADES = [
     {
         label: "Grandma",
         category: "grandma",
-        avatar: IMAGES.upgradeGrandmaIcon,
         buildingImage: IMAGES.grandmaBuilding,
         backgroundImage: IMAGES.grandmaFieldBg,
         price: generateValues(100, 1.15),
@@ -27,7 +25,6 @@ const UPGRADES = [
     {
         label: "Farm",
         category: "farm",
-        avatar: IMAGES.upgradeFarmIcon,
         buildingImage: IMAGES.farmBuilding,
         backgroundImage: IMAGES.farmFieldBg,
         price: generateValues(1100, 1.15),
@@ -39,7 +36,6 @@ const UPGRADES = [
     {
         label: "Mine",
         category: "mine",
-        avatar: IMAGES.upgradeMineIcon,
         buildingImage: IMAGES.mineBuilding,
         backgroundImage: IMAGES.mineFieldBg,
         price: generateValues(12000, 1.15),
@@ -51,7 +47,6 @@ const UPGRADES = [
     {
         label: "Factory",
         category: "factory",
-        avatar: IMAGES.upgradeFactoryIcon,
         buildingImage: IMAGES.factoryBuilding,
         backgroundImage: IMAGES.factoryFieldBg,
         price: generateValues(130000, 1.15),
@@ -63,7 +58,6 @@ const UPGRADES = [
     {
         label: "Bank",
         category: "bank",
-        avatar: IMAGES.upgradeBankIcon,
         buildingImage: IMAGES.bankBuilding,
         backgroundImage: IMAGES.bankFieldBg,
         price: generateValues(1400000, 1.15),
@@ -75,7 +69,6 @@ const UPGRADES = [
     {
         label: "Temple",
         category: "temple",
-        avatar: IMAGES.upgradeTempleIcon,
         buildingImage: IMAGES.templeBuilding,
         backgroundImage: IMAGES.templeFieldBg,
         price: generateValues(20000000, 1.15),
@@ -87,7 +80,6 @@ const UPGRADES = [
     {
         label: "Wizard tower",
         category: "wizard-tower",
-        avatar: IMAGES.upgradeWizardTowerIcon,
         buildingImage: IMAGES.wizardTowerBuilding,
         backgroundImage: IMAGES.wizardTowerFieldBg,
         price: generateValues(330000000, 1.15),
@@ -99,7 +91,6 @@ const UPGRADES = [
     {
         label: "Shipment",
         category: "shipment",
-        avatar: IMAGES.upgradeShipmentIcon,
         buildingImage: IMAGES.shipmentBuilding,
         backgroundImage: IMAGES.shipmentFieldBg,
         price: generateValues(5100000000, 1.15),
@@ -111,7 +102,6 @@ const UPGRADES = [
     {
         label: "Alchemy Lab",
         category: "alchemy-lab",
-        avatar: IMAGES.upgradeAlchemyLabIcon,
         buildingImage: IMAGES.alchemyLabBuilding,
         backgroundImage: IMAGES.alchemyLabFieldBg,
         price: generateValues(75000000000, 1.15),
@@ -123,7 +113,6 @@ const UPGRADES = [
     {
         label: "Portal",
         category: "portal",
-        avatar: IMAGES.upgradePortalIcon,
         buildingImage: IMAGES.portalBuilding,
         backgroundImage: IMAGES.portalFieldBg,
         price: generateValues(1000000000000, 1.15),
@@ -135,7 +124,6 @@ const UPGRADES = [
     {
         label: "Time Machine",
         category: "time-machine",
-        avatar: IMAGES.upgradeTimeMachineIcon,
         buildingImage: IMAGES.timeMachineBuilding,
         backgroundImage: IMAGES.timeMachineFieldBg,
         price: generateValues(14000000000000, 1.15),
@@ -147,7 +135,6 @@ const UPGRADES = [
     {
         label: "Antimatter Condenser",
         category: "antimatter-condenser",
-        avatar: IMAGES.upgradeAntimatterCondenserIcon,
         buildingImage: IMAGES.antimatterCondenserBuilding,
         backgroundImage: IMAGES.antimatterCondenserFieldBg,
         price: generateValues(170000000000000, 1.15),
@@ -159,7 +146,6 @@ const UPGRADES = [
     {
         label: "Prism",
         category: "prism",
-        avatar: IMAGES.upgradePrismIcon,
         buildingImage: IMAGES.prismBuilding,
         backgroundImage: IMAGES.prismFieldBg,
         price: generateValues("21000000000000000", 1.15),
@@ -171,7 +157,6 @@ const UPGRADES = [
     {
         label: "Chancemaker",
         category: "chancemaker",
-        avatar: IMAGES.upgradeChancemakerIcon,
         buildingImage: IMAGES.chancemakerBuilding,
         backgroundImage: IMAGES.chancemakerFieldBg,
         price: generateValues("26000000000000000", 1.15),
@@ -183,7 +168,6 @@ const UPGRADES = [
     {
         label: "Fractal Engine",
         category: "fractal-engine",
-        avatar: IMAGES.upgradeFractalEngineIcon,
         buildingImage: IMAGES.fractalEngineBuilding,
         backgroundImage: IMAGES.fractalEngineFieldBg,
         price: generateValues("310000000000000000", 1.15),
@@ -195,7 +179,6 @@ const UPGRADES = [
     {
         label: "Javascript Console",
         category: "javascript-console",
-        avatar: IMAGES.upgradeJavascriptConsoleIcon,
         buildingImage: IMAGES.javascriptConsoleBuilding,
         backgroundImage: IMAGES.javascriptConsoleFieldBg,
         price: generateValues("71000000000000000000", 1.15),
@@ -207,7 +190,6 @@ const UPGRADES = [
     {
         label: "Idleverse",
         category: "idleverse",
-        avatar: IMAGES.upgradeIdleverseIcon,
         buildingImage: IMAGES.idleverseBuilding,
         backgroundImage: IMAGES.idleverseFieldBg,
         price: generateValues("12000000000000000000000", 1.15),
@@ -219,7 +201,6 @@ const UPGRADES = [
     {
         label: "Cortex Baker",
         category: "cortex-baker",
-        avatar: IMAGES.upgradeCortexBakerIcon,
         buildingImage: IMAGES.cortexBakerBuilding,
         backgroundImage: IMAGES.cortexBakerFieldBg,
         price: generateValues("19000000000000000000000000", 1.15),
@@ -231,7 +212,6 @@ const UPGRADES = [
     {
         label: "You",
         category: "you",
-        avatar: IMAGES.upgradeYouIcon,
         buildingImage: IMAGES.youBuilding,
         backgroundImage: IMAGES.youFieldBg,
         price: generateValues("540000000000000000000000000", 1.15),

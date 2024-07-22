@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Stage, Layer, Image as KonvaImage, Text, Group } from "react-konva";
+import { Stage, Layer, Image as KonvaImage, Text, Group, Rect } from "react-konva";
 import useImage from "use-image";
 
 import "./UpgradeItem.scss";
@@ -7,12 +7,20 @@ import { useCookies } from "../../App";
 import numeral from "numeral";
 import IMAGES from "../../utils/images";
 
-const UpgradeItem = ({ dimensions, upgrade, buying, buySellMultiplier, updateUpgrades }: any) => {
+const UpgradeItem = ({
+    dimensions,
+    upgrade,
+    buying,
+    buySellMultiplier,
+    updateUpgrades,
+    position,
+    shouldBeDark = false,
+}: any) => {
     const { cookiesCount, setCookiesCount, setCookiesPerSecond } = useCookies();
 
     const [bg] = useImage(IMAGES.upgradeBg);
     const [cookie] = useImage(IMAGES.cookie);
-    const [avatar] = useImage(upgrade.avatar);
+    const [avatar] = useImage(IMAGES.buildingIconsSprite);
 
     const [textWidth, setTextWidth] = useState(0);
     const textRef = useRef(null);
@@ -107,8 +115,16 @@ const UpgradeItem = ({ dimensions, upgrade, buying, buySellMultiplier, updateUpg
                     >
                         <KonvaImage
                             image={avatar}
-                            width={dimensions.width / 6}
+                            width={dimensions.width / 5}
                             height={64}
+                            crop={{
+                                x: shouldBeDark ? 64 : 0,
+                                y: position >= 2 ? (position + 1) * 64 : position * 64,
+                                width: 63,
+                                height: 64,
+                            }}
+                            x={0}
+                            y={0}
                         />
                         <Text
                             text={upgrade.label}
@@ -129,9 +145,13 @@ const UpgradeItem = ({ dimensions, upgrade, buying, buySellMultiplier, updateUpg
                             height={25}
                         />
                         <Text
-                            text={formatNumber(
-                                buying ? summedPriceArray : summedPriceArray - (summedPriceArray * 50) / 100
-                            )}
+                            text={
+                                shouldBeDark
+                                    ? "???"
+                                    : formatNumber(
+                                          buying ? summedPriceArray : summedPriceArray - (summedPriceArray * 50) / 100
+                                      )
+                            }
                             x={dimensions.width / 5 + 20}
                             y={40}
                             fill={textColor}

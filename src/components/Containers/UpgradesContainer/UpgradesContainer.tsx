@@ -11,6 +11,8 @@ const UpgradesContainer = () => {
 
     const { upgrades, updateUpgrades, multipliers } = useCookies();
 
+    const sortedMultipliers = multipliers.sort((a: any, b: any) => a.price - b.price);
+
     const [buying, setBuying] = useState(true);
     const [buySellMultiplier, setBuySellMultiplier] = useState(1);
 
@@ -19,6 +21,25 @@ const UpgradesContainer = () => {
             const { offsetWidth, offsetHeight } = divRef.current;
             setDimensions({ width: offsetWidth, height: offsetHeight });
         }
+
+        let timeoutId: any;
+
+        const handleResize = () => {
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(() => {
+                if (divRef.current) {
+                    const { offsetWidth, offsetHeight } = divRef.current;
+                    setDimensions({ width: offsetWidth, height: offsetHeight });
+                }
+            }, 200);
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            clearTimeout(timeoutId);
+            window.removeEventListener("resize", handleResize);
+        };
     }, []);
 
     return (
@@ -32,14 +53,18 @@ const UpgradesContainer = () => {
                 style={{ backgroundImage: `url(${IMAGES.panelHorizontal})` }}
             ></div>
             <div className="multipliers-container">
-                {multipliers.map((multiplier: any, index: number) => {
+                {sortedMultipliers.map((multiplier: any, index: number) => {
+                    const foundUpgrade = upgrades.find((upgrade: any) => upgrade.category === multiplier.category);
+                    const isAvailable = foundUpgrade?.boughtCount >= multiplier.unlocksAt;
+
                     return (
-                        !multiplier.bought && (
+                        !multiplier.bought &&
+                        isAvailable && (
                             <MultiplierItem
                                 key={index}
                                 dimensions={dimensions}
                                 item={multiplier}
-                                index={index}
+                                position={index}
                             />
                         )
                     );
@@ -90,7 +115,7 @@ const UpgradesContainer = () => {
                 };
 
                 if (index > 1) {
-                    if (upgrade.boughtCount > 0) {
+                    if (upgrade.boughtCount > 0 || upgrades[index - 1].boughtCount !== 0) {
                         return (
                             <UpgradeItem
                                 key={index}
@@ -112,18 +137,7 @@ const UpgradesContainer = () => {
                                 position={index}
                                 buying={buying}
                                 buySellMultiplier={buySellMultiplier}
-                            />
-                        );
-                    } else if (upgrades[index - 1].boughtCount !== 0) {
-                        return (
-                            <UpgradeItem
-                                key={index}
-                                dimensions={dimensions}
-                                updateUpgrades={updateUpgrades}
-                                upgrade={upgrade}
-                                position={index}
-                                buying={buying}
-                                buySellMultiplier={buySellMultiplier}
+                                shouldBeDark={true}
                             />
                         );
                     }

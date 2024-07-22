@@ -19,6 +19,25 @@ const FarmsContainer = () => {
             const { offsetWidth, offsetHeight } = divRef.current;
             setDimensions({ width: offsetWidth, height: offsetHeight });
         }
+
+        let timeoutId: any;
+
+        const handleResize = () => {
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(() => {
+                if (divRef.current) {
+                    const { offsetWidth, offsetHeight } = divRef.current;
+                    setDimensions({ width: offsetWidth, height: offsetHeight });
+                }
+            }, 200);
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            clearTimeout(timeoutId);
+            window.removeEventListener("resize", handleResize);
+        };
     }, []);
 
     useEffect(() => {
@@ -26,7 +45,6 @@ const FarmsContainer = () => {
         axios
             .get(`https://cookieclicker-3181a99ad544.herokuapp.com/api/random-quote/`)
             .then((res: any) => {
-                console.log(res);
                 setRandomText(res.data.data.text);
                 setAuthor(res.data.data.author);
                 timeOut = setTimeout(() => {
