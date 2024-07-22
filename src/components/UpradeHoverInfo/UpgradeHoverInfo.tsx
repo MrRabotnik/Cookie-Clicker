@@ -1,22 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import "./UpgradeHoverInfo.scss";
 import IMAGES from "../../utils/images";
 import { useCookies } from "../../App";
+import numeral from "numeral";
 
 const UpgradeHoverInfo = ({ upgrade }: any) => {
     const { cookiesCount } = useCookies();
 
+    const available = cookiesCount >= upgrade.price[upgrade.boughtCount];
+
+    const formatNumber = (number: number) => {
+        let formatted = numeral(number).format("0.00a");
+
+        formatted = formatted.replace(/\.00([a-z])$/, "$1");
+
+        if (number < 1000) {
+            formatted = numeral(number).format("0");
+        }
+
+        return formatted;
+    };
+
     return (
         <div className="upgrade-hover-container">
             <div className="top-part">
-                <div className="avatar">
-                    <img
-                        src={IMAGES.buildingIconsSprite}
-                        alt="Avatar"
-                        width={64}
-                        height={64}
-                    />
-                </div>
+                <div
+                    className="avatar"
+                    style={{ backgroundImage: IMAGES.buildingIconsSprite }}
+                ></div>
                 <div className="info">
                     <p>{upgrade.label}</p>
                     <div>owned: {upgrade.boughtCount}</div>
@@ -28,11 +39,13 @@ const UpgradeHoverInfo = ({ upgrade }: any) => {
                         width={30}
                         height={"auto"}
                     />
-                    <span>{upgrade.price[upgrade.boughtCount]}</span>
+                    <span>{available ? formatNumber(upgrade.price[upgrade.boughtCount]) : "???"}</span>
                 </div>
             </div>
             <hr />
-            <p className="text-align-right">{upgrade.description}</p>
+            <p className="text-align-right">
+                <i>"{upgrade.description}"</i>{" "}
+            </p>
             {upgrade.boughtCount > 0 && (
                 <>
                     <hr />
@@ -45,7 +58,8 @@ const UpgradeHoverInfo = ({ upgrade }: any) => {
 
                         <div>
                             <p>
-                                {upgrade.boughtCount} {upgrade.category} producing {upgrade.value} cookies per second (
+                                {upgrade.boughtCount} {upgrade.category} producing{" "}
+                                {upgrade.boughtCount * upgrade.multiplier * upgrade.value} cookies per second (
                                 {(
                                     ((upgrade.boughtCount * upgrade.multiplier * upgrade.value) / cookiesCount) *
                                     100
