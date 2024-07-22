@@ -10,19 +10,24 @@ const MultiplierHoverInfo = ({ multiplier, position }: any) => {
     const available = cookiesCount >= multiplier.price;
 
     const formatNumber = (number: number) => {
-        let formatted = numeral(number).format("0.00a");
+        let formatted;
 
-        formatted = formatted.replace(/\.00([a-z])$/, "$1");
-
-        if (number < 1000) {
-            formatted = numeral(number).format("0");
+        if (number < 1000 && number >= 0) {
+            formatted = numeral(number).format("0.0");
+        } else {
+            formatted = numeral(number)
+                .format("0.00a")
+                .replace(/\.00([a-z])$/, "$1");
         }
 
         return formatted;
     };
 
     return (
-        <div className="multiplier-hover-container">
+        <div
+            className="multiplier-hover-container"
+            style={{ backgroundImage: `url(${IMAGES.darkNoise})` }}
+        >
             <div className="top-part">
                 <div
                     className="avatar"
@@ -33,7 +38,7 @@ const MultiplierHoverInfo = ({ multiplier, position }: any) => {
                 ></div>
                 <div className="info">
                     <p>{multiplier.label}</p>
-                    <div>Upgrade</div>
+                    <div className="chip">Upgrade</div>
                 </div>
                 <div className="price">
                     <img
@@ -49,6 +54,13 @@ const MultiplierHoverInfo = ({ multiplier, position }: any) => {
             <p>{multiplier.description}</p>
             <p className="text-align-right">
                 <i>"{multiplier.author}"</i>{" "}
+            </p>
+            <hr />
+            <p
+                className="text-align-center mg-0"
+                style={{ color: "grey" }}
+            >
+                <i>Click to purchase</i>
             </p>
         </div>
     );

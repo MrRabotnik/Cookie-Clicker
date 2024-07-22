@@ -11,6 +11,7 @@ import multiplierFrame from "../assets/images/multiplier-frame.png";
 import fallingCookies1 from "../assets/images/cookieShower1.png";
 import fallingCookies2 from "../assets/images/cookieShower2.png";
 import fallingCookies3 from "../assets/images/cookieShower3.png";
+import darkNoise from "../assets/images/darkNoise.jpg";
 
 import upgradeBg from "../assets/images/upgradeBg.jpeg";
 import buildingIconsSprite from "../assets/images/buildings.png";
@@ -74,6 +75,7 @@ const IMAGES = {
     fallingCookies1,
     fallingCookies2,
     fallingCookies3,
+    darkNoise,
 
     //Field buildings
     grandmaBuilding,

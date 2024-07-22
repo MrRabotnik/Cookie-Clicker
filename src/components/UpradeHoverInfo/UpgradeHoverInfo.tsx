@@ -5,17 +5,19 @@ import { useCookies } from "../../App";
 import numeral from "numeral";
 
 const UpgradeHoverInfo = ({ upgrade, position, infoContainerY, shouldBeDark }: any) => {
-    const { cookiesCount } = useCookies();
+    const { cookiesCount, cookiesPerSecond } = useCookies();
 
     const available = cookiesCount >= upgrade.price[upgrade.boughtCount];
 
     const formatNumber = (number: number) => {
-        let formatted = numeral(number).format("0.00a");
+        let formatted;
 
-        formatted = formatted.replace(/\.00([a-z])$/, "$1");
-
-        if (number < 1000) {
-            formatted = numeral(number).format("0");
+        if (number < 1000 && number >= 0) {
+            formatted = numeral(number).format("0.0");
+        } else {
+            formatted = numeral(number)
+                .format("0.00a")
+                .replace(/\.00([a-z])$/, "$1");
         }
 
         return formatted;
@@ -24,7 +26,10 @@ const UpgradeHoverInfo = ({ upgrade, position, infoContainerY, shouldBeDark }: a
     return (
         <div
             className="upgrade-hover-container"
-            style={{ top: infoContainerY + "px" }}
+            style={{
+                backgroundImage: `url(${IMAGES.darkNoise})`,
+                top: infoContainerY + "px",
+            }}
         >
             <div className="top-part">
                 <div
@@ -38,7 +43,7 @@ const UpgradeHoverInfo = ({ upgrade, position, infoContainerY, shouldBeDark }: a
                 ></div>
                 <div className="info">
                     <p>{upgrade.label}</p>
-                    <div>owned: {upgrade.boughtCount}</div>
+                    <div className="chip">owned: {upgrade.boughtCount}</div>
                 </div>
                 <div className="price">
                     <img
@@ -59,19 +64,21 @@ const UpgradeHoverInfo = ({ upgrade, position, infoContainerY, shouldBeDark }: a
             {upgrade.boughtCount > 0 && (
                 <>
                     <hr />
-                    <div>
+                    <div className="list">
                         <div>
                             <p>
-                                each {upgrade.category} produces {upgrade.value * upgrade.multiplier} cookies per second
+                                each {upgrade.category} produces {formatNumber(upgrade.value * upgrade.multiplier)}{" "}
+                                cookies per second
                             </p>
                         </div>
 
                         <div>
                             <p>
                                 {upgrade.boughtCount} {upgrade.category} producing{" "}
-                                {upgrade.boughtCount * upgrade.multiplier * upgrade.value} cookies per second (
+                                {formatNumber(upgrade.boughtCount * upgrade.multiplier * upgrade.value)} cookies per
+                                second (
                                 {(
-                                    ((upgrade.boughtCount * upgrade.multiplier * upgrade.value) / cookiesCount) *
+                                    ((upgrade.boughtCount * upgrade.multiplier * upgrade.value) / cookiesPerSecond) *
                                     100
                                 ).toFixed(1)}
                                 % of total CpS)

@@ -42,12 +42,14 @@ const UpgradeItem = ({
     const summedPriceArray = sumPriceArray();
 
     const formatNumber = (number: number) => {
-        let formatted = numeral(number).format("0.00a");
+        let formatted;
 
-        formatted = formatted.replace(/\.00([a-z])$/, "$1");
-
-        if (number < 1000) {
-            formatted = numeral(number).format("0");
+        if (number < 1000 && number >= 0) {
+            formatted = numeral(number).format("0.0");
+        } else {
+            formatted = numeral(number)
+                .format("0.00a")
+                .replace(/\.00([a-z])$/, "$1");
         }
 
         return formatted;
