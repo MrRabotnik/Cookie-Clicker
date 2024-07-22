@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./UpgradeHoverInfo.scss";
 import IMAGES from "../../utils/images";
 import { useCookies } from "../../App";
