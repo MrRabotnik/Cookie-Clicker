@@ -18,7 +18,7 @@ const MULTIPLIERS = [
         label: "Carpal tunnel prevention cream",
         category: "cursor",
 
-        description: "The mouse and cursors are twice as efficient.2",
+        description: "The mouse and cursors are twice as efficient.",
         value: 2,
         price: 500,
         unlocksAt: 1,

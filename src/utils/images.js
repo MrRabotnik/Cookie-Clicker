@@ -6,6 +6,7 @@ import farmHeaderBg from "../assets/images/panelMenu3.png";
 import cookie from "../assets/images/cookie.png";
 import halo from "../assets/images/halo.png";
 import rotatingCursor from "../assets/images/rotating-cursor.png";
+import rotatingCursorGif from "../assets/images/rotating-cursor.gif";
 import multiplierFrame from "../assets/images/multiplier-frame.png";
 import fallingCookies1 from "../assets/images/cookieShower1.png";
 import fallingCookies2 from "../assets/images/cookieShower2.png";
@@ -68,6 +69,7 @@ const IMAGES = {
     cookie,
     halo,
     rotatingCursor,
+    rotatingCursorGif,
     multiplierFrame,
     fallingCookies1,
     fallingCookies2,

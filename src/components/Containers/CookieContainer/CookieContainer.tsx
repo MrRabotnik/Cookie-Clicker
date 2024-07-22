@@ -25,7 +25,7 @@ const CookieContainer = () => {
     const [cookie] = useImage(IMAGES.cookie);
     const [fallingCookieImage] = useImage(IMAGES.fallingCookies1);
     const [cookieHalo] = useImage(IMAGES.halo);
-    const [cursor] = useImage(IMAGES.rotatingCursor);
+    const [cursor] = useImage(IMAGES.rotatingCursorGif);
     const [fallingCookies, setFallingCookies] = useState<any[]>([]);
     const [invert, setInvert] = useState(false);
 
@@ -172,9 +172,25 @@ const CookieContainer = () => {
     useEffect(() => {
         const anim = new Konva.Animation((frame: any) => {
             const time = frame.time / 3000;
-            const radius = 150;
+            let radius = 130;
             cursorRefs.current.forEach((cursor, i) => {
-                const angle = (i / cursorRefs.current.length) * 2 * Math.PI + time;
+                let angle = (i / 50) * 2 * Math.PI + time;
+
+                if (i > 50) {
+                    radius = 160;
+                    angle = (i / 100) * 2 * Math.PI + time;
+                }
+
+                if (i > 150) {
+                    radius = 190;
+                    angle = (i / 150) * 2 * Math.PI + time;
+                }
+
+                if (i > 300) {
+                    radius = 220;
+                    angle = (i / 250) * 2 * Math.PI + time;
+                }
+
                 const x = dimensions.width / 2 + radius * Math.cos(angle);
                 const y = dimensions.height / 2 + radius * Math.sin(angle);
                 if (cursor) {
@@ -183,7 +199,7 @@ const CookieContainer = () => {
                     const dx = dimensions.width / 2 - x;
                     const dy = dimensions.height / 2 - y;
                     const rotation = Math.atan2(dy, dx) * (180 / Math.PI);
-                    cursor.rotation(rotation + 90);
+                    cursor.rotation(rotation + 115);
                 }
             });
         });
@@ -314,8 +330,14 @@ const CookieContainer = () => {
                             <KonvaImage
                                 key={i}
                                 image={cursor}
-                                width={50}
-                                height={50}
+                                crop={{
+                                    x: 0,
+                                    y: 0,
+                                    width: 326,
+                                    height: 326,
+                                }}
+                                width={30}
+                                height={30}
                                 x={dimensions.width / 2}
                                 y={dimensions.height / 2}
                                 offsetX={25}

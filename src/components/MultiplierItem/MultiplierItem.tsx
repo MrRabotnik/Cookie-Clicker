@@ -5,9 +5,9 @@ import useImage from "use-image";
 import "./MultiplierItem.scss";
 import IMAGES from "../../utils/images";
 
-import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
 import { useCookies } from "../../App";
+import MultiplierHoverInfo from "../MultiplierHoverInfo/MultiplierHoverInfo";
 // import numeral from "numeral";
 
 const MultiplierItem = ({ dimensions, item, position }: any) => {
@@ -37,7 +37,7 @@ const MultiplierItem = ({ dimensions, item, position }: any) => {
     //     return formatted;
     // };
 
-    const textColor = cookiesCount >= item.price ? "#6f6" : "#f66";
+    // const textColor = cookiesCount >= item.price ? "#6f6" : "#f66";
 
     const upgradeAvailable = cookiesCount >= item.price;
 
@@ -74,6 +74,7 @@ const MultiplierItem = ({ dimensions, item, position }: any) => {
             onTouchStart={buyAMultiplier}
         >
             <div className={upgradeAvailable ? "display-none" : "disabled-upgrade"}></div>
+            <MultiplierHoverInfo multiplier={item} />
 
             {/* <Tooltip
                 id={`multiplier-item${index}`}

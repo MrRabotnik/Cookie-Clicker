@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Stage, Layer, Image as KonvaImage, Text, Group, Rect } from "react-konva";
+import { Stage, Layer, Image as KonvaImage, Text, Group } from "react-konva";
 import useImage from "use-image";
 
 import "./UpgradeItem.scss";
 import { useCookies } from "../../App";
 import numeral from "numeral";
 import IMAGES from "../../utils/images";
+import UpgradeHoverInfo from "../UpradeHoverInfo/UpgradeHoverInfo";
 
 const UpgradeItem = ({
     dimensions,
@@ -96,6 +97,8 @@ const UpgradeItem = ({
             onTouchStart={buying ? buyAnUpgrade : sellAnUpgrade}
         >
             <div className={upgradeAvailable ? "display-none" : "disabled-upgrade"}></div>
+
+            <UpgradeHoverInfo upgrade={upgrade} />
 
             <Stage
                 width={dimensions.width}

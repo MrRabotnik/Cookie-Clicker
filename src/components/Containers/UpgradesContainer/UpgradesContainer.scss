@@ -30,10 +30,11 @@
         color: white;
         background-color: rgba(0, 0, 0, 0.7);
         box-sizing: border-box;
+        font-size: 1.2vw;
 
         & > span {
             display: block;
-            margin: 0 30px;
+            margin: 0 2vw;
         }
 
         & > div {

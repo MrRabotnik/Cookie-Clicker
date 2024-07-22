@@ -2,4 +2,8 @@
     margin: 2px 0;
     border-radius: 10px;
     position: relative;
+
+    &:hover .upgrade-hover-container {
+        display: block;
+    }
 }

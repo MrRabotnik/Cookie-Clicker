@@ -6,7 +6,7 @@ const UPGRADES = [
         label: "Cursor",
         category: "cursor",
         price: generateValues(15, 1.15),
-        description: "Each Cursor generates 0.1 cookies in 10s.",
+        description: "Autoclicks once every 10 seconds",
         value: 0.1,
         boughtCount: 0,
         multiplier: 1,
@@ -229,8 +229,8 @@ function generateValues(initialValue, percentage) {
     let value = new BigNumber(initialValue);
     const percentageValue = new BigNumber(percentage);
 
-    for (let i = 0; i < 1000; i++) {
-        array.push(value.toFixed(0)); // Convert value to a string with no decimal places
+    for (let i = 0; i < 550; i++) {
+        array.push(value.toFixed(0));
         value = value.multipliedBy(percentageValue);
     }
 
