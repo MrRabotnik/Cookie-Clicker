@@ -4,7 +4,7 @@ import IMAGES from "../../utils/images";
 import { useCookies } from "../../App";
 import numeral from "numeral";
 
-const UpgradeHoverInfo = ({ upgrade, position }: any) => {
+const UpgradeHoverInfo = ({ upgrade, position, infoContainerY }: any) => {
     const { cookiesCount } = useCookies();
 
     const available = cookiesCount >= upgrade.price[upgrade.boughtCount];
@@ -22,7 +22,10 @@ const UpgradeHoverInfo = ({ upgrade, position }: any) => {
     };
 
     return (
-        <div className="upgrade-hover-container">
+        <div
+            className="upgrade-hover-container"
+            style={{ top: infoContainerY + "px" }}
+        >
             <div className="top-part">
                 <div
                     className="avatar"

@@ -19,6 +19,9 @@ const UpgradeItem = ({
 }: any) => {
     const { cookiesCount, setCookiesCount, setCookiesPerSecond } = useCookies();
 
+    const [infoContainerY, setInfoContainerY] = useState(200);
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+
     const [bg] = useImage(IMAGES.upgradeBg);
     const [cookie] = useImage(IMAGES.cookie);
     const [avatar] = useImage(IMAGES.buildingIconsSprite);
@@ -95,13 +98,27 @@ const UpgradeItem = ({
             className="upgrade-item"
             onClick={buying ? buyAnUpgrade : sellAnUpgrade}
             onTouchStart={buying ? buyAnUpgrade : sellAnUpgrade}
+            onMouseMove={(e) => {
+                setModalIsOpen(true);
+                if (e.clientY + 200 >= window.innerHeight) {
+                    setInfoContainerY(e.clientY - 200);
+                } else {
+                    setInfoContainerY(e.clientY);
+                }
+            }}
+            onMouseLeave={() => {
+                setModalIsOpen(false);
+            }}
         >
             <div className={upgradeAvailable ? "display-none" : "disabled-upgrade"}></div>
 
-            <UpgradeHoverInfo
-                upgrade={upgrade}
-                position={position}
-            />
+            {modalIsOpen && (
+                <UpgradeHoverInfo
+                    upgrade={upgrade}
+                    position={position}
+                    infoContainerY={infoContainerY}
+                />
+            )}
 
             <Stage
                 width={dimensions.width}

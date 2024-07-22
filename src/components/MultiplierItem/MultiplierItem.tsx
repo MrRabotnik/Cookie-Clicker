@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Stage, Layer, Image as KonvaImage, Group, Rect } from "react-konva";
 import useImage from "use-image";
 
@@ -23,6 +23,8 @@ const MultiplierItem = ({ dimensions, item, position }: any) => {
 
     const [containerFrame] = useImage(IMAGES.multiplierFrame);
     const [avatar] = useImage(IMAGES.multipliersIconsSprite);
+
+    const [modalIsOpen, setModalIsOpen] = useState(false);
 
     const upgradeAvailable = cookiesCount >= item.price;
 
@@ -57,16 +59,25 @@ const MultiplierItem = ({ dimensions, item, position }: any) => {
             data-tooltip-id={`multiplier-item${position}`}
         >
             <div className={upgradeAvailable ? "display-none" : "disabled-upgrade"}></div>
-            <MultiplierHoverInfo
-                multiplier={item}
-                position={position}
-            />
+
+            {modalIsOpen && (
+                <MultiplierHoverInfo
+                    multiplier={item}
+                    position={position}
+                />
+            )}
 
             <Stage
                 width={dimensions.width / 5.1}
                 height={80}
                 onClick={buyAMultiplier}
                 onTouchStart={buyAMultiplier}
+                onMouseEnter={(e) => {
+                    setModalIsOpen(true);
+                }}
+                onMouseLeave={(e) => {
+                    setModalIsOpen(false);
+                }}
             >
                 <Layer>
                     <Group
