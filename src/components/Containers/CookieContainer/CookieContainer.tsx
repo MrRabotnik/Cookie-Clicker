@@ -40,6 +40,18 @@ const CookieContainer = () => {
     const [fadingTexts, setFadingTexts] = useState<any[]>([]);
 
     useEffect(() => {
+        const handleTouchMove = (e: any) => {
+            setMousePos({ x: e.touches[0].clientX, y: e.touches[0].clientY });
+        };
+
+        window.addEventListener("touchmove", handleTouchMove);
+
+        return () => {
+            window.removeEventListener("touchmove", handleTouchMove);
+        };
+    }, []);
+
+    useEffect(() => {
         if (divRef.current) {
             const { offsetWidth, offsetHeight } = divRef.current;
             setDimensions({ width: offsetWidth, height: offsetHeight });
