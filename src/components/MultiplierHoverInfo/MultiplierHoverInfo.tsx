@@ -3,30 +3,20 @@ import "./MultiplierHoverInfo.scss";
 import numeral from "numeral";
 import { useCookies } from "../../App";
 import IMAGES from "../../utils/images";
+import { formatNumber } from "../../utils/formatNumber";
 
-const MultiplierHoverInfo = ({ multiplier, position }: any) => {
+const MultiplierHoverInfo = ({ multiplier, position, setModalIsOpen }: any) => {
     const { cookiesCount } = useCookies();
 
     const available = cookiesCount >= multiplier.price;
-
-    const formatNumber = (number: number) => {
-        let formatted;
-
-        if (number < 1000 && number >= 0) {
-            formatted = numeral(number).format("0.0");
-        } else {
-            formatted = numeral(number)
-                .format("0.00a")
-                .replace(/\.00([a-z])$/, "$1");
-        }
-
-        return formatted;
-    };
 
     return (
         <div
             className="multiplier-hover-container"
             style={{ backgroundImage: `url(${IMAGES.darkNoise})` }}
+            onMouseEnter={() => {
+                setModalIsOpen(false);
+            }}
         >
             <div className="top-part">
                 <div

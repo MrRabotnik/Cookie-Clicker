@@ -2,26 +2,13 @@ import React from "react";
 import "./UpgradeHoverInfo.scss";
 import IMAGES from "../../utils/images";
 import { useCookies } from "../../App";
-import numeral from "numeral";
+import { formatNumber } from "../../utils/formatNumber";
 
-const UpgradeHoverInfo = ({ upgrade, position, infoContainerY, shouldBeDark }: any) => {
+const UpgradeHoverInfo = ({ upgrade, position, infoContainerY, shouldBeDark, setModalIsOpen }: any) => {
     const { cookiesCount, cookiesPerSecond } = useCookies();
 
-    const available = cookiesCount >= upgrade.price[upgrade.boughtCount];
-
-    const formatNumber = (number: number) => {
-        let formatted;
-
-        if (number < 1000 && number >= 0) {
-            formatted = numeral(number).format("0.0");
-        } else {
-            formatted = numeral(number)
-                .format("0.00a")
-                .replace(/\.00([a-z])$/, "$1");
-        }
-
-        return formatted;
-    };
+    const available = +cookiesCount >= +upgrade.price[upgrade.boughtCount];
+    console.log(upgrade);
 
     return (
         <div
@@ -29,6 +16,9 @@ const UpgradeHoverInfo = ({ upgrade, position, infoContainerY, shouldBeDark }: a
             style={{
                 backgroundImage: `url(${IMAGES.darkNoise})`,
                 top: infoContainerY + "px",
+            }}
+            onMouseEnter={() => {
+                setModalIsOpen(false);
             }}
         >
             <div className="top-part">
@@ -53,7 +43,9 @@ const UpgradeHoverInfo = ({ upgrade, position, infoContainerY, shouldBeDark }: a
                         height={"auto"}
                     />
                     <span className={available ? "available" : ""}>
-                        {available ? formatNumber(upgrade.price[upgrade.boughtCount]) : "???"}
+                        {upgrade.boughtCount === 0 && shouldBeDark
+                            ? "???"
+                            : formatNumber(upgrade.price[upgrade.boughtCount])}
                     </span>
                 </div>
             </div>

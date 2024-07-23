@@ -70,6 +70,7 @@ const MultiplierItem = ({ dimensions, item, position }: any) => {
                 <MultiplierHoverInfo
                     multiplier={item}
                     position={position}
+                    setModalIsOpen={setModalIsOpen}
                 />
             )}
 

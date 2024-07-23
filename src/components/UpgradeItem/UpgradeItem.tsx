@@ -7,6 +7,7 @@ import { useCookies } from "../../App";
 import numeral from "numeral";
 import IMAGES from "../../utils/images";
 import UpgradeHoverInfo from "../UpradeHoverInfo/UpgradeHoverInfo";
+import { formatNumber } from "../../utils/formatNumber";
 
 const UpgradeItem = ({
     dimensions,
@@ -40,20 +41,6 @@ const UpgradeItem = ({
     };
 
     const summedPriceArray = sumPriceArray();
-
-    const formatNumber = (number: number) => {
-        let formatted;
-
-        if (number < 1000 && number >= 0) {
-            formatted = numeral(number).format("0.0");
-        } else {
-            formatted = numeral(number)
-                .format("0.00a")
-                .replace(/\.00([a-z])$/, "$1");
-        }
-
-        return formatted;
-    };
 
     const textColor = buying
         ? cookiesCount >= summedPriceArray
@@ -120,6 +107,7 @@ const UpgradeItem = ({
                     position={position}
                     infoContainerY={infoContainerY}
                     shouldBeDark={shouldBeDark}
+                    setModalIsOpen={setModalIsOpen}
                 />
             )}
 

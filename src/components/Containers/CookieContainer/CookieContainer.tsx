@@ -7,6 +7,7 @@ import { useCookies } from "../../../App";
 import { useSpring, animated } from "@react-spring/konva";
 import IMAGES from "../../../utils/images";
 import numeral from "numeral";
+import { formatNumber } from "../../../utils/formatNumber";
 
 const CookieContainer = () => {
     const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -17,6 +18,7 @@ const CookieContainer = () => {
     const haloRef = useRef<any>(null);
     const halo2Ref = useRef<any>(null);
     const cursorRefs = useRef<any[]>([]);
+    const fallingCookiesFullImageRefs = useRef<any[]>([]);
     const fallingCookiesRefs = useRef<any[]>([]);
     const waveRef = useRef<any>(null);
 
@@ -27,6 +29,8 @@ const CookieContainer = () => {
     const [cookieHalo] = useImage(IMAGES.halo);
     const [cursor] = useImage(IMAGES.rotatingCursorGif);
     const [fallingCookies, setFallingCookies] = useState<any[]>([]);
+    const [fallingCookiesFullImage, setFallingCookiesFullImage] = useState<any[]>([]);
+
     const [invert, setInvert] = useState(false);
 
     const props = useSpring({
@@ -137,7 +141,7 @@ const CookieContainer = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setFallingCookies((prev) => [
+            setFallingCookiesFullImage((prev) => [
                 ...prev,
                 {
                     id: Date.now(),
@@ -148,13 +152,16 @@ const CookieContainer = () => {
             ]);
         }, 4000);
 
-        return () => clearInterval(interval);
-    }, [dimensions.width]);
-
-    useEffect(() => {
         const anim = new Konva.Animation((frame: any) => {
             const timeDiff = frame.timeDiff / 3000;
             setFallingCookies((prev) =>
+                prev.map((cookie) => ({
+                    ...cookie,
+                    y: cookie.y + cookie.velocity * timeDiff,
+                }))
+            );
+
+            setFallingCookiesFullImage((prev) =>
                 prev.map((cookie) => ({
                     ...cookie,
                     y: cookie.y + cookie.velocity * timeDiff,
@@ -166,6 +173,7 @@ const CookieContainer = () => {
 
         return () => {
             anim.stop();
+            clearInterval(interval);
         };
     }, [dimensions]);
 
@@ -211,20 +219,6 @@ const CookieContainer = () => {
         };
     }, [dimensions, cursorRefs.current.length]);
 
-    const formatNumber = (number: number) => {
-        let formatted;
-
-        if (number < 1000 && number >= 0) {
-            formatted = numeral(number).format("0.0");
-        } else {
-            formatted = numeral(number)
-                .format("0.00a")
-                .replace(/\.00([a-z])$/, "$1");
-        }
-
-        return formatted;
-    };
-
     const handleClickOnCookie = () => {
         const addedNewCookies = cookiesPerClick * multiplier;
         setCookiesCount((prev: number) => prev + addedNewCookies);
@@ -237,6 +231,16 @@ const CookieContainer = () => {
             opacity: 1,
         };
         setFadingTexts((prev) => [...prev, newText]);
+
+        setFallingCookies((prev) => [
+            ...prev,
+            {
+                id: Date.now(),
+                x: Math.random() * dimensions.width,
+                y: -30,
+                velocity: Math.random() * 200 + 100,
+            },
+        ]);
     };
 
     const mouseDownOnCookie = () => {
@@ -274,12 +278,26 @@ const CookieContainer = () => {
                 height={dimensions.height}
             >
                 <Layer>
+                    {fallingCookiesFullImage.map((fallingCookieImageItem: any) => (
+                        <KonvaImage
+                            key={fallingCookieImageItem.id}
+                            image={fallingCookieImage}
+                            width={dimensions.width}
+                            height={dimensions.width}
+                            x={0}
+                            y={fallingCookieImageItem.y}
+                            ref={(node) => {
+                                fallingCookiesFullImageRefs.current[fallingCookieImageItem.id] = node;
+                            }}
+                        />
+                    ))}
                     {fallingCookies.map((fallingCookie) => (
                         <KonvaImage
                             key={fallingCookie.id}
-                            image={fallingCookieImage}
-                            width={dimensions.width}
-                            x={0}
+                            image={cookie}
+                            width={dimensions.width / 10}
+                            height={dimensions.width / 12}
+                            x={fallingCookie.x}
                             y={fallingCookie.y}
                             ref={(node) => {
                                 fallingCookiesRefs.current[fallingCookie.id] = node;
