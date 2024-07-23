@@ -47,7 +47,7 @@ const MultiplierItem = ({ dimensions, item }: any) => {
             value: foundUpgrade.value * item.value,
         });
 
-        updateMultipliers(item.label, {
+        updateMultipliers(item.description, {
             value: item.value,
             bought: true,
         });

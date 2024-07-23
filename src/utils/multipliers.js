@@ -179,7 +179,7 @@ const MULTIPLIERS = [
     // ----------------------------------- //
 
     {
-        label: "Reinforced index finger",
+        label: "Farmer grandmas",
         imagePos: { x: 48, y: 0 },
         category: "grandma",
         description: "The grandmas are twice as efficient x2.",
@@ -190,7 +190,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Carpal tunnel prevention cream",
+        label: "Miner grandmas",
         imagePos: { x: 48, y: 48 },
         category: "grandma",
         description: "The grandmas are more efficient x3.",

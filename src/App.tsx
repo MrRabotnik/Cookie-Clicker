@@ -3,7 +3,7 @@ import FarmsContainer from "./components/Containers/FarmsContainer/FarmsContaine
 import UpgradesContainer from "./components/Containers/UpgradesContainer/UpgradesContainer";
 import Header from "./components/Containers/Header/Header";
 import { createContext, useContext, useEffect, useRef, useState } from "react";
-import { getCookiesFromLocalStorage, saveInLocalStorage } from "./utils/saveInLocalStorage";
+import { getCookiesFromLocalStorage, removeFromLocalStorage, saveInLocalStorage } from "./utils/saveInLocalStorage";
 import UPGRADES from "./utils/upgrades";
 import MULTIPLIERS from "./utils/multipliers";
 
@@ -100,6 +100,16 @@ const App = () => {
         toast.success("Saved");
     };
 
+    const deleteAll = () => {
+        removeFromLocalStorage("cookies_count");
+        removeFromLocalStorage("cookies_per_second");
+        removeFromLocalStorage("multiplier");
+        removeFromLocalStorage("cookies_per_click");
+        removeFromLocalStorage("upgrades");
+        removeFromLocalStorage("multipliers");
+        toast.error("REMOVED ALL DATA");
+    };
+
     useEffect(() => {
         const x = setInterval(() => {
             setCookiesCount((prev: number) => prev + cookiesPerSecondRef.current);
@@ -151,7 +161,7 @@ const App = () => {
 
     const updateMultipliers = (label: string, updatedUpgrade: any) => {
         const arr = multipliers.map((multiplierItem: any) => {
-            if (multiplierItem.label === label) {
+            if (multiplierItem.description === label) {
                 multiplierItem = {
                     ...multiplierItem,
                     ...updatedUpgrade,
@@ -181,6 +191,9 @@ const App = () => {
             >
                 <CookiesContext.Provider
                     value={{
+                        saveAll,
+                        deleteAll,
+
                         upgrades,
                         updateUpgrades,
 

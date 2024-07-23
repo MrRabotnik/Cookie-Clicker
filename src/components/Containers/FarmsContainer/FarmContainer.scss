@@ -5,6 +5,7 @@
     .farm-container-header {
         height: 100px;
         display: flex;
+        background-color: rgba(0, 0, 0, 0.5);
 
         .farm-header-sides {
             width: 20%;
@@ -15,14 +16,13 @@
             cursor: pointer;
         }
 
-        .stats {
+        .options {
             background-size: 200% 200%;
         }
 
         .random-texts {
             width: 100%;
             padding: 10px;
-            background-color: rgba(0, 0, 0, 0.5);
 
             p {
                 display: -webkit-box;
@@ -35,13 +35,37 @@
                 text-align: end;
             }
         }
-
-        .options {
-        }
     }
 
     .farm-items-scrollable {
         height: calc(97vh - 110px);
         overflow: auto;
+
+        .options-container {
+            padding: 20px;
+
+            h1 {
+                text-align: center;
+            }
+
+            .buttons-container {
+                display: flex;
+                justify-content: space-evenly;
+
+                button {
+                    color: white;
+                }
+
+                .save-data {
+                    border: 1px solid lime;
+                    background-color: green;
+                }
+
+                .delete-save {
+                    border: 1px solid coral;
+                    background-color: red;
+                }
+            }
+        }
     }
 }
