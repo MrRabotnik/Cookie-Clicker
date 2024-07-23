@@ -94,6 +94,14 @@ const UpgradeItem = ({
                     setInfoContainerY(e.clientY);
                 }
             }}
+            onTouchMove={(e) => {
+                setModalIsOpen(true);
+                if (e.touches[0].clientY + 200 >= window.innerHeight) {
+                    setInfoContainerY(e.touches[0].clientY - 200);
+                } else {
+                    setInfoContainerY(e.touches[0].clientY);
+                }
+            }}
             onMouseLeave={() => {
                 setModalIsOpen(false);
             }}
