@@ -85,7 +85,7 @@ const UpgradeItem = ({
         <div
             className="upgrade-item"
             onClick={buying ? buyAnUpgrade : sellAnUpgrade}
-            onTouchStart={buying ? buyAnUpgrade : sellAnUpgrade}
+            onTouchStartCapture={buying ? buyAnUpgrade : sellAnUpgrade}
             onMouseMove={(e) => {
                 setModalIsOpen(true);
                 if (e.clientY + 200 >= window.innerHeight) {
