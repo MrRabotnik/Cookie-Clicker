@@ -66,12 +66,12 @@ const FarmsContainer = () => {
             ref={divRef}
         >
             <div className="farm-container-header">
-                <div
+                {/* <div
                     className="farm-header-sides stats"
                     style={{ backgroundImage: `url(${IMAGES.farmHeaderBg})` }}
                 >
                     <p>Stats</p>
-                </div>
+                </div> */}
                 <div
                     className="random-texts"
                     onClick={() => setUpdate((prev) => !prev)}
@@ -79,12 +79,12 @@ const FarmsContainer = () => {
                     <p>"{randomText}"</p>
                     {author.length ? <p className="author">-{author}</p> : ""}
                 </div>
-                <div
+                {/* <div
                     className="farm-header-sides options"
                     style={{ backgroundImage: `url(${IMAGES.headerBg})` }}
                 >
                     <p>Options</p>
-                </div>
+                </div> */}
             </div>
             <div
                 className="line-horizontal"
