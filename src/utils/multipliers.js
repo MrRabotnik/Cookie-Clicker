@@ -30,7 +30,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Ambidextrous",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 0, y: 96 },
         category: "cursor",
         description: "The mouse and cursors are more efficient x4.",
         quote: "prod prod",
@@ -41,7 +41,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Thousand fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 0, y: 624 },
         category: "cursor",
         description: "The mouse and cursors are more efficient x5.",
         quote: "prod prod",
@@ -52,7 +52,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Million fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 0, y: 672 },
         category: "cursor",
         description: "The mouse and cursors are more efficient x6.",
         quote: "prod prod",
@@ -63,7 +63,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Billion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 0, y: 720 },
         category: "cursor",
         description: "The mouse and cursors are more efficient x7.",
         quote: "prod prod",
@@ -74,7 +74,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Trillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 0, y: 768 },
         category: "cursor",
         description: "The mouse and cursors are more efficient x8.",
         quote: "prod prod",
@@ -85,7 +85,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quadrillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 0, y: 816 },
         category: "cursor",
         description: "The mouse and cursors are more efficient x9.",
         quote: "prod prod",
@@ -96,7 +96,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quintillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 0, y: 864 },
         category: "cursor",
         description: "The mouse and cursors are more efficient x10.",
         quote: "prod prod",
@@ -107,7 +107,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Sextillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 0, y: 912 },
         category: "cursor",
         description: "The mouse and cursors are more efficient x15.",
         quote: "prod prod",
@@ -118,7 +118,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Septillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 0, y: 1344 },
         category: "cursor",
         description: "The mouse and cursors are more efficient x20.",
         quote: "prod prod",
@@ -129,7 +129,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Octillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 0, y: 1444 },
         category: "cursor",
         description: "The mouse and cursors are more efficient x50.",
         quote: "prod prod",
@@ -140,7 +140,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Nonillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 0, y: 1492 },
         category: "cursor",
         description: "The mouse and cursors are more efficient x100.",
         quote: "prod prod",
@@ -151,7 +151,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Decillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 0, y: 1636 },
         category: "cursor",
         description: "The mouse and cursors are more efficient x200.",
         quote: "prod prod",
@@ -162,7 +162,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Undecillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 0, y: 1732 },
         category: "cursor",
         description: "The mouse and cursors are more efficient x500.",
         quote: "prod prod",
@@ -180,7 +180,7 @@ const MULTIPLIERS = [
 
     {
         label: "Reinforced index finger",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 48, y: 0 },
         category: "grandma",
         description: "The grandmas are twice as efficient x2.",
         quote: "prod prod",
@@ -191,7 +191,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Carpal tunnel prevention cream",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 48, y: 48 },
         category: "grandma",
         description: "The grandmas are more efficient x3.",
         quote: "prod prod",
@@ -202,7 +202,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Ambidextrous",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 48, y: 96 },
         category: "grandma",
         description: "The grandmas are more efficient x4.",
         quote: "prod prod",
@@ -213,7 +213,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Thousand fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 48, y: 624 },
         category: "grandma",
         description: "The grandmas are more efficient x5.",
         quote: "prod prod",
@@ -224,7 +224,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Million fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 48, y: 672 },
         category: "grandma",
         description: "The grandmas are more efficient x6.",
         quote: "prod prod",
@@ -235,7 +235,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Billion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 48, y: 720 },
         category: "grandma",
         description: "The grandmas are more efficient x7.",
         quote: "prod prod",
@@ -246,7 +246,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Trillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 48, y: 768 },
         category: "grandma",
         description: "The grandmas are more efficient x8.",
         quote: "prod prod",
@@ -257,7 +257,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quadrillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 48, y: 816 },
         category: "grandma",
         description: "The grandmas are more efficient x9.",
         quote: "prod prod",
@@ -268,7 +268,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quintillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 48, y: 864 },
         category: "grandma",
         description: "The grandmas are more efficient x10.",
         quote: "prod prod",
@@ -279,7 +279,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Sextillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 48, y: 912 },
         category: "grandma",
         description: "The grandmas are more efficient x15.",
         quote: "prod prod",
@@ -290,7 +290,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Septillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 48, y: 1344 },
         category: "grandma",
         description: "The grandmas are more efficient x20.",
         quote: "prod prod",
@@ -301,7 +301,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Octillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 48, y: 1444 },
         category: "grandma",
         description: "The grandmas are more efficient x50.",
         quote: "prod prod",
@@ -312,7 +312,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Nonillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 48, y: 1492 },
         category: "grandma",
         description: "The grandmas are more efficient x100.",
         quote: "prod prod",
@@ -323,7 +323,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Decillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 48, y: 1636 },
         category: "grandma",
         description: "The grandmas are more efficient x200.",
         quote: "prod prod",
@@ -334,7 +334,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Undecillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 48, y: 1732 },
         category: "grandma",
         description: "The grandmas are more efficient x500.",
         quote: "prod prod",
@@ -352,7 +352,7 @@ const MULTIPLIERS = [
 
     {
         label: "Reinforced index finger",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 96, y: 0 },
         category: "farm",
         description: "The farms are twice as efficient x2.",
         quote: "prod prod",
@@ -363,7 +363,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Carpal tunnel prevention cream",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 96, y: 48 },
         category: "farm",
         description: "The farms are more efficient x3.",
         quote: "prod prod",
@@ -374,7 +374,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Ambidextrous",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 96, y: 96 },
         category: "farm",
         description: "The farms are more efficient x4.",
         quote: "prod prod",
@@ -385,7 +385,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Thousand fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 96, y: 624 },
         category: "farm",
         description: "The farms are more efficient x5.",
         quote: "prod prod",
@@ -396,7 +396,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Million fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 96, y: 672 },
         category: "farm",
         description: "The farms are more efficient x6.",
         quote: "prod prod",
@@ -407,7 +407,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Billion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 96, y: 720 },
         category: "farm",
         description: "The farms are more efficient x7.",
         quote: "prod prod",
@@ -418,7 +418,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Trillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 96, y: 768 },
         category: "farm",
         description: "The farms are more efficient x8.",
         quote: "prod prod",
@@ -429,7 +429,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quadrillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 96, y: 816 },
         category: "farm",
         description: "The farms are more efficient x9.",
         quote: "prod prod",
@@ -440,7 +440,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quintillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 96, y: 864 },
         category: "farm",
         description: "The farms are more efficient x10.",
         quote: "prod prod",
@@ -451,7 +451,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Sextillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 96, y: 912 },
         category: "farm",
         description: "The farms are more efficient x15.",
         quote: "prod prod",
@@ -462,7 +462,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Septillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 96, y: 1344 },
         category: "farm",
         description: "The farms are more efficient x20.",
         quote: "prod prod",
@@ -473,7 +473,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Octillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 96, y: 1444 },
         category: "farm",
         description: "The farms are more efficient x50.",
         quote: "prod prod",
@@ -484,7 +484,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Nonillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 96, y: 1492 },
         category: "farm",
         description: "The farms are more efficient x100.",
         quote: "prod prod",
@@ -495,7 +495,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Decillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 96, y: 1636 },
         category: "farm",
         description: "The farms are more efficient x200.",
         quote: "prod prod",
@@ -506,7 +506,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Undecillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 96, y: 1732 },
         category: "farm",
         description: "The farms are more efficient x500.",
         quote: "prod prod",
@@ -524,7 +524,7 @@ const MULTIPLIERS = [
 
     {
         label: "Reinforced index finger",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 144, y: 0 },
         category: "mine",
         description: "The mines are twice as efficient x2.",
         quote: "prod prod",
@@ -535,7 +535,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Carpal tunnel prevention cream",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 144, y: 48 },
         category: "mine",
         description: "The mines are more efficient x3.",
         quote: "prod prod",
@@ -546,7 +546,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Ambidextrous",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 144, y: 96 },
         category: "mine",
         description: "The mines are more efficient x4.",
         quote: "prod prod",
@@ -557,7 +557,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Thousand fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 144, y: 624 },
         category: "mine",
         description: "The mines are more efficient x5.",
         quote: "prod prod",
@@ -568,7 +568,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Million fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 144, y: 672 },
         category: "mine",
         description: "The mines are more efficient x6.",
         quote: "prod prod",
@@ -579,7 +579,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Billion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 144, y: 720 },
         category: "mine",
         description: "The mines are more efficient x7.",
         quote: "prod prod",
@@ -590,7 +590,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Trillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 144, y: 768 },
         category: "mine",
         description: "The mines are more efficient x8.",
         quote: "prod prod",
@@ -601,7 +601,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quadrillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 144, y: 816 },
         category: "mine",
         description: "The mines are more efficient x9.",
         quote: "prod prod",
@@ -612,7 +612,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quintillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 144, y: 864 },
         category: "mine",
         description: "The mines are more efficient x10.",
         quote: "prod prod",
@@ -623,7 +623,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Sextillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 144, y: 912 },
         category: "mine",
         description: "The mines are more efficient x15.",
         quote: "prod prod",
@@ -634,7 +634,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Septillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 144, y: 1344 },
         category: "mine",
         description: "The mines are more efficient x20.",
         quote: "prod prod",
@@ -645,7 +645,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Octillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 144, y: 1444 },
         category: "mine",
         description: "The mines are more efficient x50.",
         quote: "prod prod",
@@ -656,7 +656,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Nonillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 144, y: 1492 },
         category: "mine",
         description: "The mines are more efficient x100.",
         quote: "prod prod",
@@ -667,7 +667,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Decillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 144, y: 1636 },
         category: "mine",
         description: "The mines are more efficient x200.",
         quote: "prod prod",
@@ -678,7 +678,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Undecillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 144, y: 1732 },
         category: "mine",
         description: "The mines are more efficient x500.",
         quote: "prod prod",
@@ -696,7 +696,7 @@ const MULTIPLIERS = [
 
     {
         label: "Reinforced index finger",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 192, y: 0 },
         category: "factory",
         description: "The factories are twice as efficient x2.",
         quote: "prod prod",
@@ -707,7 +707,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Carpal tunnel prevention cream",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 192, y: 48 },
         category: "factory",
         description: "The factories are more efficient x3.",
         quote: "prod prod",
@@ -718,7 +718,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Ambidextrous",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 192, y: 96 },
         category: "factory",
         description: "The factories are more efficient x4.",
         quote: "prod prod",
@@ -729,7 +729,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Thousand fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 192, y: 624 },
         category: "factory",
         description: "The factories are more efficient x5.",
         quote: "prod prod",
@@ -740,7 +740,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Million fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 192, y: 672 },
         category: "factory",
         description: "The factories are more efficient x6.",
         quote: "prod prod",
@@ -751,7 +751,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Billion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 192, y: 720 },
         category: "factory",
         description: "The factories are more efficient x7.",
         quote: "prod prod",
@@ -762,7 +762,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Trillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 192, y: 768 },
         category: "factory",
         description: "The factories are more efficient x8.",
         quote: "prod prod",
@@ -773,7 +773,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quadrillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 192, y: 816 },
         category: "factory",
         description: "The factories are more efficient x9.",
         quote: "prod prod",
@@ -784,7 +784,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quintillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 192, y: 864 },
         category: "factory",
         description: "The factories are more efficient x10.",
         quote: "prod prod",
@@ -795,7 +795,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Sextillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 192, y: 912 },
         category: "factory",
         description: "The factories are more efficient x15.",
         quote: "prod prod",
@@ -806,7 +806,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Septillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 192, y: 1344 },
         category: "factory",
         description: "The factories are more efficient x20.",
         quote: "prod prod",
@@ -817,7 +817,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Octillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 192, y: 1444 },
         category: "factory",
         description: "The factories are more efficient x50.",
         quote: "prod prod",
@@ -828,7 +828,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Nonillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 192, y: 1492 },
         category: "factory",
         description: "The factories are more efficient x100.",
         quote: "prod prod",
@@ -839,7 +839,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Decillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 192, y: 1636 },
         category: "factory",
         description: "The factories are more efficient x200.",
         quote: "prod prod",
@@ -850,7 +850,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Undecillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 192, y: 1732 },
         category: "factory",
         description: "The factories are more efficient x500.",
         quote: "prod prod",
@@ -868,7 +868,7 @@ const MULTIPLIERS = [
 
     {
         label: "Reinforced index finger",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 720, y: 0 },
         category: "bank",
         description: "The banks are twice as efficient x2.",
         quote: "prod prod",
@@ -879,7 +879,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Carpal tunnel prevention cream",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 720, y: 48 },
         category: "bank",
         description: "The banks are more efficient x3.",
         quote: "prod prod",
@@ -890,7 +890,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Ambidextrous",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 720, y: 96 },
         category: "bank",
         description: "The banks are more efficient x4.",
         quote: "prod prod",
@@ -901,7 +901,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Thousand fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 720, y: 624 },
         category: "bank",
         description: "The banks are more efficient x5.",
         quote: "prod prod",
@@ -912,7 +912,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Million fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 720, y: 672 },
         category: "bank",
         description: "The banks are more efficient x6.",
         quote: "prod prod",
@@ -923,7 +923,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Billion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 720, y: 720 },
         category: "bank",
         description: "The banks are more efficient x7.",
         quote: "prod prod",
@@ -934,7 +934,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Trillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 720, y: 768 },
         category: "bank",
         description: "The banks are more efficient x8.",
         quote: "prod prod",
@@ -945,7 +945,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quadrillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 720, y: 816 },
         category: "bank",
         description: "The banks are more efficient x9.",
         quote: "prod prod",
@@ -956,7 +956,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quintillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 720, y: 864 },
         category: "bank",
         description: "The banks are more efficient x10.",
         quote: "prod prod",
@@ -967,7 +967,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Sextillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 720, y: 912 },
         category: "bank",
         description: "The banks are more efficient x15.",
         quote: "prod prod",
@@ -978,7 +978,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Septillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 720, y: 1344 },
         category: "bank",
         description: "The banks are more efficient x20.",
         quote: "prod prod",
@@ -989,7 +989,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Octillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 720, y: 1444 },
         category: "bank",
         description: "The banks are more efficient x50.",
         quote: "prod prod",
@@ -1000,7 +1000,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Nonillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 720, y: 1492 },
         category: "bank",
         description: "The banks are more efficient x100.",
         quote: "prod prod",
@@ -1011,7 +1011,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Decillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 720, y: 1636 },
         category: "bank",
         description: "The banks are more efficient x200.",
         quote: "prod prod",
@@ -1022,7 +1022,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Undecillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 720, y: 1732 },
         category: "bank",
         description: "The banks are more efficient x500.",
         quote: "prod prod",
@@ -1040,7 +1040,7 @@ const MULTIPLIERS = [
 
     {
         label: "Reinforced index finger",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 768, y: 0 },
         category: "temple",
         description: "The temples are twice as efficient x2.",
         quote: "prod prod",
@@ -1051,7 +1051,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Carpal tunnel prevention cream",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 768, y: 48 },
         category: "temple",
         description: "The temples are more efficient x3.",
         quote: "prod prod",
@@ -1062,7 +1062,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Ambidextrous",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 768, y: 96 },
         category: "temple",
         description: "The temples are more efficient x4.",
         quote: "prod prod",
@@ -1073,7 +1073,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Thousand fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 768, y: 624 },
         category: "temple",
         description: "The temples are more efficient x5.",
         quote: "prod prod",
@@ -1084,7 +1084,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Million fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 768, y: 672 },
         category: "temple",
         description: "The temples are more efficient x6.",
         quote: "prod prod",
@@ -1095,7 +1095,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Billion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 768, y: 720 },
         category: "temple",
         description: "The temples are more efficient x7.",
         quote: "prod prod",
@@ -1106,7 +1106,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Trillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 768, y: 768 },
         category: "temple",
         description: "The temples are more efficient x8.",
         quote: "prod prod",
@@ -1117,7 +1117,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quadrillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 768, y: 816 },
         category: "temple",
         description: "The temples are more efficient x9.",
         quote: "prod prod",
@@ -1128,7 +1128,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quintillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 768, y: 864 },
         category: "temple",
         description: "The temples are more efficient x10.",
         quote: "prod prod",
@@ -1139,7 +1139,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Sextillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 768, y: 912 },
         category: "temple",
         description: "The temples are more efficient x15.",
         quote: "prod prod",
@@ -1150,7 +1150,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Septillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 768, y: 1344 },
         category: "temple",
         description: "The temples are more efficient x20.",
         quote: "prod prod",
@@ -1161,7 +1161,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Octillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 768, y: 1444 },
         category: "temple",
         description: "The temples are more efficient x50.",
         quote: "prod prod",
@@ -1172,7 +1172,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Nonillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 768, y: 1492 },
         category: "temple",
         description: "The temples are more efficient x100.",
         quote: "prod prod",
@@ -1183,7 +1183,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Decillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 768, y: 1636 },
         category: "temple",
         description: "The temples are more efficient x200.",
         quote: "prod prod",
@@ -1194,7 +1194,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Undecillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 768, y: 1732 },
         category: "temple",
         description: "The temples are more efficient x500.",
         quote: "prod prod",
@@ -1212,7 +1212,7 @@ const MULTIPLIERS = [
 
     {
         label: "Reinforced index finger",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 816, y: 0 },
         category: "wizard-tower",
         description: "The grandmas are twice as efficient x2.",
         quote: "prod prod",
@@ -1223,7 +1223,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Carpal tunnel prevention cream",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 816, y: 48 },
         category: "wizard-tower",
         description: "The grandmas are more efficient x3.",
         quote: "prod prod",
@@ -1234,7 +1234,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Ambidextrous",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 816, y: 96 },
         category: "wizard-tower",
         description: "The grandmas are more efficient x4.",
         quote: "prod prod",
@@ -1245,7 +1245,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Thousand fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 816, y: 624 },
         category: "wizard-tower",
         description: "The grandmas are more efficient x5.",
         quote: "prod prod",
@@ -1256,7 +1256,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Million fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 816, y: 672 },
         category: "wizard-tower",
         description: "The grandmas are more efficient x6.",
         quote: "prod prod",
@@ -1267,7 +1267,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Billion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 816, y: 720 },
         category: "wizard-tower",
         description: "The grandmas are more efficient x7.",
         quote: "prod prod",
@@ -1278,7 +1278,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Trillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 816, y: 768 },
         category: "wizard-tower",
         description: "The grandmas are more efficient x8.",
         quote: "prod prod",
@@ -1289,7 +1289,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quadrillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 816, y: 816 },
         category: "wizard-tower",
         description: "The grandmas are more efficient x9.",
         quote: "prod prod",
@@ -1300,7 +1300,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quintillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 816, y: 864 },
         category: "wizard-tower",
         description: "The grandmas are more efficient x10.",
         quote: "prod prod",
@@ -1311,7 +1311,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Sextillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 816, y: 912 },
         category: "wizard-tower",
         description: "The grandmas are more efficient x15.",
         quote: "prod prod",
@@ -1322,7 +1322,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Septillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 816, y: 1344 },
         category: "wizard-tower",
         description: "The grandmas are more efficient x20.",
         quote: "prod prod",
@@ -1333,7 +1333,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Octillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 816, y: 1444 },
         category: "wizard-tower",
         description: "The grandmas are more efficient x50.",
         quote: "prod prod",
@@ -1344,7 +1344,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Nonillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 816, y: 1492 },
         category: "wizard-tower",
         description: "The grandmas are more efficient x100.",
         quote: "prod prod",
@@ -1355,7 +1355,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Decillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 816, y: 1636 },
         category: "wizard-tower",
         description: "The grandmas are more efficient x200.",
         quote: "prod prod",
@@ -1366,7 +1366,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Undecillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 816, y: 1732 },
         category: "wizard-tower",
         description: "The grandmas are more efficient x500.",
         quote: "prod prod",
@@ -1384,7 +1384,7 @@ const MULTIPLIERS = [
 
     {
         label: "Reinforced index finger",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 240, y: 0 },
         category: "shipment",
         description: "The grandmas are twice as efficient x2.",
         quote: "prod prod",
@@ -1395,7 +1395,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Carpal tunnel prevention cream",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 240, y: 48 },
         category: "shipment",
         description: "The grandmas are more efficient x3.",
         quote: "prod prod",
@@ -1406,7 +1406,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Ambidextrous",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 240, y: 96 },
         category: "shipment",
         description: "The grandmas are more efficient x4.",
         quote: "prod prod",
@@ -1417,7 +1417,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Thousand fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 240, y: 624 },
         category: "shipment",
         description: "The grandmas are more efficient x5.",
         quote: "prod prod",
@@ -1428,7 +1428,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Million fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 240, y: 672 },
         category: "shipment",
         description: "The grandmas are more efficient x6.",
         quote: "prod prod",
@@ -1439,7 +1439,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Billion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 240, y: 720 },
         category: "shipment",
         description: "The grandmas are more efficient x7.",
         quote: "prod prod",
@@ -1450,7 +1450,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Trillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 240, y: 768 },
         category: "shipment",
         description: "The grandmas are more efficient x8.",
         quote: "prod prod",
@@ -1461,7 +1461,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quadrillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 240, y: 816 },
         category: "shipment",
         description: "The grandmas are more efficient x9.",
         quote: "prod prod",
@@ -1472,7 +1472,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quintillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 240, y: 864 },
         category: "shipment",
         description: "The grandmas are more efficient x10.",
         quote: "prod prod",
@@ -1483,7 +1483,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Sextillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 240, y: 912 },
         category: "shipment",
         description: "The grandmas are more efficient x15.",
         quote: "prod prod",
@@ -1494,7 +1494,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Septillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 240, y: 1344 },
         category: "shipment",
         description: "The grandmas are more efficient x20.",
         quote: "prod prod",
@@ -1505,7 +1505,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Octillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 240, y: 1444 },
         category: "shipment",
         description: "The grandmas are more efficient x50.",
         quote: "prod prod",
@@ -1516,7 +1516,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Nonillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 240, y: 1492 },
         category: "shipment",
         description: "The grandmas are more efficient x100.",
         quote: "prod prod",
@@ -1527,7 +1527,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Decillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 240, y: 1636 },
         category: "shipment",
         description: "The grandmas are more efficient x200.",
         quote: "prod prod",
@@ -1538,7 +1538,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Undecillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 240, y: 1732 },
         category: "shipment",
         description: "The grandmas are more efficient x500.",
         quote: "prod prod",
@@ -1556,7 +1556,7 @@ const MULTIPLIERS = [
 
     {
         label: "Reinforced index finger",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 288, y: 0 },
         category: "alchemy-lab",
         description: "The grandmas are twice as efficient x2.",
         quote: "prod prod",
@@ -1567,7 +1567,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Carpal tunnel prevention cream",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 288, y: 48 },
         category: "alchemy-lab",
         description: "The grandmas are more efficient x3.",
         quote: "prod prod",
@@ -1578,7 +1578,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Ambidextrous",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 288, y: 96 },
         category: "alchemy-lab",
         description: "The grandmas are more efficient x4.",
         quote: "prod prod",
@@ -1589,7 +1589,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Thousand fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 288, y: 624 },
         category: "alchemy-lab",
         description: "The grandmas are more efficient x5.",
         quote: "prod prod",
@@ -1600,7 +1600,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Million fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 288, y: 672 },
         category: "alchemy-lab",
         description: "The grandmas are more efficient x6.",
         quote: "prod prod",
@@ -1611,7 +1611,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Billion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 288, y: 720 },
         category: "alchemy-lab",
         description: "The grandmas are more efficient x7.",
         quote: "prod prod",
@@ -1622,7 +1622,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Trillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 288, y: 768 },
         category: "alchemy-lab",
         description: "The grandmas are more efficient x8.",
         quote: "prod prod",
@@ -1633,7 +1633,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quadrillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 288, y: 816 },
         category: "alchemy-lab",
         description: "The grandmas are more efficient x9.",
         quote: "prod prod",
@@ -1644,7 +1644,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quintillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 288, y: 864 },
         category: "alchemy-lab",
         description: "The grandmas are more efficient x10.",
         quote: "prod prod",
@@ -1655,7 +1655,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Sextillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 288, y: 912 },
         category: "alchemy-lab",
         description: "The grandmas are more efficient x15.",
         quote: "prod prod",
@@ -1666,7 +1666,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Septillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 288, y: 1344 },
         category: "alchemy-lab",
         description: "The grandmas are more efficient x20.",
         quote: "prod prod",
@@ -1677,7 +1677,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Octillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 288, y: 1444 },
         category: "alchemy-lab",
         description: "The grandmas are more efficient x50.",
         quote: "prod prod",
@@ -1688,7 +1688,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Nonillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 288, y: 1492 },
         category: "alchemy-lab",
         description: "The grandmas are more efficient x100.",
         quote: "prod prod",
@@ -1699,7 +1699,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Decillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 288, y: 1636 },
         category: "alchemy-lab",
         description: "The grandmas are more efficient x200.",
         quote: "prod prod",
@@ -1710,7 +1710,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Undecillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 288, y: 1732 },
         category: "alchemy-lab",
         description: "The grandmas are more efficient x500.",
         quote: "prod prod",
@@ -1728,7 +1728,7 @@ const MULTIPLIERS = [
 
     {
         label: "Reinforced index finger",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 336, y: 0 },
         category: "portal",
         description: "The grandmas are twice as efficient x2.",
         quote: "prod prod",
@@ -1739,7 +1739,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Carpal tunnel prevention cream",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 336, y: 48 },
         category: "portal",
         description: "The grandmas are more efficient x3.",
         quote: "prod prod",
@@ -1750,7 +1750,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Ambidextrous",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 336, y: 96 },
         category: "portal",
         description: "The grandmas are more efficient x4.",
         quote: "prod prod",
@@ -1761,7 +1761,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Thousand fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 336, y: 624 },
         category: "portal",
         description: "The grandmas are more efficient x5.",
         quote: "prod prod",
@@ -1772,7 +1772,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Million fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 336, y: 672 },
         category: "portal",
         description: "The grandmas are more efficient x6.",
         quote: "prod prod",
@@ -1783,7 +1783,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Billion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 336, y: 720 },
         category: "portal",
         description: "The grandmas are more efficient x7.",
         quote: "prod prod",
@@ -1794,7 +1794,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Trillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 336, y: 768 },
         category: "portal",
         description: "The grandmas are more efficient x8.",
         quote: "prod prod",
@@ -1805,7 +1805,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quadrillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 336, y: 816 },
         category: "portal",
         description: "The grandmas are more efficient x9.",
         quote: "prod prod",
@@ -1816,7 +1816,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quintillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 336, y: 864 },
         category: "portal",
         description: "The grandmas are more efficient x10.",
         quote: "prod prod",
@@ -1827,7 +1827,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Sextillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 336, y: 912 },
         category: "portal",
         description: "The grandmas are more efficient x15.",
         quote: "prod prod",
@@ -1838,7 +1838,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Septillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 336, y: 1344 },
         category: "portal",
         description: "The grandmas are more efficient x20.",
         quote: "prod prod",
@@ -1849,7 +1849,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Octillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 336, y: 1444 },
         category: "portal",
         description: "The grandmas are more efficient x50.",
         quote: "prod prod",
@@ -1860,7 +1860,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Nonillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 336, y: 1492 },
         category: "portal",
         description: "The grandmas are more efficient x100.",
         quote: "prod prod",
@@ -1871,7 +1871,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Decillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 336, y: 1636 },
         category: "portal",
         description: "The grandmas are more efficient x200.",
         quote: "prod prod",
@@ -1882,7 +1882,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Undecillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 336, y: 1732 },
         category: "portal",
         description: "The grandmas are more efficient x500.",
         quote: "prod prod",
@@ -1900,7 +1900,7 @@ const MULTIPLIERS = [
 
     {
         label: "Reinforced index finger",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 384, y: 0 },
         category: "time-machine",
         description: "The grandmas are twice as efficient x2.",
         quote: "prod prod",
@@ -1911,7 +1911,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Carpal tunnel prevention cream",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 384, y: 48 },
         category: "time-machine",
         description: "The grandmas are more efficient x3.",
         quote: "prod prod",
@@ -1922,7 +1922,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Ambidextrous",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 384, y: 96 },
         category: "time-machine",
         description: "The grandmas are more efficient x4.",
         quote: "prod prod",
@@ -1933,7 +1933,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Thousand fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 384, y: 624 },
         category: "time-machine",
         description: "The grandmas are more efficient x5.",
         quote: "prod prod",
@@ -1944,7 +1944,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Million fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 384, y: 672 },
         category: "time-machine",
         description: "The grandmas are more efficient x6.",
         quote: "prod prod",
@@ -1955,7 +1955,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Billion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 384, y: 720 },
         category: "time-machine",
         description: "The grandmas are more efficient x7.",
         quote: "prod prod",
@@ -1966,7 +1966,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Trillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 384, y: 768 },
         category: "time-machine",
         description: "The grandmas are more efficient x8.",
         quote: "prod prod",
@@ -1977,7 +1977,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quadrillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 384, y: 816 },
         category: "time-machine",
         description: "The grandmas are more efficient x9.",
         quote: "prod prod",
@@ -1988,7 +1988,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quintillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 384, y: 864 },
         category: "time-machine",
         description: "The grandmas are more efficient x10.",
         quote: "prod prod",
@@ -1999,7 +1999,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Sextillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 384, y: 912 },
         category: "time-machine",
         description: "The grandmas are more efficient x15.",
         quote: "prod prod",
@@ -2010,7 +2010,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Septillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 384, y: 1344 },
         category: "time-machine",
         description: "The grandmas are more efficient x20.",
         quote: "prod prod",
@@ -2021,7 +2021,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Octillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 384, y: 1444 },
         category: "time-machine",
         description: "The grandmas are more efficient x50.",
         quote: "prod prod",
@@ -2032,7 +2032,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Nonillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 384, y: 1492 },
         category: "time-machine",
         description: "The grandmas are more efficient x100.",
         quote: "prod prod",
@@ -2043,7 +2043,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Decillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 384, y: 1636 },
         category: "time-machine",
         description: "The grandmas are more efficient x200.",
         quote: "prod prod",
@@ -2054,7 +2054,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Undecillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 384, y: 1732 },
         category: "time-machine",
         description: "The grandmas are more efficient x500.",
         quote: "prod prod",
@@ -2072,7 +2072,7 @@ const MULTIPLIERS = [
 
     {
         label: "Reinforced index finger",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 624, y: 0 },
         category: "antimatter-condenser",
         description: "The grandmas are twice as efficient x2.",
         quote: "prod prod",
@@ -2083,7 +2083,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Carpal tunnel prevention cream",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 624, y: 48 },
         category: "antimatter-condenser",
         description: "The grandmas are more efficient x3.",
         quote: "prod prod",
@@ -2094,7 +2094,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Ambidextrous",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 624, y: 96 },
         category: "antimatter-condenser",
         description: "The grandmas are more efficient x4.",
         quote: "prod prod",
@@ -2105,7 +2105,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Thousand fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 624, y: 624 },
         category: "antimatter-condenser",
         description: "The grandmas are more efficient x5.",
         quote: "prod prod",
@@ -2116,7 +2116,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Million fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 624, y: 672 },
         category: "antimatter-condenser",
         description: "The grandmas are more efficient x6.",
         quote: "prod prod",
@@ -2127,7 +2127,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Billion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 624, y: 720 },
         category: "antimatter-condenser",
         description: "The grandmas are more efficient x7.",
         quote: "prod prod",
@@ -2138,7 +2138,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Trillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 624, y: 768 },
         category: "antimatter-condenser",
         description: "The grandmas are more efficient x8.",
         quote: "prod prod",
@@ -2149,7 +2149,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quadrillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 624, y: 816 },
         category: "antimatter-condenser",
         description: "The grandmas are more efficient x9.",
         quote: "prod prod",
@@ -2160,7 +2160,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quintillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 624, y: 864 },
         category: "antimatter-condenser",
         description: "The grandmas are more efficient x10.",
         quote: "prod prod",
@@ -2171,7 +2171,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Sextillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 624, y: 912 },
         category: "antimatter-condenser",
         description: "The grandmas are more efficient x15.",
         quote: "prod prod",
@@ -2182,7 +2182,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Septillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 624, y: 1344 },
         category: "antimatter-condenser",
         description: "The grandmas are more efficient x20.",
         quote: "prod prod",
@@ -2193,7 +2193,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Octillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 624, y: 1444 },
         category: "antimatter-condenser",
         description: "The grandmas are more efficient x50.",
         quote: "prod prod",
@@ -2204,7 +2204,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Nonillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 624, y: 1492 },
         category: "antimatter-condenser",
         description: "The grandmas are more efficient x100.",
         quote: "prod prod",
@@ -2215,7 +2215,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Decillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 624, y: 1636 },
         category: "antimatter-condenser",
         description: "The grandmas are more efficient x200.",
         quote: "prod prod",
@@ -2226,7 +2226,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Undecillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 624, y: 1732 },
         category: "antimatter-condenser",
         description: "The grandmas are more efficient x500.",
         quote: "prod prod",
@@ -2244,7 +2244,7 @@ const MULTIPLIERS = [
 
     {
         label: "Reinforced index finger",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 672, y: 0 },
         category: "prism",
         description: "The grandmas are twice as efficient x2.",
         quote: "prod prod",
@@ -2255,7 +2255,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Carpal tunnel prevention cream",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 672, y: 48 },
         category: "prism",
         description: "The grandmas are more efficient x3.",
         quote: "prod prod",
@@ -2266,7 +2266,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Ambidextrous",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 672, y: 96 },
         category: "prism",
         description: "The grandmas are more efficient x4.",
         quote: "prod prod",
@@ -2277,7 +2277,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Thousand fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 672, y: 624 },
         category: "prism",
         description: "The grandmas are more efficient x5.",
         quote: "prod prod",
@@ -2288,7 +2288,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Million fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 672, y: 672 },
         category: "prism",
         description: "The grandmas are more efficient x6.",
         quote: "prod prod",
@@ -2299,7 +2299,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Billion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 672, y: 720 },
         category: "prism",
         description: "The grandmas are more efficient x7.",
         quote: "prod prod",
@@ -2310,7 +2310,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Trillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 672, y: 768 },
         category: "prism",
         description: "The grandmas are more efficient x8.",
         quote: "prod prod",
@@ -2321,7 +2321,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quadrillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 672, y: 816 },
         category: "prism",
         description: "The grandmas are more efficient x9.",
         quote: "prod prod",
@@ -2332,7 +2332,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quintillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 672, y: 864 },
         category: "prism",
         description: "The grandmas are more efficient x10.",
         quote: "prod prod",
@@ -2343,7 +2343,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Sextillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 672, y: 912 },
         category: "prism",
         description: "The grandmas are more efficient x15.",
         quote: "prod prod",
@@ -2354,7 +2354,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Septillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 672, y: 1344 },
         category: "prism",
         description: "The grandmas are more efficient x20.",
         quote: "prod prod",
@@ -2365,7 +2365,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Octillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 672, y: 1444 },
         category: "prism",
         description: "The grandmas are more efficient x50.",
         quote: "prod prod",
@@ -2376,7 +2376,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Nonillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 672, y: 1492 },
         category: "prism",
         description: "The grandmas are more efficient x100.",
         quote: "prod prod",
@@ -2387,7 +2387,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Decillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 672, y: 16360 },
         category: "prism",
         description: "The grandmas are more efficient x200.",
         quote: "prod prod",
@@ -2398,7 +2398,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Undecillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 672, y: 17320 },
         category: "prism",
         description: "The grandmas are more efficient x500.",
         quote: "prod prod",
@@ -2416,7 +2416,7 @@ const MULTIPLIERS = [
 
     {
         label: "Reinforced index finger",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 912, y: 0 },
         category: "chancemaker",
         description: "The grandmas are twice as efficient x2.",
         quote: "prod prod",
@@ -2427,7 +2427,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Carpal tunnel prevention cream",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 912, y: 48 },
         category: "chancemaker",
         description: "The grandmas are more efficient x3.",
         quote: "prod prod",
@@ -2438,7 +2438,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Ambidextrous",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 912, y: 96 },
         category: "chancemaker",
         description: "The grandmas are more efficient x4.",
         quote: "prod prod",
@@ -2449,7 +2449,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Thousand fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 912, y: 624 },
         category: "chancemaker",
         description: "The grandmas are more efficient x5.",
         quote: "prod prod",
@@ -2460,7 +2460,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Million fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 912, y: 672 },
         category: "chancemaker",
         description: "The grandmas are more efficient x6.",
         quote: "prod prod",
@@ -2471,7 +2471,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Billion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 912, y: 720 },
         category: "chancemaker",
         description: "The grandmas are more efficient x7.",
         quote: "prod prod",
@@ -2482,7 +2482,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Trillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 912, y: 768 },
         category: "chancemaker",
         description: "The grandmas are more efficient x8.",
         quote: "prod prod",
@@ -2493,7 +2493,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quadrillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 912, y: 816 },
         category: "chancemaker",
         description: "The grandmas are more efficient x9.",
         quote: "prod prod",
@@ -2504,7 +2504,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quintillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 912, y: 864 },
         category: "chancemaker",
         description: "The grandmas are more efficient x10.",
         quote: "prod prod",
@@ -2515,7 +2515,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Sextillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 912, y: 912 },
         category: "chancemaker",
         description: "The grandmas are more efficient x15.",
         quote: "prod prod",
@@ -2526,7 +2526,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Septillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 912, y: 1344 },
         category: "chancemaker",
         description: "The grandmas are more efficient x20.",
         quote: "prod prod",
@@ -2537,7 +2537,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Octillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 912, y: 1444 },
         category: "chancemaker",
         description: "The grandmas are more efficient x50.",
         quote: "prod prod",
@@ -2548,7 +2548,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Nonillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 912, y: 1492 },
         category: "chancemaker",
         description: "The grandmas are more efficient x100.",
         quote: "prod prod",
@@ -2559,7 +2559,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Decillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 912, y: 1636 },
         category: "chancemaker",
         description: "The grandmas are more efficient x200.",
         quote: "prod prod",
@@ -2570,7 +2570,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Undecillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 912, y: 1732 },
         category: "chancemaker",
         description: "The grandmas are more efficient x500.",
         quote: "prod prod",
@@ -2588,7 +2588,7 @@ const MULTIPLIERS = [
 
     {
         label: "Reinforced index finger",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 960, y: 0 },
         category: "fractal-engine",
         description: "The grandmas are twice as efficient x2.",
         quote: "prod prod",
@@ -2599,7 +2599,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Carpal tunnel prevention cream",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 960, y: 48 },
         category: "fractal-engine",
         description: "The grandmas are more efficient x3.",
         quote: "prod prod",
@@ -2610,7 +2610,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Ambidextrous",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 960, y: 96 },
         category: "fractal-engine",
         description: "The grandmas are more efficient x4.",
         quote: "prod prod",
@@ -2621,7 +2621,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Thousand fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 960, y: 624 },
         category: "fractal-engine",
         description: "The grandmas are more efficient x5.",
         quote: "prod prod",
@@ -2632,7 +2632,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Million fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 960, y: 672 },
         category: "fractal-engine",
         description: "The grandmas are more efficient x6.",
         quote: "prod prod",
@@ -2643,7 +2643,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Billion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 960, y: 720 },
         category: "fractal-engine",
         description: "The grandmas are more efficient x7.",
         quote: "prod prod",
@@ -2654,7 +2654,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Trillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 960, y: 768 },
         category: "fractal-engine",
         description: "The grandmas are more efficient x8.",
         quote: "prod prod",
@@ -2665,7 +2665,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quadrillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 960, y: 816 },
         category: "fractal-engine",
         description: "The grandmas are more efficient x9.",
         quote: "prod prod",
@@ -2676,7 +2676,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quintillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 960, y: 864 },
         category: "fractal-engine",
         description: "The grandmas are more efficient x10.",
         quote: "prod prod",
@@ -2687,7 +2687,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Sextillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 960, y: 912 },
         category: "fractal-engine",
         description: "The grandmas are more efficient x15.",
         quote: "prod prod",
@@ -2698,7 +2698,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Septillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 960, y: 1344 },
         category: "fractal-engine",
         description: "The grandmas are more efficient x20.",
         quote: "prod prod",
@@ -2709,7 +2709,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Octillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 960, y: 1444 },
         category: "fractal-engine",
         description: "The grandmas are more efficient x50.",
         quote: "prod prod",
@@ -2720,7 +2720,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Nonillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 960, y: 1492 },
         category: "fractal-engine",
         description: "The grandmas are more efficient x100.",
         quote: "prod prod",
@@ -2731,7 +2731,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Decillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 960, y: 1636 },
         category: "fractal-engine",
         description: "The grandmas are more efficient x200.",
         quote: "prod prod",
@@ -2742,7 +2742,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Undecillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 960, y: 1732 },
         category: "fractal-engine",
         description: "The grandmas are more efficient x500.",
         quote: "prod prod",
@@ -2760,7 +2760,7 @@ const MULTIPLIERS = [
 
     {
         label: "Reinforced index finger",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1536, y: 0 },
         category: "javascript-console",
         description: "The grandmas are twice as efficient x2.",
         quote: "prod prod",
@@ -2771,7 +2771,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Carpal tunnel prevention cream",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1536, y: 48 },
         category: "javascript-console",
         description: "The grandmas are more efficient x3.",
         quote: "prod prod",
@@ -2782,7 +2782,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Ambidextrous",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1536, y: 96 },
         category: "javascript-console",
         description: "The grandmas are more efficient x4.",
         quote: "prod prod",
@@ -2793,7 +2793,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Thousand fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1536, y: 624 },
         category: "javascript-console",
         description: "The grandmas are more efficient x5.",
         quote: "prod prod",
@@ -2804,7 +2804,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Million fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1536, y: 672 },
         category: "javascript-console",
         description: "The grandmas are more efficient x6.",
         quote: "prod prod",
@@ -2815,7 +2815,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Billion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1536, y: 720 },
         category: "javascript-console",
         description: "The grandmas are more efficient x7.",
         quote: "prod prod",
@@ -2826,7 +2826,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Trillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1536, y: 768 },
         category: "javascript-console",
         description: "The grandmas are more efficient x8.",
         quote: "prod prod",
@@ -2837,7 +2837,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quadrillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1536, y: 816 },
         category: "javascript-console",
         description: "The grandmas are more efficient x9.",
         quote: "prod prod",
@@ -2848,7 +2848,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quintillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1536, y: 864 },
         category: "javascript-console",
         description: "The grandmas are more efficient x10.",
         quote: "prod prod",
@@ -2859,7 +2859,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Sextillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1536, y: 912 },
         category: "javascript-console",
         description: "The grandmas are more efficient x15.",
         quote: "prod prod",
@@ -2870,7 +2870,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Septillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1536, y: 1344 },
         category: "javascript-console",
         description: "The grandmas are more efficient x20.",
         quote: "prod prod",
@@ -2881,7 +2881,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Octillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1536, y: 1444 },
         category: "javascript-console",
         description: "The grandmas are more efficient x50.",
         quote: "prod prod",
@@ -2892,7 +2892,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Nonillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1536, y: 1492 },
         category: "javascript-console",
         description: "The grandmas are more efficient x100.",
         quote: "prod prod",
@@ -2903,7 +2903,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Decillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1536, y: 1636 },
         category: "javascript-console",
         description: "The grandmas are more efficient x200.",
         quote: "prod prod",
@@ -2914,7 +2914,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Undecillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1536, y: 1732 },
         category: "javascript-console",
         description: "The grandmas are more efficient x500.",
         quote: "prod prod",
@@ -2932,7 +2932,7 @@ const MULTIPLIERS = [
 
     {
         label: "Reinforced index finger",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1584, y: 0 },
         category: "idleverse",
         description: "The grandmas are twice as efficient x2.",
         quote: "prod prod",
@@ -2943,7 +2943,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Carpal tunnel prevention cream",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1584, y: 48 },
         category: "idleverse",
         description: "The grandmas are more efficient x3.",
         quote: "prod prod",
@@ -2954,7 +2954,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Ambidextrous",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1584, y: 96 },
         category: "idleverse",
         description: "The grandmas are more efficient x4.",
         quote: "prod prod",
@@ -2965,7 +2965,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Thousand fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1584, y: 624 },
         category: "idleverse",
         description: "The grandmas are more efficient x5.",
         quote: "prod prod",
@@ -2976,7 +2976,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Million fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1584, y: 672 },
         category: "idleverse",
         description: "The grandmas are more efficient x6.",
         quote: "prod prod",
@@ -2987,7 +2987,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Billion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1584, y: 720 },
         category: "idleverse",
         description: "The grandmas are more efficient x7.",
         quote: "prod prod",
@@ -2998,7 +2998,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Trillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1584, y: 768 },
         category: "idleverse",
         description: "The grandmas are more efficient x8.",
         quote: "prod prod",
@@ -3009,7 +3009,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quadrillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1584, y: 816 },
         category: "idleverse",
         description: "The grandmas are more efficient x9.",
         quote: "prod prod",
@@ -3020,7 +3020,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quintillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1584, y: 864 },
         category: "idleverse",
         description: "The grandmas are more efficient x10.",
         quote: "prod prod",
@@ -3031,7 +3031,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Sextillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1584, y: 912 },
         category: "idleverse",
         description: "The grandmas are more efficient x15.",
         quote: "prod prod",
@@ -3042,7 +3042,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Septillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1584, y: 1344 },
         category: "idleverse",
         description: "The grandmas are more efficient x20.",
         quote: "prod prod",
@@ -3053,7 +3053,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Octillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1584, y: 1444 },
         category: "idleverse",
         description: "The grandmas are more efficient x50.",
         quote: "prod prod",
@@ -3064,7 +3064,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Nonillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1584, y: 1492 },
         category: "idleverse",
         description: "The grandmas are more efficient x100.",
         quote: "prod prod",
@@ -3075,7 +3075,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Decillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1584, y: 1636 },
         category: "idleverse",
         description: "The grandmas are more efficient x200.",
         quote: "prod prod",
@@ -3086,7 +3086,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Undecillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1584, y: 1732 },
         category: "idleverse",
         description: "The grandmas are more efficient x500.",
         quote: "prod prod",
@@ -3104,7 +3104,7 @@ const MULTIPLIERS = [
 
     {
         label: "Reinforced index finger",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1632, y: 0 },
         category: "cortex-baker",
         description: "The grandmas are twice as efficient x2.",
         quote: "prod prod",
@@ -3115,7 +3115,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Carpal tunnel prevention cream",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1632, y: 48 },
         category: "cortex-baker",
         description: "The grandmas are more efficient x3.",
         quote: "prod prod",
@@ -3126,7 +3126,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Ambidextrous",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1632, y: 96 },
         category: "cortex-baker",
         description: "The grandmas are more efficient x4.",
         quote: "prod prod",
@@ -3137,7 +3137,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Thousand fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1632, y: 624 },
         category: "cortex-baker",
         description: "The grandmas are more efficient x5.",
         quote: "prod prod",
@@ -3148,7 +3148,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Million fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1632, y: 672 },
         category: "cortex-baker",
         description: "The grandmas are more efficient x6.",
         quote: "prod prod",
@@ -3159,7 +3159,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Billion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1632, y: 720 },
         category: "cortex-baker",
         description: "The grandmas are more efficient x7.",
         quote: "prod prod",
@@ -3170,7 +3170,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Trillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1632, y: 768 },
         category: "cortex-baker",
         description: "The grandmas are more efficient x8.",
         quote: "prod prod",
@@ -3181,7 +3181,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quadrillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1632, y: 816 },
         category: "cortex-baker",
         description: "The grandmas are more efficient x9.",
         quote: "prod prod",
@@ -3192,7 +3192,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quintillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1632, y: 864 },
         category: "cortex-baker",
         description: "The grandmas are more efficient x10.",
         quote: "prod prod",
@@ -3203,7 +3203,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Sextillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1632, y: 912 },
         category: "cortex-baker",
         description: "The grandmas are more efficient x15.",
         quote: "prod prod",
@@ -3214,7 +3214,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Septillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1632, y: 1344 },
         category: "cortex-baker",
         description: "The grandmas are more efficient x20.",
         quote: "prod prod",
@@ -3225,7 +3225,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Octillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1632, y: 1444 },
         category: "cortex-baker",
         description: "The grandmas are more efficient x50.",
         quote: "prod prod",
@@ -3236,7 +3236,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Nonillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1632, y: 1492 },
         category: "cortex-baker",
         description: "The grandmas are more efficient x100.",
         quote: "prod prod",
@@ -3247,7 +3247,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Decillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1632, y: 1636 },
         category: "cortex-baker",
         description: "The grandmas are more efficient x200.",
         quote: "prod prod",
@@ -3258,7 +3258,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Undecillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1632, y: 1732 },
         category: "cortex-baker",
         description: "The grandmas are more efficient x500.",
         quote: "prod prod",
@@ -3276,7 +3276,7 @@ const MULTIPLIERS = [
 
     {
         label: "Reinforced index finger",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1680, y: 0 },
         category: "you",
         description: "The grandmas are twice as efficient x2.",
         quote: "prod prod",
@@ -3287,7 +3287,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Carpal tunnel prevention cream",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1680, y: 48 },
         category: "you",
         description: "The grandmas are more efficient x3.",
         quote: "prod prod",
@@ -3298,7 +3298,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Ambidextrous",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1680, y: 96 },
         category: "you",
         description: "The grandmas are more efficient x4.",
         quote: "prod prod",
@@ -3309,7 +3309,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Thousand fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1680, y: 624 },
         category: "you",
         description: "The grandmas are more efficient x5.",
         quote: "prod prod",
@@ -3320,7 +3320,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Million fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1680, y: 672 },
         category: "you",
         description: "The grandmas are more efficient x6.",
         quote: "prod prod",
@@ -3331,7 +3331,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Billion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1680, y: 720 },
         category: "you",
         description: "The grandmas are more efficient x7.",
         quote: "prod prod",
@@ -3342,7 +3342,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Trillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1680, y: 768 },
         category: "you",
         description: "The grandmas are more efficient x8.",
         quote: "prod prod",
@@ -3353,7 +3353,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quadrillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1680, y: 816 },
         category: "you",
         description: "The grandmas are more efficient x9.",
         quote: "prod prod",
@@ -3364,7 +3364,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Quintillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1680, y: 864 },
         category: "you",
         description: "The grandmas are more efficient x10.",
         quote: "prod prod",
@@ -3375,7 +3375,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Sextillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1680, y: 912 },
         category: "you",
         description: "The grandmas are more efficient x15.",
         quote: "prod prod",
@@ -3386,7 +3386,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Septillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1680, y: 1344 },
         category: "you",
         description: "The grandmas are more efficient x20.",
         quote: "prod prod",
@@ -3397,7 +3397,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Octillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1680, y: 1444 },
         category: "you",
         description: "The grandmas are more efficient x50.",
         quote: "prod prod",
@@ -3408,7 +3408,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Nonillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1680, y: 1492 },
         category: "you",
         description: "The grandmas are more efficient x100.",
         quote: "prod prod",
@@ -3419,7 +3419,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Decillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1680, 1636: 0 },
         category: "you",
         description: "The grandmas are more efficient x200.",
         quote: "prod prod",
@@ -3430,7 +3430,7 @@ const MULTIPLIERS = [
     },
     {
         label: "Undecillion fingers",
-        imagePos: { x: 0, y: 0 },
+        imagePos: { x: 1680, 1732: 0 },
         category: "you",
         description: "The grandmas are more efficient x500.",
         quote: "prod prod",

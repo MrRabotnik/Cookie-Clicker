@@ -22,7 +22,7 @@ const MultiplierHoverInfo = ({ multiplier, imagePos, setModalIsOpen }: any) => {
                     className="avatar"
                     style={{
                         backgroundImage: `url(${IMAGES.multipliersIconsSprite})`,
-                        backgroundPosition: `${imagePos.x}px ${imagePos.y}px`,
+                        backgroundPosition: `-${imagePos.x}px -${imagePos.y}px`,
                     }}
                 ></div>
                 <div className="info">
