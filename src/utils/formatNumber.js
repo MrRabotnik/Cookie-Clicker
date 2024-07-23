@@ -37,12 +37,22 @@ numeral.register("format", "largeNumbers", {
 export const formatNumber = (number) => {
     let formatted;
 
-    if (number < 1000 && number >= 0) {
-        formatted = numeral(number).format("0.0");
+    if (number % 1 === 0) {
+        if (number < 1000 && number >= 0) {
+            formatted = numeral(number).format("0");
+        } else {
+            formatted = numeral(number)
+                .format("0a")
+                .replace(/([a-z])$/, "$1");
+        }
     } else {
-        formatted = numeral(number)
-            .format("0.00a")
-            .replace(/\.00([a-z])$/, "$1");
+        if (number < 1000 && number >= 0) {
+            formatted = numeral(number).format("0.0");
+        } else {
+            formatted = numeral(number)
+                .format("0.0a")
+                .replace(/([a-z])$/, "$1");
+        }
     }
 
     return formatted;
