@@ -23,7 +23,7 @@ const CookieContainer = () => {
     const AnimatedGroup: any = animated(Group);
 
     const [cookie] = useImage(IMAGES.cookie);
-    const [fallingCookieImage] = useImage(IMAGES.fallingCookies1);
+    const [fallingCookieImage] = useImage(IMAGES.fallingCookies2);
     const [cookieHalo] = useImage(IMAGES.halo);
     const [cursor] = useImage(IMAGES.rotatingCursorGif);
     const [fallingCookiesFullImage, setFallingCookiesFullImage] = useState<any[]>([]);
@@ -425,7 +425,7 @@ const CookieContainer = () => {
                     <AnimatedGroup style={props}>
                         <Shape
                             ref={waveRef}
-                            fill="rgba(238, 221, 238, 0.9)"
+                            fill="rgba(238, 221, 238, 0.8)"
                             stroke="white"
                             strokeWidth={1}
                         />

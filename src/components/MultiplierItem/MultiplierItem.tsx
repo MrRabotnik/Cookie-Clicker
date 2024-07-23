@@ -40,9 +40,6 @@ const MultiplierItem = ({ dimensions, item }: any) => {
         setCookiesPerSecond(newCookiesPerSecond + foundUpgrade.value * item.value * foundUpgrade.boughtCount);
 
         updateUpgrades(foundUpgrade.label, {
-            description: `Each ${foundUpgrade.label} generates ${
-                foundUpgrade.value * item.value
-            } cookies in 10 seconds`,
             multiplier: foundUpgrade.multiplier * item.value,
             value: foundUpgrade.value * item.value,
         });

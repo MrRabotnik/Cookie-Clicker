@@ -58,21 +58,16 @@ const UpgradeHoverInfo = ({ upgrade, position, infoContainerY, shouldBeDark, set
                     <div className="list">
                         <div>
                             <p>
-                                each {upgrade.category} produces {formatNumber(upgrade.value * upgrade.multiplier)}{" "}
-                                cookies per second
+                                each {upgrade.category} produces {formatNumber(upgrade.value)} cookies per second
                             </p>
                         </div>
 
                         <div>
                             <p>
                                 {upgrade.boughtCount} {upgrade.category} producing{" "}
-                                {formatNumber(upgrade.boughtCount * upgrade.multiplier * upgrade.value)} cookies per
-                                second (
-                                {(
-                                    ((upgrade.boughtCount * upgrade.multiplier * upgrade.value) / cookiesPerSecond) *
-                                    100
-                                ).toFixed(1)}
-                                % of total CpS)
+                                {formatNumber(upgrade.boughtCount * upgrade.value)} cookies per second (
+                                {(((upgrade.boughtCount * upgrade.value) / cookiesPerSecond) * 100).toFixed(1)}% of
+                                total CpS)
                             </p>
                         </div>
                     </div>
