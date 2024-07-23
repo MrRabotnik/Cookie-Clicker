@@ -4,7 +4,6 @@ import useImage from "use-image";
 
 import "./UpgradeItem.scss";
 import { useCookies } from "../../App";
-import numeral from "numeral";
 import IMAGES from "../../utils/images";
 import UpgradeHoverInfo from "../UpradeHoverInfo/UpgradeHoverInfo";
 import { formatNumber } from "../../utils/formatNumber";

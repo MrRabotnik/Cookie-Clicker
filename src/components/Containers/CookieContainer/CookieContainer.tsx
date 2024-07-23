@@ -6,7 +6,6 @@ import useImage from "use-image";
 import { useCookies } from "../../../App";
 import { useSpring, animated } from "@react-spring/konva";
 import IMAGES from "../../../utils/images";
-import numeral from "numeral";
 import { formatNumber } from "../../../utils/formatNumber";
 
 const CookieContainer = () => {

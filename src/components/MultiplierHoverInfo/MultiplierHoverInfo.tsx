@@ -1,6 +1,5 @@
 import React from "react";
 import "./MultiplierHoverInfo.scss";
-import numeral from "numeral";
 import { useCookies } from "../../App";
 import IMAGES from "../../utils/images";
 import { formatNumber } from "../../utils/formatNumber";
