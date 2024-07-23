@@ -113,10 +113,14 @@ const UpgradeItem = ({
                 } else {
                     setInfoContainerY(e.touches[0].clientY);
                 }
+                setTouchCanceled(false);
             }}
             onTouchCancel={() => {
                 setTouchCanceled(true);
                 setModalIsOpen(false);
+            }}
+            onTouchEnd={() => {
+                setTouchCanceled(true);
             }}
         >
             <div className={upgradeAvailable ? "display-none" : "disabled-upgrade"}></div>
