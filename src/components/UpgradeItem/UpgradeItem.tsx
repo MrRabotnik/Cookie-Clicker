@@ -94,6 +94,9 @@ const UpgradeItem = ({
                     setInfoContainerY(e.clientY);
                 }
             }}
+            onMouseLeave={() => {
+                setModalIsOpen(false);
+            }}
             onTouchMove={(e) => {
                 setModalIsOpen(true);
                 if (e.touches[0].clientY + 200 >= window.innerHeight) {
@@ -102,7 +105,7 @@ const UpgradeItem = ({
                     setInfoContainerY(e.touches[0].clientY);
                 }
             }}
-            onMouseLeave={() => {
+            onTouchEnd={() => {
                 setModalIsOpen(false);
             }}
         >
