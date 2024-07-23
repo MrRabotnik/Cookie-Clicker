@@ -229,7 +229,7 @@ function generateValues(initialValue, percentage) {
     let value = new BigNumber(initialValue);
     const percentageValue = new BigNumber(percentage);
 
-    for (let i = 0; i < 550; i++) {
+    for (let i = 0; i <= 550; i++) {
         array.push(value.toFixed(0));
         value = value.multipliedBy(percentageValue);
     }

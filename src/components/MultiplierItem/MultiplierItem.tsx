@@ -9,7 +9,7 @@ import "react-tooltip/dist/react-tooltip.css";
 import { useCookies } from "../../App";
 import MultiplierHoverInfo from "../MultiplierHoverInfo/MultiplierHoverInfo";
 
-const MultiplierItem = ({ dimensions, item, position }: any) => {
+const MultiplierItem = ({ dimensions, item }: any) => {
     const {
         cookiesCount,
         setCookiesCount,
@@ -56,7 +56,6 @@ const MultiplierItem = ({ dimensions, item, position }: any) => {
     return (
         <div
             className="multiplier-item"
-            data-tooltip-id={`multiplier-item${position}`}
             onMouseEnter={() => {
                 setModalIsOpen(true);
             }}
@@ -69,7 +68,7 @@ const MultiplierItem = ({ dimensions, item, position }: any) => {
             {modalIsOpen && (
                 <MultiplierHoverInfo
                     multiplier={item}
-                    position={position}
+                    imagePos={item.imagePos}
                     setModalIsOpen={setModalIsOpen}
                 />
             )}
@@ -102,8 +101,8 @@ const MultiplierItem = ({ dimensions, item, position }: any) => {
                             width={dimensions.width / 5.1 / 1.5}
                             height={dimensions.width / 5.1 / 1.5}
                             crop={{
-                                x: 0,
-                                y: position * 48,
+                                x: item.imagePos.x,
+                                y: item.imagePos.y,
                                 width: 48,
                                 height: 48,
                             }}

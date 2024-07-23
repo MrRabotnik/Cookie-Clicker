@@ -4,7 +4,7 @@ import { useCookies } from "../../App";
 import IMAGES from "../../utils/images";
 import { formatNumber } from "../../utils/formatNumber";
 
-const MultiplierHoverInfo = ({ multiplier, position, setModalIsOpen }: any) => {
+const MultiplierHoverInfo = ({ multiplier, imagePos, setModalIsOpen }: any) => {
     const { cookiesCount } = useCookies();
 
     const available = cookiesCount >= multiplier.price;
@@ -22,7 +22,7 @@ const MultiplierHoverInfo = ({ multiplier, position, setModalIsOpen }: any) => {
                     className="avatar"
                     style={{
                         backgroundImage: `url(${IMAGES.multipliersIconsSprite})`,
-                        backgroundPosition: `0 -${position * 48}px`,
+                        backgroundPosition: `${imagePos.x}px ${imagePos.y}px`,
                     }}
                 ></div>
                 <div className="info">
