@@ -121,6 +121,7 @@ const UpgradeItem = ({
             }}
             onTouchEnd={() => {
                 setTouchCanceled(true);
+                setModalIsOpen(false);
             }}
         >
             <div className={upgradeAvailable ? "display-none" : "disabled-upgrade"}></div>
