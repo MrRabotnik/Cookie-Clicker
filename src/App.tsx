@@ -26,8 +26,24 @@ const App = () => {
     const clicksPerSecondFromLocalStorage = getCookiesFromLocalStorage("cookies_per_second");
     const cookiesPerClickFromLocalStorage = getCookiesFromLocalStorage("cookies_per_click");
     const multiplierCountFromLocalStorage = getCookiesFromLocalStorage("multiplier");
-    const upgradesFromLocalStorage = getCookiesFromLocalStorage("upgrades");
-    const multipliersFromLocalStorage = getCookiesFromLocalStorage("multipliers");
+    const upgradesFromLocalStorage: any = getCookiesFromLocalStorage("upgrades");
+    const multipliersFromLocalStorage: any = getCookiesFromLocalStorage("multipliers");
+
+    const jsonParsedUpgrades = JSON.parse(upgradesFromLocalStorage);
+    const jsonParsedMultipliers = JSON.parse(multipliersFromLocalStorage);
+
+    const UPGRADES_MERGED = UPGRADES.map((item, index) => {
+        return {
+            ...item,
+            ...jsonParsedUpgrades?.[index],
+        };
+    });
+    const MULTIPLIERS_MERGED = MULTIPLIERS.map((item, index) => {
+        return {
+            ...item,
+            ...jsonParsedMultipliers?.[index],
+        };
+    });
 
     const cookiesPerSecondRef = useRef<number>(0);
     const cookiesCountRef = useRef<number>(0);
@@ -36,12 +52,8 @@ const App = () => {
     const upgradesRef = useRef<any>([]);
     const multipliersRef = useRef<any>([]);
 
-    const [upgrades, setUpgrades] = useState(
-        upgradesFromLocalStorage ? JSON.parse(upgradesFromLocalStorage) : UPGRADES
-    );
-    const [multipliers, setMultipliers] = useState(
-        multipliersFromLocalStorage ? JSON.parse(multipliersFromLocalStorage) : MULTIPLIERS
-    );
+    const [upgrades, setUpgrades] = useState(upgradesFromLocalStorage ? UPGRADES_MERGED : UPGRADES);
+    const [multipliers, setMultipliers] = useState(multipliersFromLocalStorage ? MULTIPLIERS_MERGED : MULTIPLIERS);
 
     const [cookiesCount, setCookiesCount] = useState(
         cookiesCountFromLocalStorage && !isNaN(parseInt(cookiesCountFromLocalStorage))
@@ -63,8 +75,28 @@ const App = () => {
         saveInLocalStorage("cookies_per_second", cookiesPerSecondRef.current);
         saveInLocalStorage("multiplier", JSON.stringify(multiplierRef.current));
         saveInLocalStorage("cookies_per_click", JSON.stringify(cookiesPerClickRef.current));
-        saveInLocalStorage("upgrades", JSON.stringify(upgradesRef.current));
-        saveInLocalStorage("multipliers", JSON.stringify(multipliersRef.current));
+        saveInLocalStorage(
+            "upgrades",
+            JSON.stringify(
+                upgradesRef.current.map((item: any) => {
+                    return {
+                        value: item.value,
+                        boughtCount: item.boughtCount,
+                        multiplier: item.multiplier,
+                    };
+                })
+            )
+        );
+        saveInLocalStorage(
+            "multipliers",
+            JSON.stringify(
+                multipliersRef.current.map((item: any) => {
+                    return {
+                        bought: item.bought,
+                    };
+                })
+            )
+        );
         toast.success("Saved");
     };
 
@@ -73,9 +105,9 @@ const App = () => {
             setCookiesCount((prev: number) => prev + cookiesPerSecondRef.current);
         }, 1000);
 
-        // const saveCookies = setInterval(() => {
-        //     saveAll();
-        // }, 60000);
+        const saveCookies = setInterval(() => {
+            saveAll();
+        }, 60000);
 
         const handleKeyDown = (event: any) => {
             if (event.ctrlKey && event.key === "s") {
@@ -88,7 +120,7 @@ const App = () => {
 
         return () => {
             clearInterval(x);
-            // clearInterval(saveCookies);
+            clearInterval(saveCookies);
             window.removeEventListener("keydown", handleKeyDown);
         };
     }, []);

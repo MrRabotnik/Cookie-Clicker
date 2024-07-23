@@ -8,7 +8,6 @@ const UpgradeHoverInfo = ({ upgrade, position, infoContainerY, shouldBeDark, set
     const { cookiesCount, cookiesPerSecond } = useCookies();
 
     const available = +cookiesCount >= +upgrade.price[upgrade.boughtCount];
-    console.log(upgrade);
 
     return (
         <div
