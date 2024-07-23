@@ -21,6 +21,7 @@ const UpgradeItem = ({
 
     const [infoContainerY, setInfoContainerY] = useState(200);
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [touchCanceled, setTouchCanceled] = useState(false);
 
     const [bg] = useImage(IMAGES.upgradeBg);
     const [cookie] = useImage(IMAGES.cookie);
@@ -85,7 +86,15 @@ const UpgradeItem = ({
         <div
             className="upgrade-item"
             onClick={buying ? buyAnUpgrade : sellAnUpgrade}
-            onTouchEndCapture={buying ? buyAnUpgrade : sellAnUpgrade}
+            onTouchEndCapture={
+                !touchCanceled
+                    ? buying
+                        ? buyAnUpgrade
+                        : sellAnUpgrade
+                    : () => {
+                          setTouchCanceled(false);
+                      }
+            }
             onMouseMove={(e) => {
                 setModalIsOpen(true);
                 if (e.clientY + 200 >= window.innerHeight) {
@@ -105,7 +114,8 @@ const UpgradeItem = ({
                     setInfoContainerY(e.touches[0].clientY);
                 }
             }}
-            onTouchEnd={() => {
+            onTouchCancel={() => {
+                setTouchCanceled(true);
                 setModalIsOpen(false);
             }}
         >
