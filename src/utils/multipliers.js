@@ -197,7 +197,7 @@ const MULTIPLIERS = [
         quote: "Just what you kneaded.",
         value: 2,
         price: 5000,
-        unlocksAt: 1,
+        unlocksAt: 5,
         bought: false,
     },
     {
