@@ -8,7 +8,7 @@ numeral.register("format", "largeNumbers", {
     format: function (value, format, roundingFunction) {
         const units = ["", "k", "m", "b", "t", "q", "Q", "s", "S", "o", "n", "d"];
         let unit = "";
-        let power = 0;
+        let power = 1;
 
         while (value >= 1000 && power < units.length - 1) {
             value /= 1000;
@@ -38,17 +38,23 @@ export const formatNumber = (number) => {
     let formatted;
 
     if (number % 1 === 0) {
-        if (number < 1000 && number >= 0) {
-            formatted = numeral(number).format("0");
+        // Check if the number is an integer
+        if (number <= 999999 && number >= 0) {
+            // Format numbers between 1 and 999,999 without dividing or adding a letter
+            formatted = numeral(number).format("0,0");
         } else {
+            // Use custom format for numbers 1,000,000 and above
             formatted = numeral(number)
                 .format("0a")
                 .replace(/([a-z])$/, "$1");
         }
     } else {
-        if (number < 1000 && number >= 0) {
-            formatted = numeral(number).format("0.0");
+        // If the number has a decimal part
+        if (number <= 999999 && number >= 0) {
+            // Format numbers between 1 and 999,999 without dividing or adding a letter
+            formatted = numeral(number).format("0,0.0");
         } else {
+            // Use custom format for numbers 1,000,000 and above
             formatted = numeral(number)
                 .format("0.0a")
                 .replace(/([a-z])$/, "$1");
