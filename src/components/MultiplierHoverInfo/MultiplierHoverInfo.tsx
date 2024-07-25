@@ -42,7 +42,7 @@ const MultiplierHoverInfo = ({ multiplier, imagePos, setModalIsOpen }: any) => {
             <hr />
             <p>{multiplier.description}</p>
             <p className="text-align-right">
-                <i>"{multiplier.author}"</i>{" "}
+                <i>"{multiplier.quote}"</i>{" "}
             </p>
             <hr />
             <p
