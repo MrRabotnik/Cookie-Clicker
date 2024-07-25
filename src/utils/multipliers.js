@@ -525,32 +525,6 @@ const MULTIPLIERS = [
         bought: false,
     },
 
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-
     // ----------------------------------- //
     // ----------------------------------- //
     // ------------- MINES ------------- //
@@ -558,7 +532,7 @@ const MULTIPLIERS = [
     // ----------------------------------- //
 
     {
-        label: "Reinforced index finger",
+        label: "Sugar gas",
         imagePos: { x: 144, y: 0 },
         category: "mine",
         description: "The mines are twice as efficient x2.",
@@ -569,7 +543,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Carpal tunnel prevention cream",
+        label: "Megadrill",
         imagePos: { x: 144, y: 48 },
         category: "mine",
         description: "The mines are twice as efficient x2.",
@@ -580,7 +554,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Ambidextrous",
+        label: "Ultradrill",
         imagePos: { x: 144, y: 96 },
         category: "mine",
         description: "The mines are twice as efficient x2.",
@@ -591,7 +565,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Thousand fingers",
+        label: "Ultimadrill",
         imagePos: { x: 144, y: 624 },
         category: "mine",
         description: "The mines are twice as efficient x2.",
@@ -602,7 +576,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Million fingers",
+        label: "H-bomb mining",
         imagePos: { x: 144, y: 672 },
         category: "mine",
         description: "The mines are twice as efficient x2.",
@@ -613,7 +587,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Billion fingers",
+        label: "Coreforge",
         imagePos: { x: 144, y: 720 },
         category: "mine",
         description: "The mines are twice as efficient x2.",
@@ -624,7 +598,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Trillion fingers",
+        label: "Planetsplitters",
         imagePos: { x: 144, y: 768 },
         category: "mine",
         description: "The mines are twice as efficient x2.",
@@ -635,7 +609,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Quadrillion fingers",
+        label: "Canola oil wells",
         imagePos: { x: 144, y: 816 },
         category: "mine",
         description: "The mines are twice as efficient x2.",
@@ -646,7 +620,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Quintillion fingers",
+        label: "Mole people",
         imagePos: { x: 144, y: 864 },
         category: "mine",
         description: "The mines are twice as efficient x2.",
@@ -657,7 +631,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Sextillion fingers",
+        label: "Mine canaries",
         imagePos: { x: 144, y: 912 },
         category: "mine",
         description: "The mines are twice as efficient x2.",
@@ -668,7 +642,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Septillion fingers",
+        label: "Bore again",
         imagePos: { x: 144, y: 1344 },
         category: "mine",
         description: "The mines are twice as efficient x2.",
@@ -679,7 +653,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Octillion fingers",
+        label: "Air mining",
         imagePos: { x: 144, y: 1444 },
         category: "mine",
         description: "The mines are twice as efficient x2.",
@@ -690,7 +664,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Nonillion fingers",
+        label: "Caramel alloys",
         imagePos: { x: 144, y: 1492 },
         category: "mine",
         description: "The mines are twice as efficient x2.",
@@ -701,7 +675,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Decillion fingers",
+        label: "Delicious mineralogy",
         imagePos: { x: 144, y: 1636 },
         category: "mine",
         description: "The mines are twice as efficient x2.",
@@ -712,7 +686,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Undecillion fingers",
+        label: "Mineshaft supports",
         imagePos: { x: 144, y: 1732 },
         category: "mine",
         description: "The mines are twice as efficient x2.",
@@ -730,7 +704,7 @@ const MULTIPLIERS = [
     // ----------------------------------- //
 
     {
-        label: "Reinforced index finger",
+        label: "Sturdier conveyor belts",
         imagePos: { x: 192, y: 0 },
         category: "factory",
         description: "The factories are twice as efficient x2.",
@@ -741,7 +715,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Carpal tunnel prevention cream",
+        label: "Child labor",
         imagePos: { x: 192, y: 48 },
         category: "factory",
         description: "The factories are twice as efficient x2.",
@@ -752,7 +726,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Ambidextrous",
+        label: "Sweatshop",
         imagePos: { x: 192, y: 96 },
         category: "factory",
         description: "The factories are twice as efficient x2.",
@@ -763,7 +737,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Thousand fingers",
+        label: "Radium reactors",
         imagePos: { x: 192, y: 624 },
         category: "factory",
         description: "The factories are twice as efficient x2.",
@@ -774,7 +748,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Million fingers",
+        label: "Recombobulators",
         imagePos: { x: 192, y: 672 },
         category: "factory",
         description: "The factories are twice as efficient x2.",
@@ -785,7 +759,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Billion fingers",
+        label: "Deep-bake process",
         imagePos: { x: 192, y: 720 },
         category: "factory",
         description: "The factories are twice as efficient x2.",
@@ -796,7 +770,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Trillion fingers",
+        label: "Cyborg workforce",
         imagePos: { x: 192, y: 768 },
         category: "factory",
         description: "The factories are twice as efficient x2.",
@@ -807,7 +781,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Quadrillion fingers",
+        label: "78-hour days",
         imagePos: { x: 192, y: 816 },
         category: "factory",
         description: "The factories are twice as efficient x2.",
@@ -818,7 +792,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Quintillion fingers",
+        label: "Machine learning",
         imagePos: { x: 192, y: 864 },
         category: "factory",
         description: "The factories are twice as efficient x2.",
@@ -829,7 +803,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Sextillion fingers",
+        label: "Brownie point system",
         imagePos: { x: 192, y: 912 },
         category: "factory",
         description: "The factories are twice as efficient x2.",
@@ -840,7 +814,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Septillion fingers",
+        label: '"Volunteer" interns',
         imagePos: { x: 192, y: 1344 },
         category: "factory",
         description: "The factories are twice as efficient x2.",
@@ -851,7 +825,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Octillion fingers",
+        label: "Behavioral reframing",
         imagePos: { x: 192, y: 1444 },
         category: "factory",
         description: "The factories are twice as efficient x2.",
@@ -862,7 +836,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Nonillion fingers",
+        label: "The infinity engine",
         imagePos: { x: 192, y: 1492 },
         category: "factory",
         description: "The factories are twice as efficient x2.",
@@ -873,7 +847,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Decillion fingers",
+        label: "N-dimensional assembly lines",
         imagePos: { x: 192, y: 1636 },
         category: "factory",
         description: "The factories are twice as efficient x2.",
@@ -884,7 +858,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Undecillion fingers",
+        label: "Universal automation",
         imagePos: { x: 192, y: 1732 },
         category: "factory",
         description: "The factories are twice as efficient x2.",
@@ -900,6 +874,32 @@ const MULTIPLIERS = [
     // ------------- BANK ------------- //
     // ----------------------------------- //
     // ----------------------------------- //
+
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
 
     {
         label: "Reinforced index finger",
