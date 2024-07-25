@@ -11,7 +11,7 @@ const UpgradesContainer = () => {
 
     const { upgrades, updateUpgrades, multipliers } = useCookies();
 
-    const sortedMultipliers = multipliers.sort((a: any, b: any) => a.price - b.price);
+    // const sortedMultipliers = multipliers.sort((a: any, b: any) => a.price - b.price);
 
     const [buying, setBuying] = useState(true);
     const [buySellMultiplier, setBuySellMultiplier] = useState(1);
@@ -53,7 +53,7 @@ const UpgradesContainer = () => {
                 style={{ backgroundImage: `url(${IMAGES.panelHorizontal})` }}
             ></div>
             <div className="multipliers-container">
-                {sortedMultipliers.map((multiplier: any, index: number) => {
+                {multipliers.map((multiplier: any, index: number) => {
                     const foundUpgrade = upgrades.find((upgrade: any) => upgrade.category === multiplier.category);
                     const isAvailable = foundUpgrade?.boughtCount >= multiplier.unlocksAt;
 
