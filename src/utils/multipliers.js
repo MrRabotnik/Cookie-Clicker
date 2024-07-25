@@ -22,7 +22,7 @@ const MULTIPLIERS = [
         imagePos: { x: 0, y: 48 },
         category: "cursor",
         description: "The mouse and cursors are twice as efficient x2.",
-        quote: "prod prod",
+        quote: "it... it hurts to click...",
         value: 2,
         price: 500,
         unlocksAt: 1,
@@ -33,7 +33,7 @@ const MULTIPLIERS = [
         imagePos: { x: 0, y: 96 },
         category: "cursor",
         description: "The mouse and cursors are twice as efficient x2.",
-        quote: "prod prod",
+        quote: "Look ma, both hands!",
         value: 2,
         price: 10000,
         unlocksAt: 10,
@@ -49,7 +49,7 @@ const MULTIPLIERS = [
         imagePos: { x: 0, y: 624 },
         category: "cursor",
         description: "Multiplies the gain from Thousand fingers x2.",
-        quote: "prod prod",
+        quote: "clickity",
         value: 2,
         price: 100000,
         unlocksAt: 25,
@@ -64,7 +64,7 @@ const MULTIPLIERS = [
         imagePos: { x: 0, y: 672 },
         category: "cursor",
         description: "Multiplies the gain from Thousand fingers x5.",
-        quote: "prod prod",
+        quote: "clickityclickity",
         value: 5,
         price: 10000000,
         unlocksAt: 50,
@@ -75,7 +75,7 @@ const MULTIPLIERS = [
         imagePos: { x: 0, y: 720 },
         category: "cursor",
         description: "Multiplies the gain from Thousand fingers x10.",
-        quote: "prod prod",
+        quote: "clickityclickityclickity",
         value: 10,
         price: 100000000,
         unlocksAt: 100,
@@ -86,7 +86,7 @@ const MULTIPLIERS = [
         imagePos: { x: 0, y: 768 },
         category: "cursor",
         description: "Multiplies the gain from Thousand fingers x20.",
-        quote: "prod prod",
+        quote: "clickityclickityclickityclickity",
         value: 20,
         price: 1000000000,
         unlocksAt: 150,
@@ -97,7 +97,7 @@ const MULTIPLIERS = [
         imagePos: { x: 0, y: 816 },
         category: "cursor",
         description: "Multiplies the gain from Thousand fingers x20.",
-        quote: "prod prod",
+        quote: "clickityclickityclickityclickityclick",
         value: 20,
         price: 10000000000,
         unlocksAt: 200,
@@ -108,7 +108,7 @@ const MULTIPLIERS = [
         imagePos: { x: 0, y: 864 },
         category: "cursor",
         description: "Multiplies the gain from Thousand fingers x20.",
-        quote: "prod prod",
+        quote: "man, just go click click click click click, it’s real easy, man.",
         value: 20,
         price: 10000000000000,
         unlocksAt: 250,
@@ -119,7 +119,7 @@ const MULTIPLIERS = [
         imagePos: { x: 0, y: 912 },
         category: "cursor",
         description: "Multiplies the gain from Thousand fingers x20.",
-        quote: "prod prod",
+        quote: "sometimes things just click",
         value: 20,
         price: 10000000000000000,
         unlocksAt: 300,
@@ -130,7 +130,7 @@ const MULTIPLIERS = [
         imagePos: { x: 0, y: 1344 },
         category: "cursor",
         description: "Multiplies the gain from Thousand fingers x20.",
-        quote: "prod prod",
+        quote: "[cursory flavor text]",
         value: 20,
         price: 10000000000000000000,
         unlocksAt: 350,
@@ -141,7 +141,7 @@ const MULTIPLIERS = [
         imagePos: { x: 0, y: 1444 },
         category: "cursor",
         description: "Multiplies the gain from Thousand fingers x20.",
-        quote: "prod prod",
+        quote: "Turns out you can quite put your finger on it.",
         value: 20,
         price: 10000000000000000000000,
         unlocksAt: 400,
@@ -152,7 +152,7 @@ const MULTIPLIERS = [
         imagePos: { x: 0, y: 1492 },
         category: "cursor",
         description: "Multiplies the gain from Thousand fingers x20.",
-        quote: "prod prod",
+        quote: "Only for the freakiest handshakes.",
         value: 20,
         price: 10000000000000000000000000,
         unlocksAt: 450,
@@ -163,7 +163,7 @@ const MULTIPLIERS = [
         imagePos: { x: 0, y: 1636 },
         category: "cursor",
         description: "Multiplies the gain from Thousand fingers x200.",
-        quote: "prod prod",
+        quote: "If you still can't quite put your finger on it, you must not be trying very hard.",
         value: 20,
         price: 10000000000000000000000000000,
         unlocksAt: 500,
@@ -174,7 +174,7 @@ const MULTIPLIERS = [
         imagePos: { x: 0, y: 1732 },
         category: "cursor",
         description: "Multiplies the gain from Thousand fingers x20.",
-        quote: "prod prod",
+        quote: "Whatever you touch turns to dough in your clutch.",
         value: 20,
         price: 10000000000000000000000000000000,
         unlocksAt: 550,
@@ -524,6 +524,32 @@ const MULTIPLIERS = [
         unlocksAt: 600,
         bought: false,
     },
+
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
 
     // ----------------------------------- //
     // ----------------------------------- //
