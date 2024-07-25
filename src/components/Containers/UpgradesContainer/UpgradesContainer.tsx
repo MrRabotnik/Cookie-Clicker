@@ -10,6 +10,27 @@ const UpgradesContainer = () => {
     const divRef = useRef(null);
 
     const { upgrades, updateUpgrades, multipliers } = useCookies();
+    const boughtCountOfEachBuilding = {
+        cursor: upgrades[0].boughtCount,
+        grandma: upgrades[1].boughtCount,
+        farm: upgrades[2].boughtCount,
+        mine: upgrades[3].boughtCount,
+        factory: upgrades[4].boughtCount,
+        bank: upgrades[5].boughtCount,
+        temple: upgrades[6].boughtCount,
+        "wizard-tower": upgrades[7].boughtCount,
+        "alchemy-lab": upgrades[8].boughtCount,
+        portal: upgrades[9].boughtCount,
+        "time-machine": upgrades[10].boughtCount,
+        "antimatter-condenser": upgrades[11].boughtCount,
+        prism: upgrades[12].boughtCount,
+        chancemaker: upgrades[13].boughtCount,
+        "fractal-engine": upgrades[14].boughtCount,
+        "javascript-console": upgrades[15].boughtCount,
+        idleverse: upgrades[16].boughtCount,
+        "cortex-baker": upgrades[17].boughtCount,
+        you: upgrades[18].boughtCount,
+    };
 
     // const sortedMultipliers = multipliers.sort((a: any, b: any) => a.price - b.price);
 
@@ -65,6 +86,7 @@ const UpgradesContainer = () => {
                                 dimensions={dimensions}
                                 item={multiplier}
                                 position={index}
+                                boughtCountOfEachBuilding={boughtCountOfEachBuilding}
                             />
                         )
                     );
