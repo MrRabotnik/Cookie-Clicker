@@ -39,26 +39,17 @@ const MULTIPLIERS = [
         unlocksAt: 10,
         bought: false,
     },
-
-    ///// ------------------------------------------------------
-    ///// ------------------------------------------------------
-    ///// ------------------------------------------------------
-    //// Change this to +0.1 for each non cursor object owned ///
     {
         label: "Thousand fingers",
         imagePos: { x: 0, y: 624 },
         category: "cursor",
-        description: "Multiplies the gain from Thousand fingers x2.",
+        description: "The mouse and cursors gain +0.1 cookies for each non-cursor object owned.",
         quote: "clickity",
         value: 2,
         price: 100000,
         unlocksAt: 25,
         bought: false,
     },
-    //// Change this to +0.1 for each non cursor object owned ///
-    ///// ------------------------------------------------------
-    ///// ------------------------------------------------------
-    ///// ------------------------------------------------------
     {
         label: "Million fingers",
         imagePos: { x: 0, y: 672 },
@@ -703,6 +694,32 @@ const MULTIPLIERS = [
     // ----------------------------------- //
     // ----------------------------------- //
 
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------------------------------------------------------------------------------
+
     {
         label: "Sturdier conveyor belts",
         imagePos: { x: 192, y: 0 },
@@ -875,34 +892,8 @@ const MULTIPLIERS = [
     // ----------------------------------- //
     // ----------------------------------- //
 
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-    // ------------------------------------------------------------------------------------------------------------------------
-
     {
-        label: "Reinforced index finger",
+        label: "Taller tellers",
         imagePos: { x: 720, y: 0 },
         category: "bank",
         description: "The banks are twice as efficient x2.",
@@ -913,7 +904,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Carpal tunnel prevention cream",
+        label: "Scissor-resistant credit cards",
         imagePos: { x: 720, y: 48 },
         category: "bank",
         description: "The banks are twice as efficient x2.",
@@ -924,7 +915,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Ambidextrous",
+        label: "Acid-proof vaults",
         imagePos: { x: 720, y: 96 },
         category: "bank",
         description: "The banks are twice as efficient x2.",
@@ -935,7 +926,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Thousand fingers",
+        label: "Chocolate coins",
         imagePos: { x: 720, y: 624 },
         category: "bank",
         description: "The banks are twice as efficient x2.",
@@ -946,7 +937,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Million fingers",
+        label: "Exponential interest rates",
         imagePos: { x: 720, y: 672 },
         category: "bank",
         description: "The banks are twice as efficient x2.",
@@ -957,7 +948,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Billion fingers",
+        label: "Financial zen",
         imagePos: { x: 720, y: 720 },
         category: "bank",
         description: "The banks are twice as efficient x2.",
@@ -968,7 +959,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Trillion fingers",
+        label: "Way of the wallet",
         imagePos: { x: 720, y: 768 },
         category: "bank",
         description: "The banks are twice as efficient x2.",
@@ -979,7 +970,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Quadrillion fingers",
+        label: "The stuff rationale",
         imagePos: { x: 720, y: 816 },
         category: "bank",
         description: "The banks are twice as efficient x2.",
@@ -990,7 +981,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Quintillion fingers",
+        label: "Edible money",
         imagePos: { x: 720, y: 864 },
         category: "bank",
         description: "The banks are twice as efficient x2.",
@@ -1001,7 +992,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Sextillion fingers",
+        label: "Grand supercycle",
         imagePos: { x: 720, y: 912 },
         category: "bank",
         description: "The banks are twice as efficient x2.",
@@ -1012,7 +1003,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Septillion fingers",
+        label: "Rules of acquisition",
         imagePos: { x: 720, y: 1344 },
         category: "bank",
         description: "The banks are twice as efficient x2.",
@@ -1023,7 +1014,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Octillion fingers",
+        label: "Altruistic loop",
         imagePos: { x: 720, y: 1444 },
         category: "bank",
         description: "The banks are twice as efficient x2.",
@@ -1034,7 +1025,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Nonillion fingers",
+        label: "Diminishing tax returns",
         imagePos: { x: 720, y: 1492 },
         category: "bank",
         description: "The banks are twice as efficient x2.",
@@ -1045,7 +1036,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Decillion fingers",
+        label: "Cookie Points",
         imagePos: { x: 720, y: 1636 },
         category: "bank",
         description: "The banks are twice as efficient x2.",
@@ -1056,7 +1047,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Undecillion fingers",
+        label: "The big shortcake",
         imagePos: { x: 720, y: 1732 },
         category: "bank",
         description: "The banks are twice as efficient x2.",
@@ -1074,7 +1065,7 @@ const MULTIPLIERS = [
     // ----------------------------------- //
 
     {
-        label: "Reinforced index finger",
+        label: "Golden idols",
         imagePos: { x: 768, y: 0 },
         category: "temple",
         description: "The temples are twice as efficient x2.",
@@ -1085,7 +1076,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Carpal tunnel prevention cream",
+        label: "Sacrifices",
         imagePos: { x: 768, y: 48 },
         category: "temple",
         description: "The temples are twice as efficient x2.",
@@ -1096,7 +1087,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Ambidextrous",
+        label: "Delicious blessing",
         imagePos: { x: 768, y: 96 },
         category: "temple",
         description: "The temples are twice as efficient x2.",
@@ -1107,7 +1098,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Thousand fingers",
+        label: "Sun festival",
         imagePos: { x: 768, y: 624 },
         category: "temple",
         description: "The temples are twice as efficient x2.",
@@ -1118,7 +1109,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Million fingers",
+        label: "Enlarged pantheon",
         imagePos: { x: 768, y: 672 },
         category: "temple",
         description: "The temples are twice as efficient x2.",
@@ -1129,7 +1120,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Billion fingers",
+        label: "Great Baker in the sky",
         imagePos: { x: 768, y: 720 },
         category: "temple",
         description: "The temples are twice as efficient x2.",
@@ -1140,7 +1131,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Trillion fingers",
+        label: "Creation myth",
         imagePos: { x: 768, y: 768 },
         category: "temple",
         description: "The temples are twice as efficient x2.",
@@ -1151,7 +1142,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Quadrillion fingers",
+        label: "Theocracy",
         imagePos: { x: 768, y: 816 },
         category: "temple",
         description: "The temples are twice as efficient x2.",
@@ -1162,7 +1153,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Quintillion fingers",
+        label: "Sick rap prayers",
         imagePos: { x: 768, y: 864 },
         category: "temple",
         description: "The temples are twice as efficient x2.",
@@ -1173,7 +1164,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Sextillion fingers",
+        label: "Psalm-reading",
         imagePos: { x: 768, y: 912 },
         category: "temple",
         description: "The temples are twice as efficient x2.",
@@ -1184,7 +1175,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Septillion fingers",
+        label: "War of the gods",
         imagePos: { x: 768, y: 1344 },
         category: "temple",
         description: "The temples are twice as efficient x2.",
@@ -1195,7 +1186,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Octillion fingers",
+        label: "A novel idea",
         imagePos: { x: 768, y: 1444 },
         category: "temple",
         description: "The temples are twice as efficient x2.",
@@ -1206,7 +1197,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Nonillion fingers",
+        label: "Apparitions",
         imagePos: { x: 768, y: 1492 },
         category: "temple",
         description: "The temples are twice as efficient x2.",
@@ -1217,7 +1208,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Decillion fingers",
+        label: "Negatheism",
         imagePos: { x: 768, y: 1636 },
         category: "temple",
         description: "The temples are twice as efficient x2.",
@@ -1228,7 +1219,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Undecillion fingers",
+        label: "Temple traps",
         imagePos: { x: 768, y: 1732 },
         category: "temple",
         description: "The temples are twice as efficient x2.",
@@ -1246,7 +1237,7 @@ const MULTIPLIERS = [
     // ----------------------------------- //
 
     {
-        label: "Reinforced index finger",
+        label: "Pointier hats",
         imagePos: { x: 816, y: 0 },
         category: "wizard-tower",
         description: "The wizard towers are twice as efficient x2.",
@@ -1257,7 +1248,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Carpal tunnel prevention cream",
+        label: "Beardlier beard",
         imagePos: { x: 816, y: 48 },
         category: "wizard-tower",
         description: "The wizard towers are twice as efficient x2.",
@@ -1268,7 +1259,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Ambidextrous",
+        label: "Ancient grimoires",
         imagePos: { x: 816, y: 96 },
         category: "wizard-tower",
         description: "The wizard towers are twice as efficient x2.",
@@ -1279,7 +1270,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Thousand fingers",
+        label: "Kitchen curses",
         imagePos: { x: 816, y: 624 },
         category: "wizard-tower",
         description: "The wizard towers are twice as efficient x2.",
@@ -1290,7 +1281,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Million fingers",
+        label: "School of sorcery",
         imagePos: { x: 816, y: 672 },
         category: "wizard-tower",
         description: "The wizard towers are twice as efficient x2.",
@@ -1301,7 +1292,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Billion fingers",
+        label: "Dark formulas",
         imagePos: { x: 816, y: 720 },
         category: "wizard-tower",
         description: "The wizard towers are twice as efficient x2.",
@@ -1312,7 +1303,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Trillion fingers",
+        label: "Cookiemancy",
         imagePos: { x: 816, y: 768 },
         category: "wizard-tower",
         description: "The wizard towers are twice as efficient x2.",
@@ -1323,7 +1314,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Quadrillion fingers",
+        label: "Rabbit trick",
         imagePos: { x: 816, y: 816 },
         category: "wizard-tower",
         description: "The wizard towers are twice as efficient x2.",
@@ -1334,7 +1325,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Quintillion fingers",
+        label: "Deluxe tailored wands",
         imagePos: { x: 816, y: 864 },
         category: "wizard-tower",
         description: "The wizard towers are twice as efficient x2.",
@@ -1345,7 +1336,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Sextillion fingers",
+        label: "Immobile spellcasting",
         imagePos: { x: 816, y: 912 },
         category: "wizard-tower",
         description: "The wizard towers are twice as efficient x2.",
@@ -1356,7 +1347,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Septillion fingers",
+        label: "Electricity",
         imagePos: { x: 816, y: 1344 },
         category: "wizard-tower",
         description: "The wizard towers are twice as efficient x2.",
@@ -1367,7 +1358,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Octillion fingers",
+        label: "Spelling bees",
         imagePos: { x: 816, y: 1444 },
         category: "wizard-tower",
         description: "The wizard towers are twice as efficient x2.",
@@ -1378,7 +1369,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Nonillion fingers",
+        label: "Wizard basements",
         imagePos: { x: 816, y: 1492 },
         category: "wizard-tower",
         description: "The wizard towers are twice as efficient x2.",
@@ -1389,7 +1380,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Decillion fingers",
+        label: "Magical realism",
         imagePos: { x: 816, y: 1636 },
         category: "wizard-tower",
         description: "The wizard towers are twice as efficient x2.",
@@ -1400,7 +1391,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Undecillion fingers",
+        label: "Polymorphism",
         imagePos: { x: 816, y: 1732 },
         category: "wizard-tower",
         description: "The wizard towers are twice as efficient x2.",
@@ -1418,7 +1409,7 @@ const MULTIPLIERS = [
     // ----------------------------------- //
 
     {
-        label: "Reinforced index finger",
+        label: "Vanilla nebulae",
         imagePos: { x: 240, y: 0 },
         category: "shipment",
         description: "The shipments are twice as efficient x2.",
@@ -1429,7 +1420,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Carpal tunnel prevention cream",
+        label: "Wormholes",
         imagePos: { x: 240, y: 48 },
         category: "shipment",
         description: "The shipments are twice as efficient x2.",
@@ -1440,7 +1431,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Ambidextrous",
+        label: "Frequent flyer",
         imagePos: { x: 240, y: 96 },
         category: "shipment",
         description: "The shipments are twice as efficient x2.",
@@ -1451,7 +1442,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Thousand fingers",
+        label: "Chocolate monoliths",
         imagePos: { x: 240, y: 624 },
         category: "shipment",
         description: "The shipments are twice as efficient x2.",
@@ -1462,7 +1453,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Million fingers",
+        label: "Generation ship",
         imagePos: { x: 240, y: 672 },
         category: "shipment",
         description: "The shipments are twice as efficient x2.",
@@ -1473,7 +1464,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Billion fingers",
+        label: "Dyson sphere",
         imagePos: { x: 240, y: 720 },
         category: "shipment",
         description: "The shipments are twice as efficient x2.",
@@ -1484,7 +1475,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Trillion fingers",
+        label: "The final frontier",
         imagePos: { x: 240, y: 768 },
         category: "shipment",
         description: "The shipments are twice as efficient x2.",
@@ -1495,7 +1486,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Quadrillion fingers",
+        label: "Autopilot",
         imagePos: { x: 240, y: 816 },
         category: "shipment",
         description: "The shipments are twice as efficient x2.",
@@ -1506,7 +1497,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Quintillion fingers",
+        label: "Restaurants at the end of the universe",
         imagePos: { x: 240, y: 864 },
         category: "shipment",
         description: "The shipments are twice as efficient x2.",
@@ -1517,7 +1508,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Sextillion fingers",
+        label: "Universal alphabet",
         imagePos: { x: 240, y: 912 },
         category: "shipment",
         description: "The shipments are twice as efficient x2.",
@@ -1528,7 +1519,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Septillion fingers",
+        label: "Toroid universe",
         imagePos: { x: 240, y: 1344 },
         category: "shipment",
         description: "The shipments are twice as efficient x2.",
@@ -1539,7 +1530,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Octillion fingers",
+        label: "Prime directive",
         imagePos: { x: 240, y: 1444 },
         category: "shipment",
         description: "The shipments are twice as efficient x2.",
@@ -1572,7 +1563,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Undecillion fingers",
+        label: "Warp drive",
         imagePos: { x: 240, y: 1732 },
         category: "shipment",
         description: "The shipments are twice as efficient x2.",
@@ -1590,7 +1581,7 @@ const MULTIPLIERS = [
     // ----------------------------------- //
 
     {
-        label: "Reinforced index finger",
+        label: "Antimony",
         imagePos: { x: 288, y: 0 },
         category: "alchemy-lab",
         description: "The alchemy labs are twice as efficient x2.",
@@ -1601,7 +1592,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Carpal tunnel prevention cream",
+        label: "Essence of dough",
         imagePos: { x: 288, y: 48 },
         category: "alchemy-lab",
         description: "The alchemy labs are twice as efficient x2.",
@@ -1612,7 +1603,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Ambidextrous",
+        label: "True chocolate",
         imagePos: { x: 288, y: 96 },
         category: "alchemy-lab",
         description: "The alchemy labs are twice as efficient x2.",
@@ -1623,7 +1614,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Thousand fingers",
+        label: "Ambrosia",
         imagePos: { x: 288, y: 624 },
         category: "alchemy-lab",
         description: "The alchemy labs are twice as efficient x2.",
@@ -1634,7 +1625,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Million fingers",
+        label: "Aqua crustulae",
         imagePos: { x: 288, y: 672 },
         category: "alchemy-lab",
         description: "The alchemy labs are twice as efficient x2.",
@@ -1645,7 +1636,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Billion fingers",
+        label: "Origin crucible",
         imagePos: { x: 288, y: 720 },
         category: "alchemy-lab",
         description: "The alchemy labs are twice as efficient x2.",
@@ -1656,7 +1647,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Trillion fingers",
+        label: "Theory of atomic fluidity",
         imagePos: { x: 288, y: 768 },
         category: "alchemy-lab",
         description: "The alchemy labs are twice as efficient x2.",
@@ -1667,7 +1658,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Quadrillion fingers",
+        label: "Beige goo",
         imagePos: { x: 288, y: 816 },
         category: "alchemy-lab",
         description: "The alchemy labs are twice as efficient x2.",
@@ -1678,7 +1669,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Quintillion fingers",
+        label: "The advent of chemistry",
         imagePos: { x: 288, y: 864 },
         category: "alchemy-lab",
         description: "The alchemy labs are twice as efficient x2.",
@@ -1689,7 +1680,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Sextillion fingers",
+        label: "On second thought",
         imagePos: { x: 288, y: 912 },
         category: "alchemy-lab",
         description: "The alchemy labs are twice as efficient x2.",
@@ -1700,7 +1691,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Septillion fingers",
+        label: "Public betterment",
         imagePos: { x: 288, y: 1344 },
         category: "alchemy-lab",
         description: "The alchemy labs are twice as efficient x2.",
@@ -1711,7 +1702,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Octillion fingers",
+        label: "Hermetic reconciliation",
         imagePos: { x: 288, y: 1444 },
         category: "alchemy-lab",
         description: "The alchemy labs are twice as efficient x2.",
@@ -1722,7 +1713,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Nonillion fingers",
+        label: "Chromatic cycling",
         imagePos: { x: 288, y: 1492 },
         category: "alchemy-lab",
         description: "The alchemy labs are twice as efficient x2.",
@@ -1733,7 +1724,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Decillion fingers",
+        label: "Arcanized glassware",
         imagePos: { x: 288, y: 1636 },
         category: "alchemy-lab",
         description: "The alchemy labs are twice as efficient x2.",
@@ -1744,7 +1735,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Undecillion fingers",
+        label: "The dose makes the poison",
         imagePos: { x: 288, y: 1732 },
         category: "alchemy-lab",
         description: "The alchemy labs are twice as efficient x2.",
@@ -1784,7 +1775,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Ambidextrous",
+        label: "aaaaaaaa",
         imagePos: { x: 336, y: 96 },
         category: "portal",
         description: "The portals are twice as efficient x2.",
@@ -1795,7 +1786,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Thousand fingers",
+        label: "bbbbbbbbbbbbb",
         imagePos: { x: 336, y: 624 },
         category: "portal",
         description: "The portals are twice as efficient x2.",
@@ -1806,7 +1797,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Million fingers",
+        label: "cccccccccc",
         imagePos: { x: 336, y: 672 },
         category: "portal",
         description: "The portals are twice as efficient x2.",
@@ -1817,7 +1808,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Billion fingers",
+        label: "ddddddddddd",
         imagePos: { x: 336, y: 720 },
         category: "portal",
         description: "The portals are twice as efficient x2.",
@@ -1828,7 +1819,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Trillion fingers",
+        label: "eeeeeeeee",
         imagePos: { x: 336, y: 768 },
         category: "portal",
         description: "The portals are twice as efficient x2.",
@@ -1956,7 +1947,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Ambidextrous",
+        label: "aaaaaaaa",
         imagePos: { x: 384, y: 96 },
         category: "time-machine",
         description: "The time machines are twice as efficient x2.",
@@ -1967,7 +1958,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Thousand fingers",
+        label: "bbbbbbbbbbbbb",
         imagePos: { x: 384, y: 624 },
         category: "time-machine",
         description: "The time machines are twice as efficient x2.",
@@ -1978,7 +1969,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Million fingers",
+        label: "cccccccccc",
         imagePos: { x: 384, y: 672 },
         category: "time-machine",
         description: "The time machines are twice as efficient x2.",
@@ -1989,7 +1980,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Billion fingers",
+        label: "ddddddddddd",
         imagePos: { x: 384, y: 720 },
         category: "time-machine",
         description: "The time machines are twice as efficient x2.",
@@ -2000,7 +1991,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Trillion fingers",
+        label: "eeeeeeeee",
         imagePos: { x: 384, y: 768 },
         category: "time-machine",
         description: "The time machines are twice as efficient x2.",
@@ -2128,7 +2119,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Ambidextrous",
+        label: "aaaaaaaa",
         imagePos: { x: 624, y: 96 },
         category: "antimatter-condenser",
         description: "The antimatter condensers are twice as efficient x2.",
@@ -2139,7 +2130,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Thousand fingers",
+        label: "bbbbbbbbbbbbb",
         imagePos: { x: 624, y: 624 },
         category: "antimatter-condenser",
         description: "The antimatter condensers are twice as efficient x2.",
@@ -2150,7 +2141,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Million fingers",
+        label: "cccccccccc",
         imagePos: { x: 624, y: 672 },
         category: "antimatter-condenser",
         description: "The antimatter condensers are twice as efficient x2.",
@@ -2161,7 +2152,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Billion fingers",
+        label: "ddddddddddd",
         imagePos: { x: 624, y: 720 },
         category: "antimatter-condenser",
         description: "The antimatter condensers are twice as efficient x2.",
@@ -2172,7 +2163,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Trillion fingers",
+        label: "eeeeeeeee",
         imagePos: { x: 624, y: 768 },
         category: "antimatter-condenser",
         description: "The antimatter condensers are twice as efficient x2.",
@@ -2300,7 +2291,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Ambidextrous",
+        label: "aaaaaaaa",
         imagePos: { x: 672, y: 96 },
         category: "prism",
         description: "The prisms are twice as efficient x2.",
@@ -2311,7 +2302,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Thousand fingers",
+        label: "bbbbbbbbbbbbb",
         imagePos: { x: 672, y: 624 },
         category: "prism",
         description: "The prisms are twice as efficient x2.",
@@ -2322,7 +2313,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Million fingers",
+        label: "cccccccccc",
         imagePos: { x: 672, y: 672 },
         category: "prism",
         description: "The prisms are twice as efficient x2.",
@@ -2333,7 +2324,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Billion fingers",
+        label: "ddddddddddd",
         imagePos: { x: 672, y: 720 },
         category: "prism",
         description: "The prisms are twice as efficient x2.",
@@ -2344,7 +2335,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Trillion fingers",
+        label: "eeeeeeeee",
         imagePos: { x: 672, y: 768 },
         category: "prism",
         description: "The prisms are twice as efficient x2.",
@@ -2472,7 +2463,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Ambidextrous",
+        label: "aaaaaaaa",
         imagePos: { x: 912, y: 96 },
         category: "chancemaker",
         description: "The chancemakers are twice as efficient x2.",
@@ -2483,7 +2474,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Thousand fingers",
+        label: "bbbbbbbbbbbbb",
         imagePos: { x: 912, y: 624 },
         category: "chancemaker",
         description: "The chancemakers are twice as efficient x2.",
@@ -2494,7 +2485,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Million fingers",
+        label: "cccccccccc",
         imagePos: { x: 912, y: 672 },
         category: "chancemaker",
         description: "The chancemakers are twice as efficient x2.",
@@ -2505,7 +2496,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Billion fingers",
+        label: "ddddddddddd",
         imagePos: { x: 912, y: 720 },
         category: "chancemaker",
         description: "The chancemakers are twice as efficient x2.",
@@ -2516,7 +2507,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Trillion fingers",
+        label: "eeeeeeeee",
         imagePos: { x: 912, y: 768 },
         category: "chancemaker",
         description: "The chancemakers are twice as efficient x2.",
@@ -2644,7 +2635,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Ambidextrous",
+        label: "aaaaaaaa",
         imagePos: { x: 960, y: 96 },
         category: "fractal-engine",
         description: "The fractal engines are twice as efficient x2.",
@@ -2655,7 +2646,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Thousand fingers",
+        label: "bbbbbbbbbbbbb",
         imagePos: { x: 960, y: 624 },
         category: "fractal-engine",
         description: "The fractal engines are twice as efficient x2.",
@@ -2666,7 +2657,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Million fingers",
+        label: "cccccccccc",
         imagePos: { x: 960, y: 672 },
         category: "fractal-engine",
         description: "The fractal engines are twice as efficient x2.",
@@ -2677,7 +2668,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Billion fingers",
+        label: "ddddddddddd",
         imagePos: { x: 960, y: 720 },
         category: "fractal-engine",
         description: "The fractal engines are twice as efficient x2.",
@@ -2688,7 +2679,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Trillion fingers",
+        label: "eeeeeeeee",
         imagePos: { x: 960, y: 768 },
         category: "fractal-engine",
         description: "The fractal engines are twice as efficient x2.",
@@ -2816,7 +2807,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Ambidextrous",
+        label: "aaaaaaaa",
         imagePos: { x: 1536, y: 96 },
         category: "javascript-console",
         description: "The javascript consoles are twice as efficient x2.",
@@ -2827,7 +2818,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Thousand fingers",
+        label: "bbbbbbbbbbbbb",
         imagePos: { x: 1536, y: 624 },
         category: "javascript-console",
         description: "The javascript consoles are twice as efficient x2.",
@@ -2838,7 +2829,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Million fingers",
+        label: "cccccccccc",
         imagePos: { x: 1536, y: 672 },
         category: "javascript-console",
         description: "The javascript consoles are twice as efficient x2.",
@@ -2849,7 +2840,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Billion fingers",
+        label: "ddddddddddd",
         imagePos: { x: 1536, y: 720 },
         category: "javascript-console",
         description: "The javascript consoles are twice as efficient x2.",
@@ -2860,7 +2851,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Trillion fingers",
+        label: "eeeeeeeee",
         imagePos: { x: 1536, y: 768 },
         category: "javascript-console",
         description: "The javascript consoles are twice as efficient x2.",
@@ -2988,7 +2979,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Ambidextrous",
+        label: "aaaaaaaa",
         imagePos: { x: 1584, y: 96 },
         category: "idleverse",
         description: "The idleverses are twice as efficient x2.",
@@ -2999,7 +2990,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Thousand fingers",
+        label: "bbbbbbbbbbbbb",
         imagePos: { x: 1584, y: 624 },
         category: "idleverse",
         description: "The idleverses are twice as efficient x2.",
@@ -3010,7 +3001,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Million fingers",
+        label: "cccccccccc",
         imagePos: { x: 1584, y: 672 },
         category: "idleverse",
         description: "The idleverses are twice as efficient x2.",
@@ -3021,7 +3012,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Billion fingers",
+        label: "ddddddddddd",
         imagePos: { x: 1584, y: 720 },
         category: "idleverse",
         description: "The idleverses are twice as efficient x2.",
@@ -3032,7 +3023,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Trillion fingers",
+        label: "eeeeeeeee",
         imagePos: { x: 1584, y: 768 },
         category: "idleverse",
         description: "The idleverses are twice as efficient x2.",
@@ -3160,7 +3151,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Ambidextrous",
+        label: "aaaaaaaa",
         imagePos: { x: 1632, y: 96 },
         category: "cortex-baker",
         description: "The cortex bakers are twice as efficient x2.",
@@ -3171,7 +3162,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Thousand fingers",
+        label: "bbbbbbbbbbbbb",
         imagePos: { x: 1632, y: 624 },
         category: "cortex-baker",
         description: "The cortex bakers are twice as efficient x2.",
@@ -3182,7 +3173,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Million fingers",
+        label: "cccccccccc",
         imagePos: { x: 1632, y: 672 },
         category: "cortex-baker",
         description: "The cortex bakers are twice as efficient x2.",
@@ -3193,7 +3184,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Billion fingers",
+        label: "ddddddddddd",
         imagePos: { x: 1632, y: 720 },
         category: "cortex-baker",
         description: "The cortex bakers are twice as efficient x2.",
@@ -3204,7 +3195,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Trillion fingers",
+        label: "eeeeeeeee",
         imagePos: { x: 1632, y: 768 },
         category: "cortex-baker",
         description: "The cortex bakers are twice as efficient x2.",
@@ -3332,7 +3323,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Ambidextrous",
+        label: "aaaaaaaa",
         imagePos: { x: 1680, y: 96 },
         category: "you",
         description: "You are twice as efficient x2.",
@@ -3343,7 +3334,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Thousand fingers",
+        label: "bbbbbbbbbbbbb",
         imagePos: { x: 1680, y: 624 },
         category: "you",
         description: "You are twice as efficient x2.",
@@ -3354,7 +3345,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Million fingers",
+        label: "cccccccccc",
         imagePos: { x: 1680, y: 672 },
         category: "you",
         description: "You are twice as efficient x2.",
@@ -3365,7 +3356,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Billion fingers",
+        label: "ddddddddddd",
         imagePos: { x: 1680, y: 720 },
         category: "you",
         description: "You are twice as efficient x2.",
@@ -3376,7 +3367,7 @@ const MULTIPLIERS = [
         bought: false,
     },
     {
-        label: "Trillion fingers",
+        label: "eeeeeeeee",
         imagePos: { x: 1680, y: 768 },
         category: "you",
         description: "You are twice as efficient x2.",

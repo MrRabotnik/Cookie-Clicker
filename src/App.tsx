@@ -161,7 +161,7 @@ const App = () => {
 
     const updateMultipliers = (label: string, updatedUpgrade: any) => {
         const arr = multipliers.map((multiplierItem: any) => {
-            if (multiplierItem.description === label) {
+            if (multiplierItem.label === label) {
                 multiplierItem = {
                     ...multiplierItem,
                     ...updatedUpgrade,

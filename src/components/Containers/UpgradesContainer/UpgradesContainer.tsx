@@ -30,6 +30,25 @@ const UpgradesContainer = () => {
         idleverse: upgrades[16].boughtCount,
         "cortex-baker": upgrades[17].boughtCount,
         you: upgrades[18].boughtCount,
+        summary:
+            upgrades[1].boughtCount +
+            upgrades[2].boughtCount +
+            upgrades[3].boughtCount +
+            upgrades[4].boughtCount +
+            upgrades[5].boughtCount +
+            upgrades[6].boughtCount +
+            upgrades[7].boughtCount +
+            upgrades[8].boughtCount +
+            upgrades[9].boughtCount +
+            upgrades[10].boughtCount +
+            upgrades[11].boughtCount +
+            upgrades[12].boughtCount +
+            upgrades[13].boughtCount +
+            upgrades[14].boughtCount +
+            upgrades[15].boughtCount +
+            upgrades[16].boughtCount +
+            upgrades[17].boughtCount +
+            upgrades[18].boughtCount,
     };
 
     // const sortedMultipliers = multipliers.sort((a: any, b: any) => a.price - b.price);

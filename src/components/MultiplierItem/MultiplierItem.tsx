@@ -9,7 +9,7 @@ import "react-tooltip/dist/react-tooltip.css";
 import { useCookies } from "../../App";
 import MultiplierHoverInfo from "../MultiplierHoverInfo/MultiplierHoverInfo";
 
-const MultiplierItem = ({ dimensions, item }: any) => {
+const MultiplierItem = ({ dimensions, item, boughtCountOfEachBuilding, position }: any) => {
     const {
         cookiesCount,
         setCookiesCount,
@@ -30,21 +30,33 @@ const MultiplierItem = ({ dimensions, item }: any) => {
 
     const buyAMultiplier = () => {
         if (!upgradeAvailable) return;
-
         setCookiesCount((prev: number) => prev - item.price);
+
         const foundUpgrade = upgrades.find((upgrade: any) => upgrade.category === item.category);
+        const newCookiesPerSecondSubtracted = cookiesPerSecond - foundUpgrade.boughtCount * foundUpgrade.value;
+
+        //  if (item.category === "cursor" && position === 3) {
+        //      setCookiesPerClick((prev: number) => prev * item.value * boughtCountOfEachBuilding.summary);
+        //      setCookiesPerSecond((prev: number) => prev + item.value * boughtCountOfEachBuilding.summary);
+        //  } else if (item.category === "cursor" && position > 3) {
+        //      setCookiesPerClick((prev: number) => prev * item.value * boughtCountOfEachBuilding.summary);
+        //      setCookiesPerSecond(
+        //          newCookiesPerSecondSubtracted + foundUpgrade.value * item.value * boughtCountOfEachBuilding.summary
+        //      );
+        //  } else
+
         if (item.category === "cursor") {
             setCookiesPerClick((prev: number) => prev * item.value);
         }
-        const newCookiesPerSecond = cookiesPerSecond - foundUpgrade.boughtCount * foundUpgrade.value;
-        setCookiesPerSecond(newCookiesPerSecond + foundUpgrade.value * item.value * foundUpgrade.boughtCount);
+
+        setCookiesPerSecond(newCookiesPerSecondSubtracted + foundUpgrade.value * item.value * foundUpgrade.boughtCount);
 
         updateUpgrades(foundUpgrade.label, {
             multiplier: foundUpgrade.multiplier * item.value,
             value: foundUpgrade.value * item.value,
         });
 
-        updateMultipliers(item.description, {
+        updateMultipliers(item.label, {
             value: item.value,
             bought: true,
         });
