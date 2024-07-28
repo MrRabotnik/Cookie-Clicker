@@ -9,6 +9,9 @@ import IMAGES from "../../../utils/images";
 import { formatNumber } from "../../../utils/formatNumber";
 
 const CookieContainer = () => {
+    const { upgrades, cookiesCount, setCookiesCount, cookiesPerClick, cookiesPerSecond, multiplier } = useCookies();
+    const [displayedCount, setDisplayedCount] = useState(cookiesCount);
+
     const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
     const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
@@ -34,8 +37,6 @@ const CookieContainer = () => {
         transform: invert ? "scaleY(-1)" : "scaleY(1)",
         config: { duration: 2000 },
     });
-
-    const { upgrades, cookiesCount, setCookiesCount, cookiesPerClick, cookiesPerSecond, multiplier } = useCookies();
 
     const [fadingTexts, setFadingTexts] = useState<any[]>([]);
 
@@ -76,6 +77,30 @@ const CookieContainer = () => {
             window.removeEventListener("resize", handleResize);
         };
     }, []);
+
+    useEffect(() => {
+        let animation: any;
+        const duration = 500;
+        const startValue = displayedCount;
+        const endValue = cookiesCount;
+        const startTime = performance.now();
+
+        const animate = (time: any) => {
+            const elapsed = time - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const currentCount = startValue + (endValue - startValue) * progress;
+
+            setDisplayedCount(currentCount);
+
+            if (progress < 1) {
+                animation = requestAnimationFrame(animate);
+            }
+        };
+
+        animation = requestAnimationFrame(animate);
+
+        return () => cancelAnimationFrame(animation);
+    }, [cookiesCount, displayedCount]);
 
     useEffect(() => {
         const handleMouseMove = (e: any) => {
@@ -368,7 +393,7 @@ const CookieContainer = () => {
                             cornerRadius={10}
                         />
                         <Text
-                            text={`${formatNumber(cookiesCount)} cookies`}
+                            text={`${formatNumber(displayedCount)} cookies`}
                             x={10}
                             y={20}
                             fill="white"

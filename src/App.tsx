@@ -198,15 +198,13 @@ const App = () => {
                         upgrades,
                         updateUpgrades,
 
-                        // cookiesCount: cookiesCount.toFixed(0),
                         cookiesCount,
                         setCookiesCount,
 
                         cookiesPerClick,
                         setCookiesPerClick,
 
-                        // cookiesPerSecond: cookiesPerSecond.toFixed(1),
-                        cookiesPerSecond,
+                        cookiesPerSecond: cookiesPerSecond.toFixed(1),
                         setCookiesPerSecond,
 
                         multiplier,

@@ -86,7 +86,9 @@ export const formatNumber = (number) => {
     let formatted;
 
     if (number % 1 === 0) {
-        if (number < 1000000 && number >= 0) {
+        if (number < 10000 && number >= 0) {
+            formatted = numeral(number).format("0,0");
+        } else if (number < 1000000 && number >= 10000) {
             formatted = numeral(number).format("0,0");
         } else {
             formatted = numeral(number)
@@ -94,8 +96,10 @@ export const formatNumber = (number) => {
                 .replace(/([a-z]+)$/, "$1");
         }
     } else {
-        if (number < 1000000 && number >= 0) {
+        if (number < 10000 && number >= 0) {
             formatted = numeral(number).format("0,0.0");
+        } else if (number < 1000000 && number >= 10000) {
+            formatted = numeral(number).format("0,0");
         } else {
             formatted = numeral(number)
                 .format("0.0a")
