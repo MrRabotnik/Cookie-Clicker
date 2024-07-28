@@ -204,7 +204,7 @@ const App = () => {
                         cookiesPerClick,
                         setCookiesPerClick,
 
-                        cookiesPerSecond: cookiesPerSecond.toFixed(1),
+                        cookiesPerSecond,
                         setCookiesPerSecond,
 
                         multiplier,
