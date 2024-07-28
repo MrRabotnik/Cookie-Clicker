@@ -8,6 +8,8 @@ const UPGRADES = [
         price: generateValues(15, 1.15),
         description: "Autoclicks once every 10 seconds",
         value: 0.1,
+        bonusValue: 0,
+        bonusMultiplier: 1,
         boughtCount: 0,
         multiplier: 1,
     },

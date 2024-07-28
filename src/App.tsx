@@ -144,12 +144,13 @@ const App = () => {
         multipliersRef.current = multipliers;
     }, [cookiesCount, cookiesPerSecond, multiplier, upgrades, multipliers, cookiesPerClick]);
 
-    const updateUpgrades = (label: string, updatedUpgrade: any) => {
+    const updateUpgrades = async (labels: string[], updatedUpgrade: any) => {
+        let index = 0;
         const arr = upgrades.map((upgrade: any) => {
-            if (upgrade.label === label) {
+            if (labels.includes(upgrade.label)) {
                 upgrade = {
                     ...upgrade,
-                    ...updatedUpgrade,
+                    ...updatedUpgrade[index++],
                 };
             }
 
@@ -197,13 +198,15 @@ const App = () => {
                         upgrades,
                         updateUpgrades,
 
-                        cookiesCount: cookiesCount.toFixed(0),
+                        // cookiesCount: cookiesCount.toFixed(0),
+                        cookiesCount,
                         setCookiesCount,
 
                         cookiesPerClick,
                         setCookiesPerClick,
 
-                        cookiesPerSecond: cookiesPerSecond.toFixed(1),
+                        // cookiesPerSecond: cookiesPerSecond.toFixed(1),
+                        cookiesPerSecond,
                         setCookiesPerSecond,
 
                         multiplier,

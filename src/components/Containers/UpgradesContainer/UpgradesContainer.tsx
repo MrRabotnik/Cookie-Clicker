@@ -106,6 +106,7 @@ const UpgradesContainer = () => {
                                 item={multiplier}
                                 position={index}
                                 boughtCountOfEachBuilding={boughtCountOfEachBuilding}
+                                buySellMultiplier={buySellMultiplier}
                             />
                         )
                     );
@@ -162,6 +163,7 @@ const UpgradesContainer = () => {
                                 key={index}
                                 dimensions={dimensions}
                                 updateUpgrades={updateUpgrades}
+                                upgrades={upgrades}
                                 upgrade={upgrade}
                                 position={index}
                                 buying={buying}
@@ -174,6 +176,7 @@ const UpgradesContainer = () => {
                                 key={index}
                                 dimensions={dimensions}
                                 updateUpgrades={updateUpgrades}
+                                upgrades={upgrades}
                                 upgrade={misteriousUpgrade}
                                 position={index}
                                 buying={buying}
@@ -188,6 +191,7 @@ const UpgradesContainer = () => {
                             key={index}
                             dimensions={dimensions}
                             updateUpgrades={updateUpgrades}
+                            upgrades={upgrades}
                             upgrade={upgrade}
                             position={index}
                             buying={buying}

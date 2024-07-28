@@ -7,7 +7,13 @@ import { formatNumber } from "../../utils/formatNumber";
 const UpgradeHoverInfo = ({ upgrade, position, infoContainerY, shouldBeDark, setModalIsOpen }: any) => {
     const { cookiesCount, cookiesPerSecond } = useCookies();
 
-    const available = +cookiesCount >= +upgrade.price[upgrade.boughtCount];
+    const boughtCount = upgrade.boughtCount;
+    const available = +cookiesCount >= +upgrade.price[boughtCount];
+    const singleItemProducing =
+        upgrade.category === "cursor"
+            ? upgrade.value * upgrade.multiplier + upgrade.bonusValue * upgrade.bonusMultiplier
+            : upgrade.value * upgrade.multiplier;
+    const calculatedCookieProduction = boughtCount * singleItemProducing;
 
     return (
         <div
@@ -32,7 +38,7 @@ const UpgradeHoverInfo = ({ upgrade, position, infoContainerY, shouldBeDark, set
                 ></div>
                 <div className="info">
                     <p>{upgrade.label}</p>
-                    <div className="chip">owned: {upgrade.boughtCount}</div>
+                    <div className="chip">owned: {boughtCount}</div>
                 </div>
                 <div className="price">
                     <img
@@ -42,9 +48,7 @@ const UpgradeHoverInfo = ({ upgrade, position, infoContainerY, shouldBeDark, set
                         height={"auto"}
                     />
                     <span className={available ? "available" : ""}>
-                        {upgrade.boughtCount === 0 && shouldBeDark
-                            ? "???"
-                            : formatNumber(upgrade.price[upgrade.boughtCount])}
+                        {boughtCount === 0 && shouldBeDark ? "???" : formatNumber(upgrade.price[boughtCount])}
                     </span>
                 </div>
             </div>
@@ -52,22 +56,21 @@ const UpgradeHoverInfo = ({ upgrade, position, infoContainerY, shouldBeDark, set
             <p className="text-align-right">
                 <i>"{upgrade.description}"</i>{" "}
             </p>
-            {upgrade.boughtCount > 0 && (
+            {boughtCount > 0 && (
                 <>
                     <hr />
                     <div className="list">
                         <div>
                             <p>
-                                each {upgrade.category} produces {formatNumber(upgrade.value)} cookies per second
+                                each {upgrade.category} produces {formatNumber(singleItemProducing)} cookies per second
                             </p>
                         </div>
 
                         <div>
                             <p>
                                 {upgrade.boughtCount} {upgrade.category} producing{" "}
-                                {formatNumber(upgrade.boughtCount * upgrade.value)} cookies per second (
-                                {(((upgrade.boughtCount * upgrade.value) / cookiesPerSecond) * 100).toFixed(1)}% of
-                                total CpS)
+                                {formatNumber(calculatedCookieProduction)} cookies per second (
+                                {((calculatedCookieProduction / cookiesPerSecond) * 100).toFixed(1)}% of total CpS)
                             </p>
                         </div>
                     </div>

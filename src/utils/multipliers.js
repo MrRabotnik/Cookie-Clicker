@@ -45,7 +45,7 @@ const MULTIPLIERS = [
         category: "cursor",
         description: "The mouse and cursors gain +0.1 cookies for each non-cursor object owned.",
         quote: "clickity",
-        value: 2,
+        value: 0.1,
         price: 100000,
         unlocksAt: 25,
         bought: false,

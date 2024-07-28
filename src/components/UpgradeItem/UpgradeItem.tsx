@@ -10,12 +10,14 @@ import { formatNumber } from "../../utils/formatNumber";
 
 const UpgradeItem = ({
     dimensions,
+    upgrades,
     upgrade,
     buying,
     buySellMultiplier,
     updateUpgrades,
     position,
     shouldBeDark = false,
+    boughtCountOfEachBuilding,
 }: any) => {
     const { cookiesCount, setCookiesCount, setCookiesPerSecond } = useCookies();
 
@@ -64,22 +66,59 @@ const UpgradeItem = ({
         if (!upgradeAvailable) return;
 
         setCookiesCount((prev: number) => prev - summedPriceArray);
-        setCookiesPerSecond((prev: number) => prev + upgrade.value * buySellMultiplier);
+        setCookiesPerSecond((prev: number) => prev + upgrade.value * upgrade.multiplier * buySellMultiplier);
 
-        updateUpgrades(upgrade.label, {
-            boughtCount: upgrade.boughtCount + buySellMultiplier,
-        });
+        const foundUpgrade = upgrades.find((upgrade: any) => upgrade.category === "cursor");
+
+        if (foundUpgrade.bonusValue > 0) {
+            if (upgrade.label !== "Cursor") {
+                updateUpgrades(
+                    ["Cursor", upgrade.label],
+                    [
+                        {
+                            bonusValue: foundUpgrade.bonusValue + 0.1 * buySellMultiplier,
+                        },
+                        {
+                            boughtCount: upgrade.boughtCount + buySellMultiplier,
+                        },
+                    ]
+                );
+            } else {
+                updateUpgrades(
+                    [upgrade.label],
+                    [
+                        {
+                            boughtCount: upgrade.boughtCount + buySellMultiplier,
+                        },
+                    ]
+                );
+            }
+        } else {
+            updateUpgrades(
+                [upgrade.label],
+                [
+                    {
+                        boughtCount: upgrade.boughtCount + buySellMultiplier,
+                    },
+                ]
+            );
+        }
     };
 
     const sellAnUpgrade = () => {
         if (!upgradeAvailable) return;
 
         setCookiesCount((prev: number) => +prev + summedPriceArray);
-        setCookiesPerSecond((prev: number) => +prev - upgrade.value * buySellMultiplier);
+        setCookiesPerSecond((prev: number) => +prev - upgrade.value * upgrade.multiplier * buySellMultiplier);
 
-        updateUpgrades(upgrade.label, {
-            boughtCount: upgrade.boughtCount - buySellMultiplier,
-        });
+        updateUpgrades(
+            [upgrade.label],
+            [
+                {
+                    boughtCount: upgrade.boughtCount - buySellMultiplier,
+                },
+            ]
+        );
     };
 
     return (
