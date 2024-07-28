@@ -7,6 +7,7 @@ import { useCookies } from "../../../App";
 import { useSpring, animated } from "@react-spring/konva";
 import IMAGES from "../../../utils/images";
 import { formatNumber } from "../../../utils/formatNumber";
+import SOUNDS from "../../../utils/sounds";
 
 const CookieContainer = () => {
     const { upgrades, cookiesCount, setCookiesCount, cookiesPerClick, cookiesPerSecond, multiplier } = useCookies();
@@ -258,6 +259,10 @@ const CookieContainer = () => {
             opacity: 1,
         };
         setFadingTexts((prev) => [...prev, newText]);
+
+        const audio = new Audio(SOUNDS.cookieClickSound);
+        audio.volume = 0.3;
+        audio.play();
     };
 
     const mouseDownOnCookie = () => {

@@ -8,6 +8,7 @@ import IMAGES from "../../utils/images";
 import "react-tooltip/dist/react-tooltip.css";
 import { useCookies } from "../../App";
 import MultiplierHoverInfo from "../MultiplierHoverInfo/MultiplierHoverInfo";
+import SOUNDS from "../../utils/sounds";
 
 const MultiplierItem = ({ dimensions, item, boughtCountOfEachBuilding, position, buySellMultiplier }: any) => {
     const {
@@ -30,6 +31,10 @@ const MultiplierItem = ({ dimensions, item, boughtCountOfEachBuilding, position,
 
     const buyAMultiplier = () => {
         if (!upgradeAvailable) return;
+
+        const audio = new Audio(SOUNDS.cookieClickSound);
+        audio.play();
+
         setCookiesCount((prev: number) => prev - item.price);
 
         const foundUpgrade = upgrades.find((upgrade: any) => upgrade.category === item.category);

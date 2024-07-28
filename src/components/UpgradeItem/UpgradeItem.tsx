@@ -7,6 +7,7 @@ import { useCookies } from "../../App";
 import IMAGES from "../../utils/images";
 import UpgradeHoverInfo from "../UpradeHoverInfo/UpgradeHoverInfo";
 import { formatNumber } from "../../utils/formatNumber";
+import SOUNDS from "../../utils/sounds";
 
 const UpgradeItem = ({
     dimensions,
@@ -65,6 +66,9 @@ const UpgradeItem = ({
     const buyAnUpgrade = () => {
         if (!upgradeAvailable) return;
 
+        const audio = new Audio(SOUNDS.cookieClickSound);
+        audio.play();
+
         setCookiesCount((prev: number) => prev - summedPriceArray);
         setCookiesPerSecond((prev: number) => prev + upgrade.value * upgrade.multiplier * buySellMultiplier);
 
@@ -107,6 +111,9 @@ const UpgradeItem = ({
 
     const sellAnUpgrade = () => {
         if (!upgradeAvailable) return;
+
+        const audio = new Audio(SOUNDS.cookieClickSound);
+        audio.play();
 
         setCookiesCount((prev: number) => +prev + summedPriceArray);
         setCookiesPerSecond((prev: number) => +prev - upgrade.value * upgrade.multiplier * buySellMultiplier);
